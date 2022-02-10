@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>所有文章 - SincereCSL&#39;s Blog</title>
+        <link>https://sincerecsl.github.io/posts/</link>
+        <description>所有文章 | SincereCSL&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor>
+            <webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Thu, 10 Feb 2022 20:49:43 &#43;0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Test</title>
+    <link>https://sincerecsl.github.io/posts/test/</link>
+    <pubDate>Thu, 10 Feb 2022 20:49:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://sincerecsl.github.io/posts/test/</guid>
+    <description><![CDATA[我的第一篇博客文章 开始我的博客搭建 我的博客文章]]></description>
+</item></channel>
+</rss>
