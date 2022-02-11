@@ -2,8 +2,11 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://sincerecsl.github.io/posts/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod></url><url>
-            <loc>https://sincerecsl.github.io/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod></url><url>
-            <loc>https://sincerecsl.github.io/posts/test/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod></url><url>
-            <loc>https://sincerecsl.github.io/categories/</loc></url><url>
-            <loc>https://sincerecsl.github.io/tags/</loc></url></urlset>
+            <loc>https://sincerecsl.github.io/cool/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/categories/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/tags/content/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/tags/markdown/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/posts/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/tags/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sincerecsl.github.io/categories/%E7%AC%94%E8%AE%B0/</loc><lastmod>2022-02-10T20:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
