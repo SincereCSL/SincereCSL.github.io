@@ -1,8 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>安装 - 标签 - SincereCSL&#39;s Blog</title>
-        <link>https://sincerecsl.github.io/tags/installation/</link>
-        <description>安装 - 标签 - SincereCSL&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor>
-            <webMaster>SincereCSL@163.com (SincereCSL)</webMaster><atom:link href="https://sincerecsl.github.io/tags/installation/" rel="self" type="application/rss+xml" /></channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>安装 - 标签 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/installation/</link><description>安装 - 标签 - SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><atom:link href="https://sincerecsl.github.io/tags/installation/" rel="self" type="application/rss+xml"/></channel></rss>
