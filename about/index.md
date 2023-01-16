@@ -1,6 +1,6 @@
 # 关于 SincereCSL
 
-## ✋ Hi，GitHub Test 小伙伴们你们好呀！我是 [SincereCSL](https://sincerecsl.github.io)
+## ✋ Hi，小伙伴们你们好呀！我是 [SincereCSL](https://sincerecsl.github.io)
 
 一名前端开发工程师，喜欢探索新技术，空闲时个人喜欢逛Twitter、Youtube、StackOverflow、Medium、Quora等网站冲浪、看视频、学习编程技术。
 
