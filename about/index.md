@@ -2,7 +2,7 @@
 
 ## ✋ Hi，小伙伴们你们好呀！我是 [SincereCSL](https://sincerecsl.github.io)
 
-一名前端开发工程师，喜欢探索新技术，空闲时个人喜欢逛Twitter、Youtube、StackOverflow、Medium、Quora等网站冲浪、看视频、学习编程技术。
+一名前端开发工程师，喜欢探索新技术，空闲时个人喜欢逛Twitter、Youtube、Netflix、StackOverflow、Medium、Quora等网站冲浪、看视频、学习编程技术。
 
 希望不断学习，不断成长。现阶段的目标是能够在忙碌地闲隙里多学习、不断思考，多阅读写作。
 
