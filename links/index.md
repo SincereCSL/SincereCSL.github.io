@@ -18,6 +18,7 @@
 * [勾三股四](https://jiongks.name)
 * [是不是很酷:微信公众号](https://mp.weixin.qq.com/s/Q0IrfV7FcGbIYsQ8jFdOdQ)
 ## 文章
+* [40 years of programming](https://liw.fi/40/)
 * [别让自己“墙”了自己](https://coolshell.cn/articles/20276.html)
 * [如何超过大多数人](https://coolshell.cn/articles/19464.html)
 * [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html)
