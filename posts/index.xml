@@ -1,25 +1,6 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>所有文章 - SincereCSL&#39;s Blog</title>
-        <link>http://localhost:1313/posts/</link>
-        <description>所有文章 | SincereCSL&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Jan 2025 14:16:15 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>今天的你Cool嘛</title>
-    <link>http://localhost:1313/cool/</link>
-    <pubDate>Thu, 10 Feb 2022 20:49:43 &#43;0800</pubDate>
-    <author>SincereCSL</author>
-    <guid>http://localhost:1313/cool/</guid>
-    <description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/posts/</link><description>所有文章 | SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Jan 2025 14:16:15 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/2022/featured-image.jpg" referrerpolicy="no-referrer">
-            </div><p>Amazon 创始人杰夫·贝索斯认为很酷</p>]]></description>
-</item>
-<item>
-    <title>Google 评分卡</title>
-    <link>http://localhost:1313/googlescorecard/</link>
-    <pubDate>Mon, 25 Sep 2023 22:16:23 &#43;0800</pubDate>
-    <author>SincereCSL</author>
-    <guid>http://localhost:1313/googlescorecard/</guid>
-    <description><![CDATA[<div class="featured-image">
+            </div><p>Amazon 创始人杰夫·贝索斯认为很酷</p>]]></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/2023/google.jpg" referrerpolicy="no-referrer">
             </div><h2 id="google-评分卡">Google 评分卡</h2>
 <ul>
@@ -33,15 +14,7 @@
 <p>2 - 可以实现一些小的改动、清楚基本原理，并能够在简单的指导下自己找到更多的细节<br>
  
  
- </p>]]></description>
-</item>
-<item>
-    <title>Google 搜索技巧</title>
-    <link>http://localhost:1313/googlesearch/</link>
-    <pubDate>Sat, 04 Jan 2025 14:16:15 &#43;0800</pubDate>
-    <author>SincereCSL</author>
-    <guid>http://localhost:1313/googlesearch/</guid>
-    <description><![CDATA[<div class="featured-image">
+ </p>]]></description></item><item><title>Google 搜索技巧</title><link>https://sincerecsl.github.io/googlesearch/</link><pubDate>Sat, 04 Jan 2025 14:16:15 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlesearch/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/2025/noBaidu.jpg" referrerpolicy="no-referrer">
             </div><h2 id="google-搜索技巧">Google 搜索技巧</h2>
 <h4 id="参考资料">参考资料：</h4>
@@ -55,7 +28,4 @@
 <ul>
 <li><a href="https://www.youtube.com/watch?v=BRiNw490Eq0&amp;ab_channel=freeCodeCamp.org" target="_blank" rel="noopener noreffer ">Google Like a Pro – All Advanced Search Operators Tutorial [2023 Tips]</a></li>
 <li><a href="https://www.youtube.com/watch?v=C-2YMhMu5Lc&amp;ab_channel=Dave%27sGarage" target="_blank" rel="noopener noreffer ">https://www.youtube.com/watch?v=C-2YMhMu5Lc&amp;ab_channel=Dave%27sGarage</a></li>
-</ul>]]></description>
-</item>
-</channel>
-</rss>
+</ul>]]></description></item></channel></rss>
