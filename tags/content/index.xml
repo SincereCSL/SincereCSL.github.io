@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>内容 on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/content/</link><description>Recent content in 内容 on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><atom:link href="https://sincerecsl.github.io/tags/content/index.xml" rel="self" type="application/rss+xml"/><item><title>contenu</title><link>https://sincerecsl.github.io/tags/content/_index.fr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/tags/content/_index.fr/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>内容 on SincereCSL&#39;s Blog</title>
+    <link>http://localhost:1313/tags/content/</link>
+    <description>Recent content in 内容 on SincereCSL&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor>
+    <webMaster>SincereCSL@163.com (SincereCSL)</webMaster>
+    <atom:link href="http://localhost:1313/tags/content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contenu</title>
+      <link>http://localhost:1313/tags/content/_index.fr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>SincereCSL@163.com (SincereCSL)</author>
+      <guid>http://localhost:1313/tags/content/_index.fr/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
