@@ -1,7 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Series - series - SincereCSL&#39;s Blog</title>
-        <link>http://localhost:1313/series/</link>
-        <description>Series - series - SincereCSL&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="http://localhost:1313/series/" rel="self" type="application/rss+xml" /></channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Series - series - SincereCSL's Blog</title><link>https://sincerecsl.github.io/series/</link><description>Series - series - SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://sincerecsl.github.io/series/" rel="self" type="application/rss+xml"/></channel></rss>
