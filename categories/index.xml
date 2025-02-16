@@ -3,7 +3,15 @@
         <title>Categories - 分类 - SincereCSL&#39;s Blog</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - 分类 - SincereCSL&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 14:16:15 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 16 Feb 2025 16:30:15 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>科技新闻</title>
+    <link>http://localhost:1313/categories/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/</link>
+    <pubDate>Sun, 16 Feb 2025 16:30:15 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/categories/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>计算机系统课程</title>
     <link>http://localhost:1313/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B/</link>
     <pubDate>Sun, 26 Jan 2025 14:16:15 &#43;0800</pubDate>
@@ -29,5 +37,3 @@
 </item>
 </channel>
 </rss>
-
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Categories - 分类 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/categories/</link><description>Categories - 分类 - SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 14:16:15 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/categories/" rel="self" type="application/rss+xml"/><item><title>计算机系统课程</title><link>https://sincerecsl.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B/</link><pubDate>Sun, 26 Jan 2025 14:16:15 +0800</pubDate><author>作者</author><guid>https://sincerecsl.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B/</guid><description></description></item><item><title>Google Search</title><link>https://sincerecsl.github.io/categories/google-search/</link><pubDate>Sat, 04 Jan 2025 14:16:15 +0800</pubDate><author>作者</author><guid>https://sincerecsl.github.io/categories/google-search/</guid><description></description></item><item><title>笔记</title><link>https://sincerecsl.github.io/categories/%E7%AC%94%E8%AE%B0/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>作者</author><guid>https://sincerecsl.github.io/categories/%E7%AC%94%E8%AE%B0/</guid><description></description></item></channel></rss>
