@@ -1,16 +1,5 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>科技新闻 - 标签 - SincereCSL&#39;s Blog</title>
-        <link>http://localhost:1313/tags/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/</link>
-        <description>科技新闻 - 标签 - SincereCSL&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 16 Feb 2025 16:30:15 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/" rel="self" type="application/rss+xml" /><item>
-    <title>记录一些优质的科技新闻网站</title>
-    <link>http://localhost:1313/technologynews/</link>
-    <pubDate>Sun, 16 Feb 2025 16:30:15 &#43;0800</pubDate>
-    <author>SincereCSL</author>
-    <guid>http://localhost:1313/technologynews/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/2025/02/technologyNews.jpg" referrerpolicy="no-referrer">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>科技新闻 - 标签 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/</link><description>科技新闻 - 标签 - SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 16 Feb 2025 16:30:15 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB/" rel="self" type="application/rss+xml"/><item><title>记录一些优质的科技新闻网站</title><link>https://sincerecsl.github.io/technologynews/</link><pubDate>Sun, 16 Feb 2025 16:30:15 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/technologynews/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/2025/02/technologyNews.png" referrerpolicy="no-referrer">
             </div><h3 id="综合科技新闻">综合科技新闻</h3>
 <ol>
 <li><a href="https://arstechnica.com" target="_blank" rel="noopener noreffer ">Ars Technica</a> – 深入的科技分析，涵盖计算机、科学、汽车等多个领域。</li>
@@ -85,7 +74,4 @@
 <li><strong><a href="https://www.medgadget.com" target="_blank" rel="noopener noreffer ">Medgadget</a></strong> – 医疗设备、AI 医疗、可穿戴健康科技的前沿报道。</li>
 <li><strong><a href="https://www.genomeweb.com" target="_blank" rel="noopener noreffer ">GenomeWeb</a></strong> – 专注于基因组学、生物信息学、精准医疗等领域。</li>
 </ol>
-<p>你对哪个方向的内容最感兴趣？可以深入推荐更专业的资源！ 😊</p>]]></description>
-</item>
-</channel>
-</rss>
+<p>你对哪个方向的内容最感兴趣？可以深入推荐更专业的资源！ 😊</p>]]></description></item></channel></rss>
