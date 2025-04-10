@@ -31,8 +31,11 @@
 * [英语进阶指南](https://babyyoung.gitbook.io/english-level-up-tips)
 * [人人都能用英语-李笑来](https://github.com/xiaolai/everyone-can-use-english)
 ## 播客
-* [Web Worker-前端程序员都爱听](https://podcasts.apple.com/cn/podcast/web-worker-%E5%89%8D%E7%AB%AF%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E7%88%B1%E5%90%AC/id1586927144)
-* [代码之外 Beyond Code](https://podcasts.apple.com/cn/podcast/%E4%BB%A3%E7%A0%81%E4%B9%8B%E5%A4%96-beyond-code/id1688972924)
+* [Web Worker-前端程序员都爱听](https://www.xiaoyuzhoufm.com/podcast/613753ef23c82a9a1ccfdf35)
+* [硬地骇客](https://www.xiaoyuzhoufm.com/podcast/640ee2438be5d40013fe4a87)
+* [浪说播客](https://www.xiaoyuzhoufm.com/podcast/6717d7bc0d2f24f289165dff)
+* [代码之外 Beyond code](https://www.xiaoyuzhoufm.com/podcast/6194d973c14c9a0db82de1ea)
+
 * [Lex Fridman Podcast](https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584)
 * [JS Party: JavaScript, CSS, Web Development](https://podcasts.apple.com/us/podcast/js-party-javascript-css-web-development/id1209616598)
 * [The Changelog: Software Development, Open Source](https://podcasts.apple.com/cn/podcast/the-changelog-software-development-open-source/id341623264)
