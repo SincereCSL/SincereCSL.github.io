@@ -49,9 +49,11 @@
 * [The Day You Became A Better Writer](https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html)
 ## 工具
 [Language Reactor](https://chrome.google.com/webstore/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm) 一款可以加载双语字幕的插件
+* [Bypass Paywalls Clean](https://gitflic.ru/project/magnolia1234/bpc_uploads) 【Chrome、Firefox插件】支持多达 500+网站的付费墙绕过，默认包括南方周末，路透社，经济学人，纽约时报，华尔街日报等大部分主流媒体。
 * [Relingo](https://cn.relingo.net/zh/index) 可以将自己不懂生词和难词，自动标示和翻译
 * [Trancy](https://www.trancy.org/zh-cn) 支持YouTube、NetFlix双语字幕、字幕阅读模式、划词翻译
 * [Medium Parser Chrome 插件](https://chromewebstore.google.com/detail/medium-parser/egejbknaophaadmhijkepokfchkbnelc)
+
 
 
 

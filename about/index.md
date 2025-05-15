@@ -26,9 +26,9 @@
 - **框架与类库**：Vue3、Vue2、React16+、UmiJS、AngularJS（1.x）、jQuery
 - **UI 框架**：Element Plus、Element UI、Ant Design、Bootstrap 等
 - **构建工具与工程化**：Webpack、Vite、ESLint、Prettier、Stylelint、MockJS
-- **图形图像与可视化**：Canvas、SVG、CesiumJS（三维可视化）
 - **后端基础能力**：Node.js、Go、MongoDB、MySQL、Docker
 - **跨平台桌面开发**：了解 CEF 框架，掌握 JS 与 C++ 的交互机制
+- **图形图像与可视化(感兴趣)**：WebGL、WebGPU、Canvas、SVG、CesiumJS（三维可视化）
 
 #### 🧠 项目经验与优势
 
