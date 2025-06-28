@@ -13,6 +13,7 @@
 9. **[Techmeme](https://www.techmeme.com) – 一个专注于科技新闻的聚合网站，被称为“科技新闻界的头版”。它通过自动化算法和人工编辑相结合的方式，实时收集和筛选全球范围内的科技新闻、博客文章和社交媒体讨论。
 10. **[Engadget](https://www.engadget.com) – 一家专注于消费电子和科技产品的新闻网站，提供最新的科技新闻、产品评测和行业分析。
 
+
 ### 编程 & 开发者
 1. **[Hacker News](https://news.ycombinator.com)** – 由 Y Combinator 运营，程序员和创业者必看的社区新闻。
 2. **[Smashing Magazine](https://www.smashingmagazine.com)** – 主要关注前端开发、UI/UX 设计。
