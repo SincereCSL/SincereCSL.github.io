@@ -1,1130 +1,462 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>我的AI工具使用笔记 - SincereCSL&#39;s Blog</title><meta name="Description" content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"><meta property="og:url" content="http://localhost:1313/ai/">
-  <meta property="og:site_name" content="SincereCSL&#39;s Blog">
-  <meta property="og:title" content="我的AI工具使用笔记">
-  <meta property="og:description" content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-06-10T16:00:30+08:00">
-    <meta property="article:modified_time" content="2025-06-10T16:00:30+08:00">
-    <meta property="article:tag" content="AI">
-    <meta property="article:tag" content="LLM">
-    <meta property="article:tag" content="ChatGPT">
-    <meta property="article:tag" content="Copilot">
-    <meta property="article:tag" content="提示词工程">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="我的AI工具使用笔记">
-  <meta name="twitter:description" content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。">
-      <meta name="twitter:site" content="@SincereCSL95">
-<meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/ai/" /><link rel="prev" href="http://localhost:1313/mcp/" /><link rel="next" href="http://localhost:1313/technologynews/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "我的AI工具使用笔记",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/localhost:1313\/ai\/"
-        },"genre": "posts","keywords": "AI, LLM, ChatGPT, Copilot, 提示词工程","wordcount":  4960 ,
-        "url": "http:\/\/localhost:1313\/ai\/","datePublished": "2025-06-10T16:00:30+08:00","dateModified": "2025-06-10T16:00:30+08:00","publisher": {
-            "@type": "Organization",
-            "name": ""},"author": {
-                "@type": "Person",
-                "name": "SincereCSL"
-            },"description": "全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="SincereCSL&#39;s Blog"><span class="header-title-pre"><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/"> 主页 </a><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/links/"> Links </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/SincereCSL" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="SincereCSL&#39;s Blog"><span class="header-title-pre"><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/" title="">主页</a><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/links/" title="">Links</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/SincereCSL" title="" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">目录</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">我的AI工具使用笔记</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>SincereCSL</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/ai%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>AI工具</a>&nbsp;<a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-06-10">2025-06-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 4960 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 10 分钟&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="true">
-                <div class="details-summary toc-title">
-                    <span>目录</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#-ai对话工具详解">🤖 AI对话工具详解</a>
-      <ul>
-        <li><a href="#chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐</a></li>
-        <li><a href="#claude-系列-">Claude 系列 ⭐⭐⭐⭐⭐</a></li>
-        <li><a href="#google-gemini-">Google Gemini ⭐⭐⭐⭐</a></li>
-        <li><a href="#grok-">Grok ⭐⭐⭐⭐</a></li>
-        <li><a href="#国产ai工具对比">国产AI工具对比</a></li>
-      </ul>
-    </li>
-    <li><a href="#-ai编程工具实战">💻 AI编程工具实战</a>
-      <ul>
-        <li><a href="#github-copilot-">GitHub Copilot ⭐⭐⭐⭐⭐</a></li>
-        <li><a href="#cursor-">Cursor ⭐⭐⭐⭐⭐</a></li>
-        <li><a href="#其他编程ai工具">其他编程AI工具</a></li>
-      </ul>
-    </li>
-    <li><a href="#-ai创意工具">🎨 AI创意工具</a>
-      <ul>
-        <li><a href="#图像生成工具对比">图像生成工具对比</a></li>
-        <li><a href="#视频生成工具">视频生成工具</a></li>
-      </ul>
-    </li>
-    <li><a href="#-ai写作工具深度评测">✍️ AI写作工具深度评测</a>
-      <ul>
-        <li><a href="#长文写作工具">长文写作工具</a></li>
-        <li><a href="#学术写作助手">学术写作助手</a></li>
-      </ul>
-    </li>
-    <li><a href="#-提示词工程进阶">🚀 提示词工程进阶</a>
-      <ul>
-        <li><a href="#高级提示词框架">高级提示词框架</a></li>
-        <li><a href="#专业领域提示词库">专业领域提示词库</a></li>
-        <li><a href="#chain-of-thought-思维链-技巧">Chain of Thought (思维链) 技巧</a></li>
-      </ul>
-    </li>
-    <li><a href="#-ai工具选择策略">🎯 AI工具选择策略</a>
-      <ul>
-        <li><a href="#按使用场景分类">按使用场景分类</a></li>
-        <li><a href="#主流ai对话工具对比">主流AI对话工具对比</a></li>
-        <li><a href="#免费工具组合">免费工具组合</a></li>
-      </ul>
-    </li>
-    <li><a href="#-使用注意事项与最佳实践">⚠️ 使用注意事项与最佳实践</a>
-      <ul>
-        <li><a href="#数据安全防护">数据安全防护</a></li>
-        <li><a href="#结果验证与质量控制">结果验证与质量控制</a></li>
-        <li><a href="#持续学习路径">持续学习路径</a></li>
-      </ul>
-    </li>
-    <li><a href="#-实用资源与社区">🔗 实用资源与社区</a>
-      <ul>
-        <li><a href="#官方学习资源">官方学习资源</a></li>
-        <li><a href="#中文社区推荐">中文社区推荐</a></li>
-        <li><a href="#实用工具站点">实用工具站点</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结与展望">📝 总结与展望</a></li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><blockquote>
-<p>📝 <strong>前言</strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。</p></blockquote>
-<h2 id="-ai对话工具详解">🤖 AI对话工具详解</h2>
-<h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com</a></p>
-<h4 id="版本对比">版本对比</h4>
-<ul>
-<li><strong>GPT-4o</strong>：最新版本，多模态能力强，图文并茂</li>
-<li><strong>GPT-4</strong>：逻辑推理能力最强，适合复杂任务</li>
-<li><strong>GPT-3.5</strong>：响应速度快，适合日常对话</li>
-</ul>
-<h4 id="我的使用心得">我的使用心得</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">💡 最佳实践：
-</span></span><span class="line"><span class="cl"><span class="k">1.</span> 开始对话时先设定角色和背景
-</span></span><span class="line"><span class="cl"><span class="k">2.</span> 复杂任务分解成多个步骤
-</span></span><span class="line"><span class="cl"><span class="k">3.</span> 提供具体例子而非抽象描述
-</span></span><span class="line"><span class="cl"><span class="k">4.</span> 善用&#34;请继续&#34;来获取完整回答
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="实用场景示例">实用场景示例</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">场景一：代码Review
-</span></span><span class="line"><span class="cl">提示词：请以高级程序员的身份，review这段Python代码，重点关注性能优化和安全性问题...
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">场景二：文案创作
-</span></span><span class="line"><span class="cl">提示词：你是一个资深的新媒体运营，请为我写一篇关于AI工具的推广文案，目标用户是程序员...
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">场景三：学习助手
-</span></span><span class="line"><span class="cl">提示词：我正在学习机器学习，请用通俗易懂的方式解释什么是神经网络...
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="claude-系列-">Claude 系列 ⭐⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://claude.ai" target="_blank" rel="noopener noreffer ">https://claude.ai</a></p>
-<h4 id="核心优势">核心优势</h4>
-<ul>
-<li>📖 <strong>长文本处理</strong>：可以处理100K+ token的文档</li>
-<li>🛡️ <strong>安全性高</strong>：拒绝生成有害内容</li>
-<li>📄 <strong>文档分析</strong>：支持上传PDF、Word等格式</li>
-</ul>
-<h4 id="适用场景">适用场景</h4>
-<ul>
-<li>学术论文分析和总结</li>
-<li>长篇代码review和重构建议</li>
-<li>法律文档、合同条款解读</li>
-<li>复杂业务逻辑梳理</li>
-</ul>
-<h3 id="google-gemini-">Google Gemini ⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://gemini.google.com" target="_blank" rel="noopener noreffer ">https://gemini.google.com</a></p>
-<h4 id="核心特色">核心特色</h4>
-<ul>
-<li>🔍 <strong>Google生态集成</strong>：与Gmail、Drive、YouTube等服务深度集成</li>
-<li>🖼️ <strong>多模态能力</strong>：图像分析、文档理解、代码生成</li>
-<li>🌍 <strong>实时信息</strong>：可以搜索最新的网络信息</li>
-<li>📱 <strong>移动端优化</strong>：Android设备原生集成</li>
-</ul>
-<h4 id="版本对比-1">版本对比</h4>
-<ul>
-<li><strong>Gemini Ultra</strong>：最强性能，与GPT-4竞争</li>
-<li><strong>Gemini Pro</strong>：平衡性能与成本</li>
-<li><strong>Gemini Nano</strong>：轻量级，适合移动设备</li>
-</ul>
-<h4 id="使用场景">使用场景</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">💡 最佳应用场景：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Google Workspace办公自动化
-</span></span><span class="line"><span class="cl"><span class="k">-</span> YouTube视频内容分析
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Android应用开发辅助
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 实时信息查询和分析
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 多语言翻译和本地化
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="grok-">Grok ⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://grok.com" target="_blank" rel="noopener noreffer ">https://grok.com</a> (需要X Premium订阅)</p>
-<h4 id="独特优势">独特优势</h4>
-<ul>
-<li>🐦 <strong>X平台集成</strong>：直接访问X(Twitter)实时数据</li>
-<li>😄 <strong>幽默风格</strong>：具有独特的个性和幽默感</li>
-<li>📈 <strong>实时资讯</strong>：基于X平台的最新信息和趋势</li>
-<li>🔓 <strong>相对开放</strong>：在某些话题上比其他AI更直接</li>
-</ul>
-<h4 id="核心功能">核心功能</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">🎯 主要特色：
-</span></span><span class="line"><span class="cl"><span class="k">1.</span> 实时热点分析：基于X平台的趋势数据
-</span></span><span class="line"><span class="cl"><span class="k">2.</span> 社交媒体洞察：分析推文和用户行为
-</span></span><span class="line"><span class="cl"><span class="k">3.</span> 新闻事件追踪：快速获取最新资讯
-</span></span><span class="line"><span class="cl"><span class="k">4.</span> 个性化对话：带有马斯克式的幽默风格
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="使用建议">使用建议</h4>
-<ul>
-<li><strong>适合人群</strong>：社交媒体运营、新闻工作者、趋势分析师</li>
-<li><strong>主要用途</strong>：实时信息获取、社交媒体分析、创意写作</li>
-<li><strong>注意事项</strong>：需要X Premium会员，回答风格较为直接</li>
-</ul>
-<h3 id="国产ai工具对比">国产AI工具对比</h3>
-<table>
-  <thead>
-      <tr>
-          <th>工具</th>
-          <th>优势</th>
-          <th>适用场景</th>
-          <th>免费额度</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><a href="https://yiyan.baidu.com" target="_blank" rel="noopener noreffer ">文心一言</a></td>
-          <td>中文理解好，百度生态</td>
-          <td>中文内容创作</td>
-          <td>每日20次</td>
-      </tr>
-      <tr>
-          <td><a href="https://tongyi.aliyun.com" target="_blank" rel="noopener noreffer ">通义千问</a></td>
-          <td>阿里云集成，企业友好</td>
-          <td>商业应用</td>
-          <td>每日10次</td>
-      </tr>
-      <tr>
-          <td><a href="https://xinghuo.xfyun.cn" target="_blank" rel="noopener noreffer ">讯飞星火</a></td>
-          <td>语音交互强</td>
-          <td>语音转文字</td>
-          <td>每日5次</td>
-      </tr>
-      <tr>
-          <td><a href="https://chatglm.cn" target="_blank" rel="noopener noreffer ">智谱清言</a></td>
-          <td>开源友好</td>
-          <td>技术研究</td>
-          <td>每日15次</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="-ai编程工具实战">💻 AI编程工具实战</h2>
-<h3 id="github-copilot-">GitHub Copilot ⭐⭐⭐⭐⭐</h3>
-<p><strong>价格</strong>：$10/月（学生免费）</p>
-<h4 id="进阶使用技巧">进阶使用技巧</h4>
-<ol>
-<li>
-<p><strong>注释驱动开发</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 创建一个函数，实现二分查找算法</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 参数：有序数组arr，目标值target</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 返回：目标值的索引，如果不存在返回-1</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># Copilot会自动生成完整实现</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>测试用例生成</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">n</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 为上面的函数生成测试用例</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test_fibonacci</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># Copilot会生成多个测试场景</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>代码重构建议</strong></p>
-<ul>
-<li>选中代码块，Copilot会提供优化建议</li>
-<li>支持多种编程语言和框架</li>
-</ul>
-</li>
-</ol>
-<h3 id="cursor-">Cursor ⭐⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://cursor.sh" target="_blank" rel="noopener noreffer ">https://cursor.sh</a></p>
-<h4 id="独特功能">独特功能</h4>
-<ul>
-<li><strong>Ctrl+K</strong>：自然语言编程</li>
-<li><strong>Ctrl+L</strong>：与代码库对话</li>
-<li><strong>代码补全</strong>：比Copilot更精准的上下文理解</li>
-</ul>
-<h4 id="实际使用案例">实际使用案例</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">我的使用场景：
-</span></span><span class="line"><span class="cl">1. 快速生成React组件
-</span></span><span class="line"><span class="cl">2. 代码重构和优化
-</span></span><span class="line"><span class="cl">3. 错误调试和修复
-</span></span><span class="line"><span class="cl">4. API文档生成
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="其他编程ai工具">其他编程AI工具</h3>
-<h4 id="tabnine">Tabnine</h4>
-<ul>
-<li><strong>特点</strong>：本地运行，保护代码隐私</li>
-<li><strong>适合</strong>：企业用户，对安全性要求高</li>
-</ul>
-<h4 id="replit-ai">Replit AI</h4>
-<ul>
-<li><strong>特点</strong>：在线IDE + AI辅助</li>
-<li><strong>适合</strong>：快速原型开发、教学演示</li>
-</ul>
-<h4 id="codewhisperer-aws">CodeWhisperer (AWS)</h4>
-<ul>
-<li><strong>特点</strong>：AWS服务集成度高</li>
-<li><strong>适合</strong>：云原生应用开发</li>
-</ul>
-<h2 id="-ai创意工具">🎨 AI创意工具</h2>
-<h3 id="图像生成工具对比">图像生成工具对比</h3>
-<table>
-  <thead>
-      <tr>
-          <th>工具</th>
-          <th>优势</th>
-          <th>价格</th>
-          <th>推荐指数</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Midjourney</strong></td>
-          <td>艺术感强，质量高</td>
-          <td>$10-60/月</td>
-          <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>DALL-E 3</strong></td>
-          <td>文字理解准确</td>
-          <td>$20/月</td>
-          <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>Stable Diffusion</strong></td>
-          <td>开源免费，可定制</td>
-          <td>免费</td>
-          <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>Firefly</strong></td>
-          <td>Adobe生态集成</td>
-          <td>$20/月</td>
-          <td>⭐⭐⭐</td>
-      </tr>
-  </tbody>
-</table>
-<h4 id="midjourney进阶提示词">Midjourney进阶提示词</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">基础结构：[主题] + [风格] + [参数]
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">实用模板：
-</span></span><span class="line"><span class="cl">- 人像摄影：portrait of [描述], professional photography, studio lighting --ar 3:4
-</span></span><span class="line"><span class="cl">- 产品设计：modern [产品] design, minimalist, white background --ar 1:1
-</span></span><span class="line"><span class="cl">- 概念艺术：[概念] concept art, digital painting, detailed --ar 16:9
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">高级参数：
-</span></span><span class="line"><span class="cl">--ar 16:9    # 宽高比
-</span></span><span class="line"><span class="cl">--v 6        # 版本
-</span></span><span class="line"><span class="cl">--stylize 100 # 风格化程度
-</span></span><span class="line"><span class="cl">--chaos 20   # 随机性
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="视频生成工具">视频生成工具</h3>
-<h4 id="runway-ml">Runway ML</h4>
-<ul>
-<li><strong>功能</strong>：AI视频生成和编辑</li>
-<li><strong>特色</strong>：Gen-3 Alpha模型，质量接近专业水准</li>
-<li><strong>使用场景</strong>：短视频制作、广告素材</li>
-</ul>
-<h4 id="pika-labs">Pika Labs</h4>
-<ul>
-<li><strong>功能</strong>：文本/图片转视频</li>
-<li><strong>特色</strong>：操作简单，效果自然</li>
-<li><strong>适合人群</strong>：内容创作者、社交媒体运营</li>
-</ul>
-<h2 id="-ai写作工具深度评测">✍️ AI写作工具深度评测</h2>
-<h3 id="长文写作工具">长文写作工具</h3>
-<h4 id="notion-ai">Notion AI</h4>
-<p><strong>集成优势</strong>：</p>
-<ul>
-<li>无缝融入工作流</li>
-<li>支持多种内容格式</li>
-<li>团队协作友好</li>
-</ul>
-<p><strong>实用功能</strong>：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 文章大纲生成：/ai 帮我写一个关于AI工具的文章大纲
-</span></span><span class="line"><span class="cl">2. 内容扩写：选中文字，要求AI扩展内容
-</span></span><span class="line"><span class="cl">3. 语言优化：改善文字表达和语法
-</span></span><span class="line"><span class="cl">4. 格式调整：转换文档格式和风格
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="jasper-ai">Jasper AI</h4>
-<ul>
-<li><strong>定位</strong>：营销文案专家</li>
-<li><strong>模板</strong>：50+ 营销场景模板</li>
-<li><strong>适合</strong>：电商、广告、社交媒体</li>
-</ul>
-<h4 id="copyai">Copy.ai</h4>
-<ul>
-<li><strong>特色</strong>：多语言支持</li>
-<li><strong>功能</strong>：邮件营销、社交媒体文案</li>
-<li><strong>价格</strong>：免费版可用，付费$36/月</li>
-</ul>
-<h3 id="学术写作助手">学术写作助手</h3>
-<h4 id="grammarly-">Grammarly ⭐⭐⭐⭐⭐</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">功能亮点：
-</span></span><span class="line"><span class="cl">✅ 语法检查：实时发现并修正错误
-</span></span><span class="line"><span class="cl">✅ 风格建议：提升文章可读性
-</span></span><span class="line"><span class="cl">✅ 抄袭检测：确保内容原创性
-</span></span><span class="line"><span class="cl">✅ 语调分析：调整文章语气
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="deepl-write">DeepL Write</h4>
-<ul>
-<li><strong>优势</strong>：多语言写作优化</li>
-<li><strong>适合</strong>：非英语母语用户</li>
-<li><strong>功能</strong>：句式优化、用词建议</li>
-</ul>
-<h2 id="-提示词工程进阶">🚀 提示词工程进阶</h2>
-<h3 id="高级提示词框架">高级提示词框架</h3>
-<h4 id="crispe-框架">CRISPE 框架</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C - Context (上下文)：提供背景信息
-</span></span><span class="line"><span class="cl">R - Role (角色)：指定AI扮演的角色
-</span></span><span class="line"><span class="cl">I - Intent (意图)：明确任务目标
-</span></span><span class="line"><span class="cl">S - Situation (情况)：描述具体场景
-</span></span><span class="line"><span class="cl">P - Product (产品)：定义期望输出
-</span></span><span class="line"><span class="cl">E - Example (示例)：给出参考例子
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="实际应用案例">实际应用案例</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">【Context】我是一家初创公司的产品经理
-</span></span><span class="line"><span class="cl">【Role】请你作为资深的产品架构师
-</span></span><span class="line"><span class="cl">【Intent】帮我设计一个AI客服系统的产品方案
-</span></span><span class="line"><span class="cl">【Situation】公司有100名员工，日处理客服咨询500+条
-</span></span><span class="line"><span class="cl">【Product】输出包含功能模块、技术架构、实施计划的完整方案
-</span></span><span class="line"><span class="cl">【Example】参考类似ChatBot的设计思路，但要突出我们的差异化优势
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="专业领域提示词库">专业领域提示词库</h3>
-<h4 id="编程领域">编程领域</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 代码审查提示词</span>
-</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">请以资深架构师的角度审查以下代码：
-</span></span></span><span class="line"><span class="cl"><span class="s2">1. 代码质量和规范性
-</span></span></span><span class="line"><span class="cl"><span class="s2">2. 性能优化建议
-</span></span></span><span class="line"><span class="cl"><span class="s2">3. 安全性问题
-</span></span></span><span class="line"><span class="cl"><span class="s2">4. 可维护性改进
-</span></span></span><span class="line"><span class="cl"><span class="s2">请提供具体的修改建议和示例代码。
-</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 算法解析提示词</span>
-</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">请用以下方式解释这个算法：
-</span></span></span><span class="line"><span class="cl"><span class="s2">1. 算法思路（用通俗语言）
-</span></span></span><span class="line"><span class="cl"><span class="s2">2. 时间复杂度分析
-</span></span></span><span class="line"><span class="cl"><span class="s2">3. 空间复杂度分析
-</span></span></span><span class="line"><span class="cl"><span class="s2">4. 适用场景和局限性
-</span></span></span><span class="line"><span class="cl"><span class="s2">5. 代码实现（注释详细）
-</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="内容创作">内容创作</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># 文章写作提示词
-</span></span></span><span class="line"><span class="cl"><span class="gh"></span>你是一位专业的科技记者，请按照以下结构写一篇文章：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="gs">**文章要求：**</span>
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 标题：吸引眼球，包含关键词
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 导语：100字内概括核心观点
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 正文：逻辑清晰，数据支撑
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 结尾：总结观点，引发思考
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="gs">**写作风格：**</span>
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 语言简洁明了
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 多用具体数据和案例
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 避免技术术语堆砌
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="chain-of-thought-思维链-技巧">Chain of Thought (思维链) 技巧</h3>
-<h4 id="复杂问题分解">复杂问题分解</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">请一步步分析这个商业问题：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">步骤1：问题定义
-</span></span><span class="line"><span class="cl">- 明确核心问题是什么
-</span></span><span class="line"><span class="cl">- 涉及哪些关键因素
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">步骤2：信息收集
-</span></span><span class="line"><span class="cl">- 需要哪些数据支撑
-</span></span><span class="line"><span class="cl">- 现有信息的可靠性
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">步骤3：方案设计
-</span></span><span class="line"><span class="cl">- 列出3个可行方案
-</span></span><span class="line"><span class="cl">- 分析每个方案的优缺点
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">步骤4：风险评估
-</span></span><span class="line"><span class="cl">- 识别潜在风险点
-</span></span><span class="line"><span class="cl">- 制定应对策略
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">步骤5：实施计划
-</span></span><span class="line"><span class="cl">- 制定具体时间表
-</span></span><span class="line"><span class="cl">- 分配资源和责任人
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="-ai工具选择策略">🎯 AI工具选择策略</h2>
-<h3 id="按使用场景分类">按使用场景分类</h3>
-<h3 id="主流ai对话工具对比">主流AI对话工具对比</h3>
-<table>
-  <thead>
-      <tr>
-          <th>工具</th>
-          <th>优势</th>
-          <th>特色功能</th>
-          <th>价格</th>
-          <th>推荐指数</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>ChatGPT</strong></td>
-          <td>综合能力强，生态完善</td>
-          <td>插件系统，代码解释器</td>
-          <td>$20/月</td>
-          <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>Claude</strong></td>
-          <td>长文本处理，安全性高</td>
-          <td>文档分析，代码review</td>
-          <td>$20/月</td>
-          <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>Gemini</strong></td>
-          <td>Google生态，实时搜索</td>
-          <td>多模态，移动端集成</td>
-          <td>$20/月</td>
-          <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-          <td><strong>Grok</strong></td>
-          <td>实时资讯，个性化对话</td>
-          <td>X平台数据，幽默风格</td>
-          <td>$16/月</td>
-          <td>⭐⭐⭐⭐</td>
-      </tr>
-  </tbody>
-</table>
-<h4 id="个人用户推荐">个人用户推荐</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">🏠 日常使用组合：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 主力对话：ChatGPT Plus ($20/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 编程助手：GitHub Copilot ($10/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 写作优化：Grammarly Premium ($12/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 图像生成：Midjourney Basic ($10/月)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">💰 总成本：$52/月
-</span></span><span class="line"><span class="cl">💡 性价比：⭐⭐⭐⭐⭐
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">🌟 进阶组合（多AI工具）：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 主力对话：ChatGPT + Claude ($40/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Google生态：Gemini Pro ($20/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 实时资讯：Grok (X Premium $16/月)
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 编程助手：GitHub Copilot ($10/月)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">💰 高级组合总成本：$86/月
-</span></span><span class="line"><span class="cl">🎯 适合：重度AI用户、专业工作者
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="企业用户推荐">企业用户推荐</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">🏢 团队协作组合：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 团队对话：Claude Pro for Teams
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 代码管理：GitHub Copilot Business
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 文档协作：Notion AI Team
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 设计工具：Adobe Firefly Enterprise
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">⚡ 重点考虑：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 数据安全和隐私保护
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 团队协作和权限管理
-</span></span><span class="line"><span class="cl"><span class="k">-</span> API接入和定制开发
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 成本控制和使用监控
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="免费工具组合">免费工具组合</h3>
-<h4 id="零成本起步方案">零成本起步方案</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">💸 完全免费组合：
-</span></span><span class="line"><span class="cl"><span class="k">1.</span> 对话AI：Claude (免费版) + Gemini (免费版) + 文心一言
-</span></span><span class="line"><span class="cl"><span class="k">2.</span> 编程助手：VS Code + Tabnine (免费版)
-</span></span><span class="line"><span class="cl"><span class="k">3.</span> 写作工具：Grammarly (免费版) + DeepL
-</span></span><span class="line"><span class="cl"><span class="k">4.</span> 图像生成：Stable Diffusion (本地部署)
-</span></span><span class="line"><span class="cl"><span class="k">5.</span> 设计工具：Canva (免费版)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">📊 功能覆盖：75%的日常需求
-</span></span><span class="line"><span class="cl">🎯 适合人群：学生、个人爱好者、预算有限用户
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">💡 免费版限制说明：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Claude：每日有使用次数限制
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Gemini：Google账户即可使用，有一定额度
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Grok：需要X Premium，无免费版
-</span></span><span class="line"><span class="cl"><span class="k">-</span> ChatGPT：GPT-3.5免费，GPT-4需付费
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="-使用注意事项与最佳实践">⚠️ 使用注意事项与最佳实践</h2>
-<h3 id="数据安全防护">数据安全防护</h3>
-<h4 id="敏感信息分类">敏感信息分类</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">🔴 绝对不能输入：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 身份证、银行卡等个人敏感信息
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 公司核心商业机密
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 未公开的产品代码
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 客户隐私数据
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">🟡 谨慎输入：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 公司内部流程信息
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 正在开发的功能特性
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 团队组织架构
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 业务数据（脱敏后可考虑）
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">🟢 可以安全输入：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 公开的技术文档
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 学习资料和教程
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 通用的代码片段
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 行业公开信息
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="隐私保护建议">隐私保护建议</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">🛡️ 最佳实践：
-</span></span><span class="line"><span class="cl"><span class="k">1.</span> 使用企业版工具（数据不用于训练）
-</span></span><span class="line"><span class="cl"><span class="k">2.</span> 定期清理对话历史
-</span></span><span class="line"><span class="cl"><span class="k">3.</span> 避免在共享设备上使用
-</span></span><span class="line"><span class="cl"><span class="k">4.</span> 关注各平台隐私政策更新
-</span></span><span class="line"><span class="cl"><span class="k">5.</span> 考虑本地部署开源方案
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="结果验证与质量控制">结果验证与质量控制</h3>
-<h4 id="ai输出质量检查清单">AI输出质量检查清单</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">✅ 代码输出检查：
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 语法正确性
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 逻辑合理性
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 性能优化空间
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 安全漏洞排查
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 测试用例覆盖
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">✅ 文本内容检查：
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 事实准确性验证
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 逻辑连贯性
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 语言表达流畅度
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 原创性（避免抄袭）
-</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 目标受众适配性
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="持续学习路径">持续学习路径</h3>
-<h4 id="进阶学习资源">进阶学习资源</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">📚 推荐学习路径：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">初级阶段（1-2个月）：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 掌握基本提示词技巧
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 熟悉主流AI工具界面
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 学会简单的工作流自动化
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">中级阶段（3-6个月）：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 深入学习提示词工程
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 尝试API集成开发
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 探索多工具组合使用
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">高级阶段（6个月+）：
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 参与开源AI项目
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 开发定制化AI应用
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 成为AI工具布道者
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="-实用资源与社区">🔗 实用资源与社区</h2>
-<h3 id="官方学习资源">官方学习资源</h3>
-<ul>
-<li><strong><a href="https://cookbook.openai.com" target="_blank" rel="noopener noreffer ">OpenAI Cookbook</a></strong> - 官方最佳实践</li>
-<li><strong><a href="https://docs.anthropic.com" target="_blank" rel="noopener noreffer ">Anthropic Claude Guide</a></strong> - Claude使用指南</li>
-<li><strong><a href="https://ai.google/education" target="_blank" rel="noopener noreffer ">Google AI Education</a></strong> - AI基础知识</li>
-<li><strong><a href="https://www.microsoft.com/ai/ai-school" target="_blank" rel="noopener noreffer ">Microsoft AI School</a></strong> - 企业AI应用</li>
-</ul>
-<h3 id="中文社区推荐">中文社区推荐</h3>
-<ul>
-<li><strong><a href="https://ai-bot.cn" target="_blank" rel="noopener noreffer ">AI工具集</a></strong> - 国内AI工具导航</li>
-<li><strong><a href="https://www.promptingguide.ai/zh" target="_blank" rel="noopener noreffer ">提示词工程指南</a></strong> - 中文提示词教程</li>
-<li><strong><a href="https://zhihu.com/topic/19551137" target="_blank" rel="noopener noreffer ">知乎AI话题</a></strong> - 经验分享讨论</li>
-<li><strong><a href="https://github.com/topics/artificial-intelligence" target="_blank" rel="noopener noreffer ">GitHub Awesome AI</a></strong> - 开源项目集合</li>
-</ul>
-<h3 id="实用工具站点">实用工具站点</h3>
-<ul>
-<li><strong><a href="https://artificialanalysis.ai" target="_blank" rel="noopener noreffer ">AI对比平台</a></strong> - 各AI模型性能对比</li>
-<li><strong><a href="https://prompthero.com" target="_blank" rel="noopener noreffer ">提示词库</a></strong> - 优质提示词分享</li>
-<li><strong><a href="https://www.aitrends.com" target="_blank" rel="noopener noreffer ">AI新闻聚合</a></strong> - 行业最新动态</li>
-</ul>
-<hr>
-<h2 id="-总结与展望">📝 总结与展望</h2>
-<p>AI工具正在快速发展，新的工具和功能层出不穷。保持学习的心态，关注行业动态，及时调整工具选择策略，才能在AI时代保持竞争优势。</p>
-<p><strong>我的使用原则：</strong></p>
-<ol>
-<li>🎯 <strong>效率优先</strong>：选择最能提升工作效率的工具</li>
-<li>💰 <strong>成本控制</strong>：平衡功能需求与经济成本</li>
-<li>🔒 <strong>安全第一</strong>：始终把数据安全放在首位</li>
-<li>📈 <strong>持续优化</strong>：定期评估和调整工具组合</li>
-</ol>
-<p><strong>未来展望：</strong></p>
-<ul>
-<li>AI工具将更加智能化和个性化</li>
-<li>多模态AI（文字+图像+语音）成为主流</li>
-<li>企业级AI应用将迎来爆发式增长</li>
-<li>AI伦理和监管将日趋完善</li>
-</ul>
-<hr>
-<p><em>最后更新：2025年6月</em><br>
-<em>参考链接：<a href="https://github.com/SincereCSL/Playgrounds/blob/main/ChatGPT/ChatGPT.md" target="_blank" rel="noopener noreffer ">SincereCSL/Playgrounds ChatGPT.md</a></em></p>
-<blockquote>
-<p>💡 <strong>提示</strong>：如果你有更好的AI工具推荐或使用技巧，欢迎在评论区分享交流！</p></blockquote>
-</div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>更新于 2025-06-10</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/ai/index.md" target="_blank">阅读原始文档</a>
-                        </span></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记" data-via="SincereCSL95" data-hashtags="AI,LLM,ChatGPT,Copilot,提示词工程"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/ai/" data-hashtag="AI"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="http://localhost:1313/ai/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记" data-ralateuid="u/5535058729"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记" data-description="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"><i class="fab fa-blogger fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记"><i class="fab fa-evernote fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Skype" data-sharer="skype" data-url="http://localhost:1313/ai/" data-title="我的AI工具使用笔记"><i class="fab fa-skype fa-fw" aria-hidden="true"></i></a></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ai/">AI</a>,&nbsp;<a href="/tags/llm/">LLM</a>,&nbsp;<a href="/tags/chatgpt/">ChatGPT</a>,&nbsp;<a href="/tags/copilot/">Copilot</a>,&nbsp;<a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B/">提示词工程</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/mcp/" class="prev" rel="prev" title="深入理解MCP：Model Context Protocol架构解析与开发实践"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>深入理解MCP：Model Context Protocol架构解析与开发实践</a>
-            <a href="/technologynews/" class="next" rel="next" title="记录一些优质的科技新闻网站">记录一些优质的科技新闻网站<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
-</div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">SincereCSL</div><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
-
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
-</html>
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>我的AI工具使用笔记 - SincereCSL's Blog</title><meta name=Description content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"><meta property="og:url" content="https://sincerecsl.github.io/ai/"><meta property="og:site_name" content="SincereCSL's Blog"><meta property="og:title" content="我的AI工具使用笔记"><meta property="og:description" content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-06-10T16:00:30+08:00"><meta property="article:modified_time" content="2025-06-10T16:00:30+08:00"><meta property="article:tag" content="AI"><meta property="article:tag" content="LLM"><meta property="article:tag" content="ChatGPT"><meta property="article:tag" content="Copilot"><meta property="article:tag" content="提示词工程"><meta name=twitter:card content="summary"><meta name=twitter:title content="我的AI工具使用笔记"><meta name=twitter:description content="全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"><meta name=twitter:site content="@SincereCSL95"><meta name=application-name content="LoveIt"><meta name=apple-mobile-web-app-title content="LoveIt"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sincerecsl.github.io/ai/><link rel=prev href=https://sincerecsl.github.io/mcp/><link rel=next href=https://sincerecsl.github.io/technologynews/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的AI工具使用笔记","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sincerecsl.github.io\/ai\/"},"genre":"posts","keywords":"AI, LLM, ChatGPT, Copilot, 提示词工程","wordcount":4960,"url":"https:\/\/sincerecsl.github.io\/ai\/","datePublished":"2025-06-10T16:00:30+08:00","dateModified":"2025-06-10T16:00:30+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"SincereCSL"},"description":"全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。"}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/posts/>所有文章 </a><a class=menu-item href=/links/>Links </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about/>关于 </a><a class=menu-item href=https://github.com/SincereCSL rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/links/ title>Links</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about/ title>关于</a><a class=menu-item href=https://github.com/SincereCSL title rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class="toc-content always-active" id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">我的AI工具使用笔记</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>SincereCSL</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/ai%E5%B7%A5%E5%85%B7/><i class="far fa-folder fa-fw" aria-hidden=true></i>AI工具</a>&nbsp;<a href=/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术笔记</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2025-06-10>2025-06-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 4960 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 10 分钟&nbsp;<span id=/ai/ class=leancloud_visitors data-flag-title=我的AI工具使用笔记>
+<i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+</span>&nbsp;</div></div><div class="details toc" id=toc-static data-kept=true><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#-ai对话工具详解>🤖 AI对话工具详解</a><ul><li><a href=#chatgpt-系列->ChatGPT 系列 ⭐⭐⭐⭐⭐</a></li><li><a href=#claude-系列->Claude 系列 ⭐⭐⭐⭐⭐</a></li><li><a href=#google-gemini->Google Gemini ⭐⭐⭐⭐</a></li><li><a href=#grok->Grok ⭐⭐⭐⭐</a></li><li><a href=#国产ai工具对比>国产AI工具对比</a></li></ul></li><li><a href=#-ai编程工具实战>💻 AI编程工具实战</a><ul><li><a href=#github-copilot->GitHub Copilot ⭐⭐⭐⭐⭐</a></li><li><a href=#cursor->Cursor ⭐⭐⭐⭐⭐</a></li><li><a href=#其他编程ai工具>其他编程AI工具</a></li></ul></li><li><a href=#-ai创意工具>🎨 AI创意工具</a><ul><li><a href=#图像生成工具对比>图像生成工具对比</a></li><li><a href=#视频生成工具>视频生成工具</a></li></ul></li><li><a href=#-ai写作工具深度评测>✍️ AI写作工具深度评测</a><ul><li><a href=#长文写作工具>长文写作工具</a></li><li><a href=#学术写作助手>学术写作助手</a></li></ul></li><li><a href=#-提示词工程进阶>🚀 提示词工程进阶</a><ul><li><a href=#高级提示词框架>高级提示词框架</a></li><li><a href=#专业领域提示词库>专业领域提示词库</a></li><li><a href=#chain-of-thought-思维链-技巧>Chain of Thought (思维链) 技巧</a></li></ul></li><li><a href=#-ai工具选择策略>🎯 AI工具选择策略</a><ul><li><a href=#按使用场景分类>按使用场景分类</a></li><li><a href=#主流ai对话工具对比>主流AI对话工具对比</a></li><li><a href=#免费工具组合>免费工具组合</a></li></ul></li><li><a href=#-使用注意事项与最佳实践>⚠️ 使用注意事项与最佳实践</a><ul><li><a href=#数据安全防护>数据安全防护</a></li><li><a href=#结果验证与质量控制>结果验证与质量控制</a></li><li><a href=#持续学习路径>持续学习路径</a></li></ul></li><li><a href=#-实用资源与社区>🔗 实用资源与社区</a><ul><li><a href=#官方学习资源>官方学习资源</a></li><li><a href=#中文社区推荐>中文社区推荐</a></li><li><a href=#实用工具站点>实用工具站点</a></li></ul></li><li><a href=#-总结与展望>📝 总结与展望</a></li></ul></nav></div></div><div class=content id=content><blockquote><p>📝 <strong>前言</strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。</p></blockquote><h2 id=-ai对话工具详解>🤖 AI对话工具详解</h2><h3 id=chatgpt-系列->ChatGPT 系列 ⭐⭐⭐⭐⭐</h3><p><strong>官网</strong>：<a href=https://chat.openai.com target=_blank rel="noopener noreffer">https://chat.openai.com</a></p><h4 id=版本对比>版本对比</h4><ul><li><strong>GPT-4o</strong>：最新版本，多模态能力强，图文并茂</li><li><strong>GPT-4</strong>：逻辑推理能力最强，适合复杂任务</li><li><strong>GPT-3.5</strong>：响应速度快，适合日常对话</li></ul><h4 id=我的使用心得>我的使用心得</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>💡 最佳实践：
+</span></span><span class=line><span class=cl><span class=k>1.</span> 开始对话时先设定角色和背景
+</span></span><span class=line><span class=cl><span class=k>2.</span> 复杂任务分解成多个步骤
+</span></span><span class=line><span class=cl><span class=k>3.</span> 提供具体例子而非抽象描述
+</span></span><span class=line><span class=cl><span class=k>4.</span> 善用&#34;请继续&#34;来获取完整回答
+</span></span></code></pre></td></tr></table></div></div><h4 id=实用场景示例>实用场景示例</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>场景一：代码Review
+</span></span><span class=line><span class=cl>提示词：请以高级程序员的身份，review这段Python代码，重点关注性能优化和安全性问题...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>场景二：文案创作
+</span></span><span class=line><span class=cl>提示词：你是一个资深的新媒体运营，请为我写一篇关于AI工具的推广文案，目标用户是程序员...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>场景三：学习助手
+</span></span><span class=line><span class=cl>提示词：我正在学习机器学习，请用通俗易懂的方式解释什么是神经网络...
+</span></span></code></pre></td></tr></table></div></div><h3 id=claude-系列->Claude 系列 ⭐⭐⭐⭐⭐</h3><p><strong>官网</strong>：<a href=https://claude.ai target=_blank rel="noopener noreffer">https://claude.ai</a></p><h4 id=核心优势>核心优势</h4><ul><li>📖 <strong>长文本处理</strong>：可以处理100K+ token的文档</li><li>🛡️ <strong>安全性高</strong>：拒绝生成有害内容</li><li>📄 <strong>文档分析</strong>：支持上传PDF、Word等格式</li></ul><h4 id=适用场景>适用场景</h4><ul><li>学术论文分析和总结</li><li>长篇代码review和重构建议</li><li>法律文档、合同条款解读</li><li>复杂业务逻辑梳理</li></ul><h3 id=google-gemini->Google Gemini ⭐⭐⭐⭐</h3><p><strong>官网</strong>：<a href=https://gemini.google.com target=_blank rel="noopener noreffer">https://gemini.google.com</a></p><h4 id=核心特色>核心特色</h4><ul><li>🔍 <strong>Google生态集成</strong>：与Gmail、Drive、YouTube等服务深度集成</li><li>🖼️ <strong>多模态能力</strong>：图像分析、文档理解、代码生成</li><li>🌍 <strong>实时信息</strong>：可以搜索最新的网络信息</li><li>📱 <strong>移动端优化</strong>：Android设备原生集成</li></ul><h4 id=版本对比-1>版本对比</h4><ul><li><strong>Gemini Ultra</strong>：最强性能，与GPT-4竞争</li><li><strong>Gemini Pro</strong>：平衡性能与成本</li><li><strong>Gemini Nano</strong>：轻量级，适合移动设备</li></ul><h4 id=使用场景>使用场景</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>💡 最佳应用场景：
+</span></span><span class=line><span class=cl><span class=k>-</span> Google Workspace办公自动化
+</span></span><span class=line><span class=cl><span class=k>-</span> YouTube视频内容分析
+</span></span><span class=line><span class=cl><span class=k>-</span> Android应用开发辅助
+</span></span><span class=line><span class=cl><span class=k>-</span> 实时信息查询和分析
+</span></span><span class=line><span class=cl><span class=k>-</span> 多语言翻译和本地化
+</span></span></code></pre></td></tr></table></div></div><h3 id=grok->Grok ⭐⭐⭐⭐</h3><p><strong>官网</strong>：<a href=https://grok.com target=_blank rel="noopener noreffer">https://grok.com</a> (需要X Premium订阅)</p><h4 id=独特优势>独特优势</h4><ul><li>🐦 <strong>X平台集成</strong>：直接访问X(Twitter)实时数据</li><li>😄 <strong>幽默风格</strong>：具有独特的个性和幽默感</li><li>📈 <strong>实时资讯</strong>：基于X平台的最新信息和趋势</li><li>🔓 <strong>相对开放</strong>：在某些话题上比其他AI更直接</li></ul><h4 id=核心功能>核心功能</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>🎯 主要特色：
+</span></span><span class=line><span class=cl><span class=k>1.</span> 实时热点分析：基于X平台的趋势数据
+</span></span><span class=line><span class=cl><span class=k>2.</span> 社交媒体洞察：分析推文和用户行为
+</span></span><span class=line><span class=cl><span class=k>3.</span> 新闻事件追踪：快速获取最新资讯
+</span></span><span class=line><span class=cl><span class=k>4.</span> 个性化对话：带有马斯克式的幽默风格
+</span></span></code></pre></td></tr></table></div></div><h4 id=使用建议>使用建议</h4><ul><li><strong>适合人群</strong>：社交媒体运营、新闻工作者、趋势分析师</li><li><strong>主要用途</strong>：实时信息获取、社交媒体分析、创意写作</li><li><strong>注意事项</strong>：需要X Premium会员，回答风格较为直接</li></ul><h3 id=国产ai工具对比>国产AI工具对比</h3><table><thead><tr><th>工具</th><th>优势</th><th>适用场景</th><th>免费额度</th></tr></thead><tbody><tr><td><a href=https://yiyan.baidu.com target=_blank rel="noopener noreffer">文心一言</a></td><td>中文理解好，百度生态</td><td>中文内容创作</td><td>每日20次</td></tr><tr><td><a href=https://tongyi.aliyun.com target=_blank rel="noopener noreffer">通义千问</a></td><td>阿里云集成，企业友好</td><td>商业应用</td><td>每日10次</td></tr><tr><td><a href=https://xinghuo.xfyun.cn target=_blank rel="noopener noreffer">讯飞星火</a></td><td>语音交互强</td><td>语音转文字</td><td>每日5次</td></tr><tr><td><a href=https://chatglm.cn target=_blank rel="noopener noreffer">智谱清言</a></td><td>开源友好</td><td>技术研究</td><td>每日15次</td></tr></tbody></table><h2 id=-ai编程工具实战>💻 AI编程工具实战</h2><h3 id=github-copilot->GitHub Copilot ⭐⭐⭐⭐⭐</h3><p><strong>价格</strong>：$10/月（学生免费）</p><h4 id=进阶使用技巧>进阶使用技巧</h4><ol><li><p><strong>注释驱动开发</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 创建一个函数，实现二分查找算法</span>
+</span></span><span class=line><span class=cl><span class=c1># 参数：有序数组arr，目标值target</span>
+</span></span><span class=line><span class=cl><span class=c1># 返回：目标值的索引，如果不存在返回-1</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>binary_search</span><span class=p>(</span><span class=n>arr</span><span class=p>,</span> <span class=n>target</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=c1># Copilot会自动生成完整实现</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p><strong>测试用例生成</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>fibonacci</span><span class=p>(</span><span class=n>n</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>n</span> <span class=o>&lt;=</span> <span class=mi>1</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>n</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>fibonacci</span><span class=p>(</span><span class=n>n</span><span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=o>+</span> <span class=n>fibonacci</span><span class=p>(</span><span class=n>n</span><span class=o>-</span><span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 为上面的函数生成测试用例</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>test_fibonacci</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=c1># Copilot会生成多个测试场景</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p><strong>代码重构建议</strong></p><ul><li>选中代码块，Copilot会提供优化建议</li><li>支持多种编程语言和框架</li></ul></li></ol><h3 id=cursor->Cursor ⭐⭐⭐⭐⭐</h3><p><strong>官网</strong>：<a href=https://cursor.sh target=_blank rel="noopener noreffer">https://cursor.sh</a></p><h4 id=独特功能>独特功能</h4><ul><li><strong>Ctrl+K</strong>：自然语言编程</li><li><strong>Ctrl+L</strong>：与代码库对话</li><li><strong>代码补全</strong>：比Copilot更精准的上下文理解</li></ul><h4 id=实际使用案例>实际使用案例</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>我的使用场景：
+</span></span><span class=line><span class=cl>1. 快速生成React组件
+</span></span><span class=line><span class=cl>2. 代码重构和优化
+</span></span><span class=line><span class=cl>3. 错误调试和修复
+</span></span><span class=line><span class=cl>4. API文档生成
+</span></span></code></pre></td></tr></table></div></div><h3 id=其他编程ai工具>其他编程AI工具</h3><h4 id=tabnine>Tabnine</h4><ul><li><strong>特点</strong>：本地运行，保护代码隐私</li><li><strong>适合</strong>：企业用户，对安全性要求高</li></ul><h4 id=replit-ai>Replit AI</h4><ul><li><strong>特点</strong>：在线IDE + AI辅助</li><li><strong>适合</strong>：快速原型开发、教学演示</li></ul><h4 id=codewhisperer-aws>CodeWhisperer (AWS)</h4><ul><li><strong>特点</strong>：AWS服务集成度高</li><li><strong>适合</strong>：云原生应用开发</li></ul><h2 id=-ai创意工具>🎨 AI创意工具</h2><h3 id=图像生成工具对比>图像生成工具对比</h3><table><thead><tr><th>工具</th><th>优势</th><th>价格</th><th>推荐指数</th></tr></thead><tbody><tr><td><strong>Midjourney</strong></td><td>艺术感强，质量高</td><td>$10-60/月</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td><strong>DALL-E 3</strong></td><td>文字理解准确</td><td>$20/月</td><td>⭐⭐⭐⭐</td></tr><tr><td><strong>Stable Diffusion</strong></td><td>开源免费，可定制</td><td>免费</td><td>⭐⭐⭐⭐</td></tr><tr><td><strong>Firefly</strong></td><td>Adobe生态集成</td><td>$20/月</td><td>⭐⭐⭐</td></tr></tbody></table><h4 id=midjourney进阶提示词>Midjourney进阶提示词</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>基础结构：[主题] + [风格] + [参数]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>实用模板：
+</span></span><span class=line><span class=cl>- 人像摄影：portrait of [描述], professional photography, studio lighting --ar 3:4
+</span></span><span class=line><span class=cl>- 产品设计：modern [产品] design, minimalist, white background --ar 1:1
+</span></span><span class=line><span class=cl>- 概念艺术：[概念] concept art, digital painting, detailed --ar 16:9
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>高级参数：
+</span></span><span class=line><span class=cl>--ar 16:9    # 宽高比
+</span></span><span class=line><span class=cl>--v 6        # 版本
+</span></span><span class=line><span class=cl>--stylize 100 # 风格化程度
+</span></span><span class=line><span class=cl>--chaos 20   # 随机性
+</span></span></code></pre></td></tr></table></div></div><h3 id=视频生成工具>视频生成工具</h3><h4 id=runway-ml>Runway ML</h4><ul><li><strong>功能</strong>：AI视频生成和编辑</li><li><strong>特色</strong>：Gen-3 Alpha模型，质量接近专业水准</li><li><strong>使用场景</strong>：短视频制作、广告素材</li></ul><h4 id=pika-labs>Pika Labs</h4><ul><li><strong>功能</strong>：文本/图片转视频</li><li><strong>特色</strong>：操作简单，效果自然</li><li><strong>适合人群</strong>：内容创作者、社交媒体运营</li></ul><h2 id=-ai写作工具深度评测>✍️ AI写作工具深度评测</h2><h3 id=长文写作工具>长文写作工具</h3><h4 id=notion-ai>Notion AI</h4><p><strong>集成优势</strong>：</p><ul><li>无缝融入工作流</li><li>支持多种内容格式</li><li>团队协作友好</li></ul><p><strong>实用功能</strong>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>1. 文章大纲生成：/ai 帮我写一个关于AI工具的文章大纲
+</span></span><span class=line><span class=cl>2. 内容扩写：选中文字，要求AI扩展内容
+</span></span><span class=line><span class=cl>3. 语言优化：改善文字表达和语法
+</span></span><span class=line><span class=cl>4. 格式调整：转换文档格式和风格
+</span></span></code></pre></td></tr></table></div></div><h4 id=jasper-ai>Jasper AI</h4><ul><li><strong>定位</strong>：营销文案专家</li><li><strong>模板</strong>：50+ 营销场景模板</li><li><strong>适合</strong>：电商、广告、社交媒体</li></ul><h4 id=copyai>Copy.ai</h4><ul><li><strong>特色</strong>：多语言支持</li><li><strong>功能</strong>：邮件营销、社交媒体文案</li><li><strong>价格</strong>：免费版可用，付费$36/月</li></ul><h3 id=学术写作助手>学术写作助手</h3><h4 id=grammarly->Grammarly ⭐⭐⭐⭐⭐</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>功能亮点：
+</span></span><span class=line><span class=cl>✅ 语法检查：实时发现并修正错误
+</span></span><span class=line><span class=cl>✅ 风格建议：提升文章可读性
+</span></span><span class=line><span class=cl>✅ 抄袭检测：确保内容原创性
+</span></span><span class=line><span class=cl>✅ 语调分析：调整文章语气
+</span></span></code></pre></td></tr></table></div></div><h4 id=deepl-write>DeepL Write</h4><ul><li><strong>优势</strong>：多语言写作优化</li><li><strong>适合</strong>：非英语母语用户</li><li><strong>功能</strong>：句式优化、用词建议</li></ul><h2 id=-提示词工程进阶>🚀 提示词工程进阶</h2><h3 id=高级提示词框架>高级提示词框架</h3><h4 id=crispe-框架>CRISPE 框架</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>C - Context (上下文)：提供背景信息
+</span></span><span class=line><span class=cl>R - Role (角色)：指定AI扮演的角色
+</span></span><span class=line><span class=cl>I - Intent (意图)：明确任务目标
+</span></span><span class=line><span class=cl>S - Situation (情况)：描述具体场景
+</span></span><span class=line><span class=cl>P - Product (产品)：定义期望输出
+</span></span><span class=line><span class=cl>E - Example (示例)：给出参考例子
+</span></span></code></pre></td></tr></table></div></div><h4 id=实际应用案例>实际应用案例</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>【Context】我是一家初创公司的产品经理
+</span></span><span class=line><span class=cl>【Role】请你作为资深的产品架构师
+</span></span><span class=line><span class=cl>【Intent】帮我设计一个AI客服系统的产品方案
+</span></span><span class=line><span class=cl>【Situation】公司有100名员工，日处理客服咨询500+条
+</span></span><span class=line><span class=cl>【Product】输出包含功能模块、技术架构、实施计划的完整方案
+</span></span><span class=line><span class=cl>【Example】参考类似ChatBot的设计思路，但要突出我们的差异化优势
+</span></span></code></pre></td></tr></table></div></div><h3 id=专业领域提示词库>专业领域提示词库</h3><h4 id=编程领域>编程领域</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 代码审查提示词</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>请以资深架构师的角度审查以下代码：
+</span></span></span><span class=line><span class=cl><span class=s2>1. 代码质量和规范性
+</span></span></span><span class=line><span class=cl><span class=s2>2. 性能优化建议
+</span></span></span><span class=line><span class=cl><span class=s2>3. 安全性问题
+</span></span></span><span class=line><span class=cl><span class=s2>4. 可维护性改进
+</span></span></span><span class=line><span class=cl><span class=s2>请提供具体的修改建议和示例代码。
+</span></span></span><span class=line><span class=cl><span class=s2>&#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 算法解析提示词</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>请用以下方式解释这个算法：
+</span></span></span><span class=line><span class=cl><span class=s2>1. 算法思路（用通俗语言）
+</span></span></span><span class=line><span class=cl><span class=s2>2. 时间复杂度分析
+</span></span></span><span class=line><span class=cl><span class=s2>3. 空间复杂度分析
+</span></span></span><span class=line><span class=cl><span class=s2>4. 适用场景和局限性
+</span></span></span><span class=line><span class=cl><span class=s2>5. 代码实现（注释详细）
+</span></span></span><span class=line><span class=cl><span class=s2>&#34;&#34;&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=内容创作>内容创作</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=gh># 文章写作提示词
+</span></span></span><span class=line><span class=cl><span class=gh></span>你是一位专业的科技记者，请按照以下结构写一篇文章：
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gs>**文章要求：**</span>
+</span></span><span class=line><span class=cl><span class=k>-</span> 标题：吸引眼球，包含关键词
+</span></span><span class=line><span class=cl><span class=k>-</span> 导语：100字内概括核心观点
+</span></span><span class=line><span class=cl><span class=k>-</span> 正文：逻辑清晰，数据支撑
+</span></span><span class=line><span class=cl><span class=k>-</span> 结尾：总结观点，引发思考
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gs>**写作风格：**</span>
+</span></span><span class=line><span class=cl><span class=k>-</span> 语言简洁明了
+</span></span><span class=line><span class=cl><span class=k>-</span> 多用具体数据和案例
+</span></span><span class=line><span class=cl><span class=k>-</span> 避免技术术语堆砌
+</span></span></code></pre></td></tr></table></div></div><h3 id=chain-of-thought-思维链-技巧>Chain of Thought (思维链) 技巧</h3><h4 id=复杂问题分解>复杂问题分解</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>请一步步分析这个商业问题：
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>步骤1：问题定义
+</span></span><span class=line><span class=cl>- 明确核心问题是什么
+</span></span><span class=line><span class=cl>- 涉及哪些关键因素
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>步骤2：信息收集
+</span></span><span class=line><span class=cl>- 需要哪些数据支撑
+</span></span><span class=line><span class=cl>- 现有信息的可靠性
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>步骤3：方案设计
+</span></span><span class=line><span class=cl>- 列出3个可行方案
+</span></span><span class=line><span class=cl>- 分析每个方案的优缺点
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>步骤4：风险评估
+</span></span><span class=line><span class=cl>- 识别潜在风险点
+</span></span><span class=line><span class=cl>- 制定应对策略
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>步骤5：实施计划
+</span></span><span class=line><span class=cl>- 制定具体时间表
+</span></span><span class=line><span class=cl>- 分配资源和责任人
+</span></span></code></pre></td></tr></table></div></div><h2 id=-ai工具选择策略>🎯 AI工具选择策略</h2><h3 id=按使用场景分类>按使用场景分类</h3><h3 id=主流ai对话工具对比>主流AI对话工具对比</h3><table><thead><tr><th>工具</th><th>优势</th><th>特色功能</th><th>价格</th><th>推荐指数</th></tr></thead><tbody><tr><td><strong>ChatGPT</strong></td><td>综合能力强，生态完善</td><td>插件系统，代码解释器</td><td>$20/月</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td><strong>Claude</strong></td><td>长文本处理，安全性高</td><td>文档分析，代码review</td><td>$20/月</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td><strong>Gemini</strong></td><td>Google生态，实时搜索</td><td>多模态，移动端集成</td><td>$20/月</td><td>⭐⭐⭐⭐</td></tr><tr><td><strong>Grok</strong></td><td>实时资讯，个性化对话</td><td>X平台数据，幽默风格</td><td>$16/月</td><td>⭐⭐⭐⭐</td></tr></tbody></table><h4 id=个人用户推荐>个人用户推荐</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>🏠 日常使用组合：
+</span></span><span class=line><span class=cl><span class=k>-</span> 主力对话：ChatGPT Plus ($20/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> 编程助手：GitHub Copilot ($10/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> 写作优化：Grammarly Premium ($12/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> 图像生成：Midjourney Basic ($10/月)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>💰 总成本：$52/月
+</span></span><span class=line><span class=cl>💡 性价比：⭐⭐⭐⭐⭐
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>🌟 进阶组合（多AI工具）：
+</span></span><span class=line><span class=cl><span class=k>-</span> 主力对话：ChatGPT + Claude ($40/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> Google生态：Gemini Pro ($20/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> 实时资讯：Grok (X Premium $16/月)
+</span></span><span class=line><span class=cl><span class=k>-</span> 编程助手：GitHub Copilot ($10/月)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>💰 高级组合总成本：$86/月
+</span></span><span class=line><span class=cl>🎯 适合：重度AI用户、专业工作者
+</span></span></code></pre></td></tr></table></div></div><h4 id=企业用户推荐>企业用户推荐</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>🏢 团队协作组合：
+</span></span><span class=line><span class=cl><span class=k>-</span> 团队对话：Claude Pro for Teams
+</span></span><span class=line><span class=cl><span class=k>-</span> 代码管理：GitHub Copilot Business
+</span></span><span class=line><span class=cl><span class=k>-</span> 文档协作：Notion AI Team
+</span></span><span class=line><span class=cl><span class=k>-</span> 设计工具：Adobe Firefly Enterprise
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>⚡ 重点考虑：
+</span></span><span class=line><span class=cl><span class=k>-</span> 数据安全和隐私保护
+</span></span><span class=line><span class=cl><span class=k>-</span> 团队协作和权限管理
+</span></span><span class=line><span class=cl><span class=k>-</span> API接入和定制开发
+</span></span><span class=line><span class=cl><span class=k>-</span> 成本控制和使用监控
+</span></span></code></pre></td></tr></table></div></div><h3 id=免费工具组合>免费工具组合</h3><h4 id=零成本起步方案>零成本起步方案</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>💸 完全免费组合：
+</span></span><span class=line><span class=cl><span class=k>1.</span> 对话AI：Claude (免费版) + Gemini (免费版) + 文心一言
+</span></span><span class=line><span class=cl><span class=k>2.</span> 编程助手：VS Code + Tabnine (免费版)
+</span></span><span class=line><span class=cl><span class=k>3.</span> 写作工具：Grammarly (免费版) + DeepL
+</span></span><span class=line><span class=cl><span class=k>4.</span> 图像生成：Stable Diffusion (本地部署)
+</span></span><span class=line><span class=cl><span class=k>5.</span> 设计工具：Canva (免费版)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>📊 功能覆盖：75%的日常需求
+</span></span><span class=line><span class=cl>🎯 适合人群：学生、个人爱好者、预算有限用户
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>💡 免费版限制说明：
+</span></span><span class=line><span class=cl><span class=k>-</span> Claude：每日有使用次数限制
+</span></span><span class=line><span class=cl><span class=k>-</span> Gemini：Google账户即可使用，有一定额度
+</span></span><span class=line><span class=cl><span class=k>-</span> Grok：需要X Premium，无免费版
+</span></span><span class=line><span class=cl><span class=k>-</span> ChatGPT：GPT-3.5免费，GPT-4需付费
+</span></span></code></pre></td></tr></table></div></div><h2 id=-使用注意事项与最佳实践>⚠️ 使用注意事项与最佳实践</h2><h3 id=数据安全防护>数据安全防护</h3><h4 id=敏感信息分类>敏感信息分类</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>🔴 绝对不能输入：
+</span></span><span class=line><span class=cl><span class=k>-</span> 身份证、银行卡等个人敏感信息
+</span></span><span class=line><span class=cl><span class=k>-</span> 公司核心商业机密
+</span></span><span class=line><span class=cl><span class=k>-</span> 未公开的产品代码
+</span></span><span class=line><span class=cl><span class=k>-</span> 客户隐私数据
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>🟡 谨慎输入：
+</span></span><span class=line><span class=cl><span class=k>-</span> 公司内部流程信息
+</span></span><span class=line><span class=cl><span class=k>-</span> 正在开发的功能特性
+</span></span><span class=line><span class=cl><span class=k>-</span> 团队组织架构
+</span></span><span class=line><span class=cl><span class=k>-</span> 业务数据（脱敏后可考虑）
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>🟢 可以安全输入：
+</span></span><span class=line><span class=cl><span class=k>-</span> 公开的技术文档
+</span></span><span class=line><span class=cl><span class=k>-</span> 学习资料和教程
+</span></span><span class=line><span class=cl><span class=k>-</span> 通用的代码片段
+</span></span><span class=line><span class=cl><span class=k>-</span> 行业公开信息
+</span></span></code></pre></td></tr></table></div></div><h4 id=隐私保护建议>隐私保护建议</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>🛡️ 最佳实践：
+</span></span><span class=line><span class=cl><span class=k>1.</span> 使用企业版工具（数据不用于训练）
+</span></span><span class=line><span class=cl><span class=k>2.</span> 定期清理对话历史
+</span></span><span class=line><span class=cl><span class=k>3.</span> 避免在共享设备上使用
+</span></span><span class=line><span class=cl><span class=k>4.</span> 关注各平台隐私政策更新
+</span></span><span class=line><span class=cl><span class=k>5.</span> 考虑本地部署开源方案
+</span></span></code></pre></td></tr></table></div></div><h3 id=结果验证与质量控制>结果验证与质量控制</h3><h4 id=ai输出质量检查清单>AI输出质量检查清单</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>✅ 代码输出检查：
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 语法正确性
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 逻辑合理性
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 性能优化空间
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 安全漏洞排查
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 测试用例覆盖
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>✅ 文本内容检查：
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 事实准确性验证
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 逻辑连贯性
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 语言表达流畅度
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 原创性（避免抄袭）
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> 目标受众适配性
+</span></span></code></pre></td></tr></table></div></div><h3 id=持续学习路径>持续学习路径</h3><h4 id=进阶学习资源>进阶学习资源</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>📚 推荐学习路径：
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>初级阶段（1-2个月）：
+</span></span><span class=line><span class=cl><span class=k>-</span> 掌握基本提示词技巧
+</span></span><span class=line><span class=cl><span class=k>-</span> 熟悉主流AI工具界面
+</span></span><span class=line><span class=cl><span class=k>-</span> 学会简单的工作流自动化
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>中级阶段（3-6个月）：
+</span></span><span class=line><span class=cl><span class=k>-</span> 深入学习提示词工程
+</span></span><span class=line><span class=cl><span class=k>-</span> 尝试API集成开发
+</span></span><span class=line><span class=cl><span class=k>-</span> 探索多工具组合使用
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>高级阶段（6个月+）：
+</span></span><span class=line><span class=cl><span class=k>-</span> 参与开源AI项目
+</span></span><span class=line><span class=cl><span class=k>-</span> 开发定制化AI应用
+</span></span><span class=line><span class=cl><span class=k>-</span> 成为AI工具布道者
+</span></span></code></pre></td></tr></table></div></div><h2 id=-实用资源与社区>🔗 实用资源与社区</h2><h3 id=官方学习资源>官方学习资源</h3><ul><li><strong><a href=https://cookbook.openai.com target=_blank rel="noopener noreffer">OpenAI Cookbook</a></strong> - 官方最佳实践</li><li><strong><a href=https://docs.anthropic.com target=_blank rel="noopener noreffer">Anthropic Claude Guide</a></strong> - Claude使用指南</li><li><strong><a href=https://ai.google/education target=_blank rel="noopener noreffer">Google AI Education</a></strong> - AI基础知识</li><li><strong><a href=https://www.microsoft.com/ai/ai-school target=_blank rel="noopener noreffer">Microsoft AI School</a></strong> - 企业AI应用</li></ul><h3 id=中文社区推荐>中文社区推荐</h3><ul><li><strong><a href=https://ai-bot.cn target=_blank rel="noopener noreffer">AI工具集</a></strong> - 国内AI工具导航</li><li><strong><a href=https://www.promptingguide.ai/zh target=_blank rel="noopener noreffer">提示词工程指南</a></strong> - 中文提示词教程</li><li><strong><a href=https://zhihu.com/topic/19551137 target=_blank rel="noopener noreffer">知乎AI话题</a></strong> - 经验分享讨论</li><li><strong><a href=https://github.com/topics/artificial-intelligence target=_blank rel="noopener noreffer">GitHub Awesome AI</a></strong> - 开源项目集合</li></ul><h3 id=实用工具站点>实用工具站点</h3><ul><li><strong><a href=https://artificialanalysis.ai target=_blank rel="noopener noreffer">AI对比平台</a></strong> - 各AI模型性能对比</li><li><strong><a href=https://prompthero.com target=_blank rel="noopener noreffer">提示词库</a></strong> - 优质提示词分享</li><li><strong><a href=https://www.aitrends.com target=_blank rel="noopener noreffer">AI新闻聚合</a></strong> - 行业最新动态</li></ul><hr><h2 id=-总结与展望>📝 总结与展望</h2><p>AI工具正在快速发展，新的工具和功能层出不穷。保持学习的心态，关注行业动态，及时调整工具选择策略，才能在AI时代保持竞争优势。</p><p><strong>我的使用原则：</strong></p><ol><li>🎯 <strong>效率优先</strong>：选择最能提升工作效率的工具</li><li>💰 <strong>成本控制</strong>：平衡功能需求与经济成本</li><li>🔒 <strong>安全第一</strong>：始终把数据安全放在首位</li><li>📈 <strong>持续优化</strong>：定期评估和调整工具组合</li></ol><p><strong>未来展望：</strong></p><ul><li>AI工具将更加智能化和个性化</li><li>多模态AI（文字+图像+语音）成为主流</li><li>企业级AI应用将迎来爆发式增长</li><li>AI伦理和监管将日趋完善</li></ul><hr><p><em>最后更新：2025年6月</em><br><em>参考链接：<a href=https://github.com/SincereCSL/Playgrounds/blob/main/ChatGPT/ChatGPT.md target=_blank rel="noopener noreffer">SincereCSL/Playgrounds ChatGPT.md</a></em></p><blockquote><p>💡 <strong>提示</strong>：如果你有更好的AI工具推荐或使用技巧，欢迎在评论区分享交流！</p></blockquote></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2025-06-10</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/ai/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记 data-via=SincereCSL95 data-hashtags=AI,LLM,ChatGPT,Copilot,提示词工程><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://sincerecsl.github.io/ai/ data-hashtag=AI><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 WhatsApp" data-sharer=whatsapp data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记 data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Reddit" data-sharer=reddit data-url=https://sincerecsl.github.io/ai/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记><i data-svg-src=/lib/simple-icons/icons/line.min.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记 data-ralateuid=u/5535058729><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Blogger" data-sharer=blogger data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记 data-description=全面的AI工具使用指南：从基础对话到高级应用，涵盖编程、写作、设计等各个领域的AI工具推荐和使用技巧。><i class="fab fa-blogger fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Evernote" data-sharer=evernote data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记><i class="fab fa-evernote fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Skype" data-sharer=skype data-url=https://sincerecsl.github.io/ai/ data-title=我的AI工具使用笔记><i class="fab fa-skype fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/ai/>AI</a>,&nbsp;<a href=/tags/llm/>LLM</a>,&nbsp;<a href=/tags/chatgpt/>ChatGPT</a>,&nbsp;<a href=/tags/copilot/>Copilot</a>,&nbsp;<a href=/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B/>提示词工程</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/mcp/ class=prev rel=prev title="深入理解MCP：Model Context Protocol架构解析与开发实践"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>深入理解MCP：Model Context Protocol架构解析与开发实践</a>
+<a href=/technologynews/ class=next rel=next title=记录一些优质的科技新闻网站>记录一些优质的科技新闻网站<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>SincereCSL</div><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.147.9">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/contrib/auto-render.min.js></script><script type=text/javascript src=/lib/katex/contrib/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/contrib/mhchem.min.js></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{valine:{appId:"nM17GGWo6Zp1bj316CxfmLIo-MdYXbMMI",appKey:"z9DvzP8ZaKB4Ci6y2ivyepGR",avatar:"mp",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-CN",pageSize:10,placeholder:"说点什么吧...",recordIP:!0,serverURLs:"https://nm17ggwo.api.lncldglobal.com",visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"了解更多",message:"本网站使用 Cookies 来改善您的浏览体验."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
