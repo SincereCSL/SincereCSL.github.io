@@ -1,4 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>SincereCSL's Blog</title><link>https://sincerecsl.github.io/</link><description>SincereCSL's 全新 Hugo 网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Jun 2025 10:30:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description>&lt;p>Amazon 创始人杰夫·贝索斯认为很酷&lt;/p></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SincereCSL&#39;s Blog</title>
+        <link>http://localhost:1313/</link>
+        <description>SincereCSL&#39;s 全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Jun 2025 10:30:00 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>今天的你Cool嘛</title>
+    <link>http://localhost:1313/cool/</link>
+    <pubDate>Thu, 10 Feb 2022 20:49:43 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/cool/</guid>
+    <description><![CDATA[<p>Amazon 创始人杰夫·贝索斯认为很酷</p>]]></description>
+</item>
+<item>
+    <title>Google 评分卡</title>
+    <link>http://localhost:1313/googlescorecard/</link>
+    <pubDate>Mon, 25 Sep 2023 22:16:23 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/googlescorecard/</guid>
+    <description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
 <ul>
 <li>
 <p>0 - 对于相关的技术领域还不熟悉</p>
@@ -10,7 +31,15 @@
 <p>2 - 可以实现一些小的改动、清楚基本原理，并能够在简单的指导下自己找到更多的细节<br>
  
  
- </p>]]></description></item><item><title>Google 搜索技巧</title><link>https://sincerecsl.github.io/googlesearch/</link><pubDate>Sat, 04 Jan 2025 14:16:15 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlesearch/</guid><description><![CDATA[<h2 id="google-搜索技巧">Google 搜索技巧</h2>
+ </p>]]></description>
+</item>
+<item>
+    <title>Google 搜索技巧</title>
+    <link>http://localhost:1313/googlesearch/</link>
+    <pubDate>Sat, 04 Jan 2025 14:16:15 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/googlesearch/</guid>
+    <description><![CDATA[<h2 id="google-搜索技巧">Google 搜索技巧</h2>
 <h3 id="1-基础搜索运算符">1. 基础搜索运算符</h3>
 <h4 id="精确匹配搜索---引号-">精确匹配搜索 - 引号 <code>&quot;&quot;</code></h4>
 <ul>
@@ -559,7 +588,15 @@
 </li>
 </ul>
 <h4 id="参考资料">参考资料：</h4>
-<p>文章资料：</p>]]></description></item><item><title>非计算机专业的人如何转行程序员</title><link>https://sincerecsl.github.io/suchen/</link><pubDate>Sun, 26 Jan 2025 14:16:15 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/suchen/</guid><description><![CDATA[<h3 id="左耳朵耗子叔公司小伙伴个人成长经历分享整"><a href="https://coolshell.cn/haoel" target="_blank" rel="noopener noreffer ">左耳朵耗子叔</a>公司小伙伴个人成长经历分享整</h3>
+<p>文章资料：</p>]]></description>
+</item>
+<item>
+    <title>非计算机专业的人如何转行程序员</title>
+    <link>http://localhost:1313/suchen/</link>
+    <pubDate>Sun, 26 Jan 2025 14:16:15 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/suchen/</guid>
+    <description><![CDATA[<h3 id="左耳朵耗子叔公司小伙伴个人成长经历分享整"><a href="https://coolshell.cn/haoel" target="_blank" rel="noopener noreffer ">左耳朵耗子叔</a>公司小伙伴个人成长经历分享整</h3>
 <p>【非计算机专业的人如何转行程序员】- 宿琛</p>
 <h4 id="视频">视频</h4>
 <ul>
@@ -574,7 +611,15 @@
 <h4 id="美国四大计算机名校课程">美国四大计算机名校课程</h4>
 <ul>
 <li>
-<p>名校CS课程搜索 Google 检索关键词：</p>]]></description></item><item><title>记录一些优质的科技新闻网站</title><link>https://sincerecsl.github.io/technologynews/</link><pubDate>Sun, 16 Feb 2025 16:30:15 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/technologynews/</guid><description><![CDATA[<h3 id="综合科技新闻">综合科技新闻</h3>
+<p>名校CS课程搜索 Google 检索关键词：</p>]]></description>
+</item>
+<item>
+    <title>记录一些优质的科技新闻网站</title>
+    <link>http://localhost:1313/technologynews/</link>
+    <pubDate>Sun, 16 Feb 2025 16:30:15 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/technologynews/</guid>
+    <description><![CDATA[<h3 id="综合科技新闻">综合科技新闻</h3>
 <ol>
 <li><a href="https://arstechnica.com" target="_blank" rel="noopener noreffer ">Ars Technica</a> – 深入的科技分析，涵盖计算机、科学、汽车等多个领域。</li>
 <li><a href="https://www.theverge.com" target="_blank" rel="noopener noreffer ">The Verge</a> – 关注消费电子、互联网趋势和新兴科技产品。</li>
@@ -648,9 +693,28 @@
 <li><strong><a href="https://www.medgadget.com" target="_blank" rel="noopener noreffer ">Medgadget</a></strong> – 医疗设备、AI 医疗、可穿戴健康科技的前沿报道。</li>
 <li><strong><a href="https://www.genomeweb.com" target="_blank" rel="noopener noreffer ">GenomeWeb</a></strong> – 专注于基因组学、生物信息学、精准医疗等领域。</li>
 </ol>
-<p>你对哪个方向的内容最感兴趣？可以深入推荐更专业的资源！ 😊</p>]]></description></item><item><title>我的AI工具使用笔记</title><link>https://sincerecsl.github.io/ai/</link><pubDate>Tue, 10 Jun 2025 16:00:30 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/ai/</guid><description><![CDATA[<blockquote>
+<p>你对哪个方向的内容最感兴趣？可以深入推荐更专业的资源！ 😊</p>]]></description>
+</item>
+<item>
+    <title>我的AI工具使用笔记</title>
+    <link>http://localhost:1313/ai/</link>
+    <pubDate>Tue, 10 Jun 2025 16:00:30 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/ai/</guid>
+    <description><![CDATA[<blockquote>
 <p>📝 <strong>前言</strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。</p></blockquote>
 <h2 id="-ai对话工具详解">🤖 AI对话工具详解</h2>
 <h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐</h3>
-<p><strong>官网</strong>：<a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com</a></p>]]></description></item><item><title>深入理解MCP：Model Context Protocol架构解析与开发实践</title><link>https://sincerecsl.github.io/mcp/</link><pubDate>Sun, 15 Jun 2025 10:30:00 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/mcp/</guid><description><![CDATA[<blockquote>
-<p>📝 <strong>前言</strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。</p>]]></description></item></channel></rss>
+<p><strong>官网</strong>：<a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com</a></p>]]></description>
+</item>
+<item>
+    <title>深入理解MCP：Model Context Protocol架构解析与开发实践</title>
+    <link>http://localhost:1313/mcp/</link>
+    <pubDate>Sun, 15 Jun 2025 10:30:00 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/mcp/</guid>
+    <description><![CDATA[<blockquote>
+<p>📝 <strong>前言</strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。</p>]]></description>
+</item>
+</channel>
+</rss>
