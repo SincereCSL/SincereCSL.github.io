@@ -1,2 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MCP on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/mcp/</link><description>Recent content in MCP on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Sun, 15 Jun 2025 10:30:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解MCP：Model Context Protocol架构解析与开发实践</title><link>https://sincerecsl.github.io/mcp/</link><pubDate>Sun, 15 Jun 2025 10:30:00 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/mcp/</guid><description>&lt;blockquote>
-&lt;p>📝 &lt;strong>前言&lt;/strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。&lt;/p></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MCP - 标签 - SincereCSL&#39;s Blog</title>
+        <link>http://localhost:1313/tags/mcp/</link>
+        <description>MCP - 标签 - SincereCSL&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Jun 2025 10:30:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/mcp/" rel="self" type="application/rss+xml" /><item>
+    <title>深入理解MCP：Model Context Protocol架构解析与开发实践</title>
+    <link>http://localhost:1313/mcp/</link>
+    <pubDate>Sun, 15 Jun 2025 10:30:00 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/mcp/</guid>
+    <description><![CDATA[<blockquote>
+<p>📝 <strong>前言</strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。</p>]]></description>
+</item>
+</channel>
+</rss>

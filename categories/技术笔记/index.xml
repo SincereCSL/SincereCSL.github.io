@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术笔记 on SincereCSL's Blog</title><link>https://sincerecsl.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link><description>Recent content in 技术笔记 on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Tue, 10 Jun 2025 16:00:30 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>我的AI工具使用笔记</title><link>https://sincerecsl.github.io/ai/</link><pubDate>Tue, 10 Jun 2025 16:00:30 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/ai/</guid><description>&lt;blockquote>
-&lt;p>📝 &lt;strong>前言&lt;/strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。&lt;/p>&lt;/blockquote>
-&lt;h2 id="-ai对话工具详解">🤖 AI对话工具详解&lt;/h2>
-&lt;h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐&lt;/h3>
-&lt;p>&lt;strong>官网&lt;/strong>：&lt;a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com&lt;/a>&lt;/p></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>技术笔记 - 分类 - SincereCSL&#39;s Blog</title>
+        <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+        <description>技术笔记 - 分类 - SincereCSL&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Jun 2025 16:00:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>我的AI工具使用笔记</title>
+    <link>http://localhost:1313/ai/</link>
+    <pubDate>Tue, 10 Jun 2025 16:00:30 &#43;0800</pubDate>
+    <author>SincereCSL</author>
+    <guid>http://localhost:1313/ai/</guid>
+    <description><![CDATA[<blockquote>
+<p>📝 <strong>前言</strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。</p></blockquote>
+<h2 id="-ai对话工具详解">🤖 AI对话工具详解</h2>
+<h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐</h3>
+<p><strong>官网</strong>：<a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com</a></p>]]></description>
+</item>
+</channel>
+</rss>
