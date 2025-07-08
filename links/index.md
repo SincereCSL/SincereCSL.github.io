@@ -17,6 +17,7 @@
 * [小胡子哥的个人网站](https://www.barretlee.com)
 * [勾三股四](https://jiongks.name)
 * [是不是很酷:微信公众号](https://mp.weixin.qq.com/s/Q0IrfV7FcGbIYsQ8jFdOdQ)
+* [张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com)
 ## 文章
 * [40 years of programming](https://liw.fi/40/)
 * [别让自己“墙”了自己](https://coolshell.cn/articles/20276.html)
