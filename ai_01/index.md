@@ -1,7 +1,7 @@
 # 我的AI资讯了解渠道
 
 
-####  AI资讯渠道
+###  AI资讯渠道
 - [量子位](https://www.qbitai.com)
 - [新智元](https://www.zhidx.com)
 - [AI 日刊](https://modelwatch.dev)
