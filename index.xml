@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>SincereCSL's Blog</title><link>https://sincerecsl.github.io/</link><description>SincereCSL's 全新 Hugo 网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Jun 2025 10:30:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description>&lt;p>Amazon 创始人杰夫·贝索斯认为很酷&lt;/p></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>SincereCSL's Blog</title><link>https://sincerecsl.github.io/</link><description>SincereCSL's 全新 Hugo 网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 08 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description>&lt;p>Amazon 创始人杰夫·贝索斯认为很酷&lt;/p></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
 <ul>
 <li>
 <p>0 - 对于相关的技术领域还不熟悉</p>
@@ -653,4 +653,17 @@
 <h2 id="-ai对话工具详解">🤖 AI对话工具详解</h2>
 <h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐</h3>
 <p><strong>官网</strong>：<a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com</a></p>]]></description></item><item><title>深入理解MCP：Model Context Protocol架构解析与开发实践</title><link>https://sincerecsl.github.io/mcp/</link><pubDate>Sun, 15 Jun 2025 10:30:00 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/mcp/</guid><description><![CDATA[<blockquote>
-<p>📝 <strong>前言</strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。</p>]]></description></item></channel></rss>
+<p>📝 <strong>前言</strong>：MCP（Model Context Protocol）是由Anthropic发布的开放标准，旨在标准化AI助手与数据源之间的连接方式。本文将深入解析MCP的架构原理、开发模式和实际应用，帮助开发者理解和使用这一革命性的协议。</p>]]></description></item><item><title>我的AI资讯了解渠道</title><link>https://sincerecsl.github.io/ai_01/</link><pubDate>Tue, 08 Jul 2025 21:00:00 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/ai_01/</guid><description><![CDATA[<h4 id="ai资讯渠道">AI资讯渠道</h4>
+<ul>
+<li><a href="https://www.qbitai.com" target="_blank" rel="noopener noreffer ">量子位</a></li>
+<li><a href="https://www.zhidx.com" target="_blank" rel="noopener noreffer ">新智元</a></li>
+<li><a href="https://modelwatch.dev" target="_blank" rel="noopener noreffer ">AI 日刊</a></li>
+<li><a href="https://aihot.today" target="_blank" rel="noopener noreffer ">AI今日热榜</a> — AI资讯聚合网站</li>
+<li><a href="https://linux.do/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" target="_blank" rel="noopener noreffer ">linux.do 人工智能模块</a></li>
+<li><a href="https://www.reddit.com/r/ClaudeAI/" target="_blank" rel="noopener noreffer ">Reddit ClaudeAI</a></li>
+<li><a href="https://www.bensbites.com" target="_blank" rel="noopener noreffer ">bensbites</a></li>
+<li><a href="https://sanhua.himrr.com/daily-news" target="_blank" rel="noopener noreffer ">三花快讯</a></li>
+<li><a href="https://www.technologyreview.com/tag/the-algorithm" target="_blank" rel="noopener noreffer ">MIT Technology Review – The Algorithm</a></li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank" rel="noopener noreffer ">The Verge – AI</a></li>
+<li><a href="https://www.wired.com/tag/artificial-intelligence/" target="_blank" rel="noopener noreffer ">WIRED – AI</a></li>
+</ul>]]></description></item></channel></rss>
