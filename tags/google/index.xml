@@ -1,550 +1,550 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/google/</link><description>Recent content in Google on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Sat, 04 Jan 2025 14:16:15 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/google/index.xml" rel="self" type="application/rss+xml"/><item><title>Google 搜索技巧</title><link>https://sincerecsl.github.io/googlesearch/</link><pubDate>Sat, 04 Jan 2025 14:16:15 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/googlesearch/</guid><description>&lt;h2 id="google-搜索技巧">Google 搜索技巧&lt;/h2>
-&lt;h3 id="1-基础搜索运算符">1. 基础搜索运算符&lt;/h3>
-&lt;h4 id="精确匹配搜索---引号-">精确匹配搜索 - 引号 &lt;code>&amp;quot;&amp;quot;&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>当你需要搜索完全匹配的词组时使用&lt;/li>
-&lt;li>例如：
-&lt;ul>
-&lt;li>&lt;code>&amp;quot;最好的编程语言&amp;quot;&lt;/code> - 完整匹配这个短语&lt;/li>
-&lt;li>&lt;code>&amp;quot;python error&amp;quot;&lt;/code> - 精确匹配错误信息&lt;/li>
-&lt;li>&lt;code>&amp;quot;how to&amp;quot; &amp;quot;python&amp;quot;&lt;/code> - 组合多个精确匹配&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>适用场景：
-&lt;ul>
-&lt;li>搜索特定的错误信息&lt;/li>
-&lt;li>查找精确的引用或句子&lt;/li>
-&lt;li>寻找特定的标题或名称&lt;/li>
-&lt;li>搜索特定的代码片段&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>使用技巧：
-&lt;ul>
-&lt;li>可以组合多个引号搜索&lt;/li>
-&lt;li>引号内的空格会被保留&lt;/li>
-&lt;li>标点符号最好也包含在内&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="排除特定词---减号--">排除特定词 - 减号 &lt;code>-&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>在关键词前加减号可以排除包含该词的结果&lt;/li>
-&lt;li>实例：
-&lt;ul>
-&lt;li>&lt;code>java -咖啡&lt;/code> (搜索Java编程而非咖啡)&lt;/li>
-&lt;li>&lt;code>python -蛇 -宠物&lt;/code> (编程相关)&lt;/li>
-&lt;li>&lt;code>苹果 -手机 -水果&lt;/code> (公司相关)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>使用技巧：
-&lt;ul>
-&lt;li>减号必须紧贴要排除的词&lt;/li>
-&lt;li>可以同时使用多个减号&lt;/li>
-&lt;li>可以排除特定网站：&lt;code>python -site:csdn.com&lt;/code>&lt;/li>
-&lt;li>可以排除特定文件类型：&lt;code>教程 -filetype:pdf&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>常见应用：
-&lt;ul>
-&lt;li>去除购物网站：&lt;code>-site:taobao.com -site:jd.com&lt;/code>&lt;/li>
-&lt;li>去除视频站点：&lt;code>-site:bilibili.com -site:youtube.com&lt;/code>&lt;/li>
-&lt;li>排除培训广告：&lt;code>-培训 -招生 -报名&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="站内搜索---site">站内搜索 - &lt;code>site:&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>限定在特定网站内搜索内容&lt;/li>
-&lt;li>基本语法：&lt;code>site:网站域名 搜索词&lt;/code>&lt;/li>
-&lt;li>实例：
-&lt;ul>
-&lt;li>&lt;code>site:zhihu.com 人工智能&lt;/code>&lt;/li>
-&lt;li>&lt;code>site:edu.cn 论文&lt;/code>&lt;/li>
-&lt;li>&lt;code>site:gov.cn 政策&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>高级用法：
-&lt;ul>
-&lt;li>指定多个站点：
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:(github.com OR stackoverflow.com) python错误
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/li>
-&lt;li>限定子域名：
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:docs.python.org 教程
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">site:help.github.com 指南
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/li>
-&lt;li>组合其他运算符：
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:edu.cn filetype:pdf &amp;#34;机器学习&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">site:github.com &amp;#34;README.md&amp;#34; &amp;#34;最佳实践&amp;#34;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>实用技巧：
-&lt;ul>
-&lt;li>学术搜索：&lt;code>site:edu.cn OR site:ac.cn&lt;/code>&lt;/li>
-&lt;li>官方文档：&lt;code>site:docs.*.com&lt;/code>&lt;/li>
-&lt;li>技术问答：&lt;code>site:(stackoverflow.com OR github.com)&lt;/code>&lt;/li>
-&lt;li>政府文件：&lt;code>site:gov.cn filetype:pdf&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="2-高级搜索技巧">2. 高级搜索技巧&lt;/h3>
-&lt;h4 id="文件类型搜索---filetype">文件类型搜索 - &lt;code>filetype:&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>搜索特定格式的文件&lt;/li>
-&lt;li>常用文件类型：
-&lt;ul>
-&lt;li>&lt;code>filetype:pdf&lt;/code> - PDF文档&lt;/li>
-&lt;li>&lt;code>filetype:ppt&lt;/code> - 演示文稿&lt;/li>
-&lt;li>&lt;code>filetype:doc&lt;/code> - Word文档&lt;/li>
-&lt;li>&lt;code>filetype:xls&lt;/code> - Excel表格&lt;/li>
-&lt;li>&lt;code>filetype:txt&lt;/code> - 文本文件&lt;/li>
-&lt;li>&lt;code>filetype:zip&lt;/code> - 压缩文件&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>实例：
-&lt;ul>
-&lt;li>&lt;code>filetype:pdf python教程 site:edu.cn&lt;/code>&lt;/li>
-&lt;li>&lt;code>filetype:ppt 项目管理&lt;/code>&lt;/li>
-&lt;li>&lt;code>filetype:doc 简历模板&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>高级用法：
-&lt;ul>
-&lt;li>多文件类型：&lt;code>(filetype:doc OR filetype:pdf) 开发文档&lt;/code>&lt;/li>
-&lt;li>排除某类文件：&lt;code>开发文档 -filetype:pdf&lt;/code>&lt;/li>
-&lt;li>组合站点搜索：&lt;code>site:github.com filetype:md README&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="通配符搜索---">通配符搜索 - &lt;code>*&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>用星号代替任意文字&lt;/li>
-&lt;li>使用场景：
-&lt;ul>
-&lt;li>记不清完整词句时&lt;/li>
-&lt;li>搜索变体形式&lt;/li>
-&lt;li>查找特定模式&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>例子：
-&lt;ul>
-&lt;li>&lt;code>如何成为一名*工程师&lt;/code>&lt;/li>
-&lt;li>&lt;code>* 的使用方法&lt;/code>&lt;/li>
-&lt;li>&lt;code>2024年*趋势&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>高级应用：
-&lt;ul>
-&lt;li>歌词搜索：&lt;code>&amp;quot;我爱* 就像*&amp;quot;&lt;/code>&lt;/li>
-&lt;li>成语搜索：&lt;code>&amp;quot;一* 一*&amp;quot;&lt;/code>&lt;/li>
-&lt;li>标题匹配：&lt;code>&amp;quot;如何提高* 效率&amp;quot;&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="多关键词搜索---or-或-">多关键词搜索 - &lt;code>OR&lt;/code> 或 &lt;code>|&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>搜索多个可能的关键词&lt;/li>
-&lt;li>使用大写的OR或竖线符号&lt;/li>
-&lt;li>实例：
-&lt;ul>
-&lt;li>&lt;code>前端 OR 后端 开发&lt;/code>&lt;/li>
-&lt;li>&lt;code>Python | Java | C++ 教程&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>可以组合多个条件：
-&lt;ul>
-&lt;li>&lt;code>(Python | Java) site:github.com&lt;/code>&lt;/li>
-&lt;li>&lt;code>(北京 | 上海 | 深圳) 招聘&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="标题搜索---intitle-和-allintitle">标题搜索 - &lt;code>intitle:&lt;/code> 和 &lt;code>allintitle:&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>&lt;code>intitle:&lt;/code> - 搜索标题中包含特定词的页面&lt;/li>
-&lt;li>&lt;code>allintitle:&lt;/code> - 搜索标题中包含所有指定词的页面&lt;/li>
-&lt;li>使用方法：
-&lt;ul>
-&lt;li>&lt;code>intitle:python 教程&lt;/code> - 标题含&amp;quot;python&amp;quot;&lt;/li>
-&lt;li>&lt;code>allintitle:python 入门 教程&lt;/code> - 标题同时含这三个词&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>实用场景：
-&lt;ul>
-&lt;li>找教程：&lt;code>intitle:教程 python&lt;/code>&lt;/li>
-&lt;li>找文档：&lt;code>intitle:documentation react&lt;/code>&lt;/li>
-&lt;li>找视频：&lt;code>intitle:视频教程 golang&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="网址搜索---inurl-和-allinurl">网址搜索 - &lt;code>inurl:&lt;/code> 和 &lt;code>allinurl:&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>&lt;code>inurl:&lt;/code> - URL中包含特定词&lt;/li>
-&lt;li>&lt;code>allinurl:&lt;/code> - URL中包含所有指定词&lt;/li>
-&lt;li>应用示例：
-&lt;ul>
-&lt;li>&lt;code>inurl:blog python&lt;/code> - URL含&amp;quot;blog&amp;quot;&lt;/li>
-&lt;li>&lt;code>allinurl:github python project&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>实用技巧：
-&lt;ul>
-&lt;li>找博客：&lt;code>inurl:blog site:medium.com&lt;/code>&lt;/li>
-&lt;li>找项目：&lt;code>inurl:project site:github.com&lt;/code>&lt;/li>
-&lt;li>找文档：&lt;code>inurl:docs python&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="正文内容搜索---intext-和-allintext">正文内容搜索 - &lt;code>intext:&lt;/code> 和 &lt;code>allintext:&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>&lt;code>intext:&lt;/code> - 正文中包含特定词&lt;/li>
-&lt;li>&lt;code>allintext:&lt;/code> - 正文中包含所有指定词&lt;/li>
-&lt;li>使用场景：
-&lt;ul>
-&lt;li>&lt;code>intext:机器学习 算法&lt;/code>&lt;/li>
-&lt;li>&lt;code>allintext:python 错误 解决方案&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>组合应用：
-&lt;ul>
-&lt;li>&lt;code>intext:面试题 site:zhihu.com&lt;/code>&lt;/li>
-&lt;li>&lt;code>allintext:源码分析 site:github.com&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="相关词搜索---related-和-aroundn">相关词搜索 - &lt;code>related:&lt;/code> 和 &lt;code>AROUND(n)&lt;/code>&lt;/h4>
-&lt;ul>
-&lt;li>&lt;code>related:&lt;/code> - 查找相关网站&lt;/li>
-&lt;li>&lt;code>AROUND(n)&lt;/code> - 查找两个词距离在n个词以内的结果&lt;/li>
-&lt;li>实例：
-&lt;ul>
-&lt;li>&lt;code>related:python.org&lt;/code> - Python相关网站&lt;/li>
-&lt;li>&lt;code>python AROUND(3) 教程&lt;/code> - 两词相距3个词内&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>实用场景：
-&lt;ul>
-&lt;li>寻找替代网站：&lt;code>related:stackoverflow.com&lt;/code>&lt;/li>
-&lt;li>寻找相近内容：&lt;code>javascript AROUND(5) framework&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="时间和数字范围搜索">时间和数字范围搜索&lt;/h4>
-&lt;ul>
-&lt;li>数字范围 &lt;code>..&lt;/code>：
-&lt;ul>
-&lt;li>&lt;code>手机 3000..5000 元&lt;/code>&lt;/li>
-&lt;li>&lt;code>显示器 24..32 英寸&lt;/code>&lt;/li>
-&lt;li>&lt;code>2020..2024 技术趋势&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>时间范围：
-&lt;ul>
-&lt;li>&lt;code>before:2024-01-01&lt;/code> - 某日期之前&lt;/li>
-&lt;li>&lt;code>after:2023-01-01&lt;/code> - 某日期之后&lt;/li>
-&lt;li>组合示例：
-&lt;ul>
-&lt;li>&lt;code>after:2023-01-01 before:2024-01-01 编程语言排行&lt;/code>&lt;/li>
-&lt;li>&lt;code>after:2024 site:github.com &amp;quot;machine learning&amp;quot;&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-实用搜索命令">3. 实用搜索命令&lt;/h3>
-&lt;h4 id="计算和单位转换">计算和单位转换&lt;/h4>
-&lt;ul>
-&lt;li>数学计算：
-&lt;ul>
-&lt;li>基础运算：&lt;code>2 * 3 + 4&lt;/code>&lt;/li>
-&lt;li>高级计算：
-&lt;ul>
-&lt;li>&lt;code>sin(30) + cos(60)&lt;/code>&lt;/li>
-&lt;li>&lt;code>sqrt(144)&lt;/code>&lt;/li>
-&lt;li>&lt;code>2^10&lt;/code>&lt;/li>
-&lt;li>&lt;code>(15% of 80) * 2&lt;/code>&lt;/li>
-&lt;li>&lt;code>log(1000)&lt;/code>&lt;/li>
-&lt;li>&lt;code>5!&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>单位换算：
-&lt;ul>
-&lt;li>货币：&lt;code>100 USD to CNY&lt;/code>&lt;/li>
-&lt;li>长度：&lt;code>5 miles to km&lt;/code>&lt;/li>
-&lt;li>面积：&lt;code>100 平方米 to 平方英尺&lt;/code>&lt;/li>
-&lt;li>重量：&lt;code>50 公斤 转 磅&lt;/code>&lt;/li>
-&lt;li>温度：&lt;code>32F to C&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="时间和日期查询">时间和日期查询&lt;/h4>
-&lt;ul>
-&lt;li>时区转换：
-&lt;ul>
-&lt;li>&lt;code>北京时间 3pm in New York&lt;/code>&lt;/li>
-&lt;li>&lt;code>Tokyo time in London&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>日期计算：
-&lt;ul>
-&lt;li>&lt;code>Easter 2024&lt;/code>&lt;/li>
-&lt;li>&lt;code>days between 2024-01-01 and 2024-12-31&lt;/code>&lt;/li>
-&lt;li>&lt;code>weeks until Christmas&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>日出日落：&lt;code>sunrise/sunset [城市名]&lt;/code>&lt;/li>
-&lt;li>节假日：&lt;code>[节日名] [年份]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="实时信息查询">实时信息查询&lt;/h4>
-&lt;ul>
-&lt;li>天气信息：
-&lt;ul>
-&lt;li>&lt;code>天气 [城市名]&lt;/code>&lt;/li>
-&lt;li>&lt;code>[城市]未来一周天气&lt;/code>&lt;/li>
-&lt;li>&lt;code>weather alerts [地区]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>交通状态：
-&lt;ul>
-&lt;li>&lt;code>flight [航班号]&lt;/code>&lt;/li>
-&lt;li>&lt;code>[城市]实时路况&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>自然灾害：
-&lt;ul>
-&lt;li>&lt;code>earthquakes near [地点]&lt;/code>&lt;/li>
-&lt;li>&lt;code>台风实时路径&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>股票市场：
-&lt;ul>
-&lt;li>&lt;code>[股票代码] stock&lt;/code>&lt;/li>
-&lt;li>&lt;code>[公司名] stock price&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="健康相关查询">健康相关查询&lt;/h4>
-&lt;ul>
-&lt;li>营养成分：
-&lt;ul>
-&lt;li>&lt;code>calories in apple&lt;/code>&lt;/li>
-&lt;li>&lt;code>protein in chicken breast&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>运动消耗：
-&lt;ul>
-&lt;li>&lt;code>calories burned running 30 minutes&lt;/code>&lt;/li>
-&lt;li>&lt;code>calories walking 5km&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BMI计算：
-&lt;ul>
-&lt;li>&lt;code>BMI calculator&lt;/code>&lt;/li>
-&lt;li>&lt;code>healthy weight for 175cm&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="实用工具命令">实用工具命令&lt;/h4>
-&lt;ul>
-&lt;li>IP地址查询：
-&lt;ul>
-&lt;li>&lt;code>what is my ip&lt;/code>&lt;/li>
-&lt;li>&lt;code>ip location 8.8.8.8&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>网站状态：
-&lt;ul>
-&lt;li>&lt;code>is facebook down&lt;/code>&lt;/li>
-&lt;li>&lt;code>site status github.com&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>字符计数：
-&lt;ul>
-&lt;li>&lt;code>word count &amp;quot;your text here&amp;quot;&lt;/code>&lt;/li>
-&lt;li>&lt;code>character count &amp;quot;测试文本&amp;quot;&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="娱乐功能">娱乐功能&lt;/h4>
-&lt;ul>
-&lt;li>掷骰子：
-&lt;ul>
-&lt;li>&lt;code>roll a die&lt;/code>&lt;/li>
-&lt;li>&lt;code>roll 2d6&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>随机数：
-&lt;ul>
-&lt;li>&lt;code>random number 1-100&lt;/code>&lt;/li>
-&lt;li>&lt;code>random number generator&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>游戏：
-&lt;ul>
-&lt;li>&lt;code>play pacman&lt;/code>&lt;/li>
-&lt;li>&lt;code>play snake&lt;/code>&lt;/li>
-&lt;li>&lt;code>play solitaire&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="紧急信息查询">紧急信息查询&lt;/h4>
-&lt;ul>
-&lt;li>天气预警：
-&lt;ul>
-&lt;li>&lt;code>weather alerts near me&lt;/code>&lt;/li>
-&lt;li>&lt;code>台风实时路径&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>地震信息：
-&lt;ul>
-&lt;li>&lt;code>earthquakes near me&lt;/code>&lt;/li>
-&lt;li>&lt;code>recent earthquakes in Japan&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>急救信息：
-&lt;ul>
-&lt;li>&lt;code>first aid for burns&lt;/code>&lt;/li>
-&lt;li>&lt;code>CPR steps&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="4-搜索技巧组合使用">4. 搜索技巧组合使用&lt;/h3>
-&lt;h4 id="实例一学术研究">实例一：学术研究&lt;/h4>
-&lt;ul>
-&lt;li>论文搜索组合：&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:edu.cn filetype:pdf &amp;#34;机器学习&amp;#34; after:2023 -&amp;#34;课程设计&amp;#34;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>这个组合可以：
-&lt;ul>
-&lt;li>限定在教育网站搜索&lt;/li>
-&lt;li>只搜索PDF格式&lt;/li>
-&lt;li>精确匹配&amp;quot;机器学习&amp;quot;&lt;/li>
-&lt;li>限定2023年后的内容&lt;/li>
-&lt;li>排除课程设计类文档&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="实例二技术问题排查">实例二：技术问题排查&lt;/h4>
-&lt;ul>
-&lt;li>错误信息搜索：&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:(stackoverflow.com OR github.com) &amp;#34;RuntimeException&amp;#34; &amp;#34;解决方案&amp;#34; after:2023
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>搜索策略：
-&lt;ul>
-&lt;li>在主流技术社区中搜索&lt;/li>
-&lt;li>精确匹配错误信息&lt;/li>
-&lt;li>查找最新的解决方案&lt;/li>
-&lt;li>支持中英文混合查询&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="实例三产品调研">实例三：产品调研&lt;/h4>
-&lt;ul>
-&lt;li>产品评测搜索：&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(小米 OR 华为) 手机 15000..20000 评测 -二手 filetype:pdf after:2024-01
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>搜索要点：
-&lt;ul>
-&lt;li>指定多个品牌&lt;/li>
-&lt;li>设定价格范围&lt;/li>
-&lt;li>排除二手信息&lt;/li>
-&lt;li>限定最新评测&lt;/li>
-&lt;li>专业评测文档&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="实例四编程资源查找">实例四：编程资源查找&lt;/h4>
-&lt;ul>
-&lt;li>开发文档搜索：&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:github.com &amp;#34;React Native&amp;#34; (tutorial OR 教程) stars:&amp;gt;1000 after:2023
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>搜索特点：
-&lt;ul>
-&lt;li>在GitHub上搜索&lt;/li>
-&lt;li>查找高质量教程&lt;/li>
-&lt;li>限定星标数量&lt;/li>
-&lt;li>确保资源新鲜度&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="实例五求职信息搜索">实例五：求职信息搜索&lt;/h4>
-&lt;ul>
-&lt;li>工作机会搜索：&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">site:(linkedin.com OR zhipin.com) (&amp;#34;前端开发&amp;#34; OR &amp;#34;前端工程师&amp;#34;) (React OR Vue) 深圳 after:2024
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>搜索策略：
-&lt;ul>
-&lt;li>多平台组合&lt;/li>
-&lt;li>职位名称变体&lt;/li>
-&lt;li>技术栈要求&lt;/li>
-&lt;li>地理位置限定&lt;/li>
-&lt;li>时间限制&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="参考资料">参考资料：&lt;/h4>
-&lt;p>文章资料：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/google/</link><description>Recent content in Google on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Sat, 04 Jan 2025 14:16:15 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/google/index.xml" rel="self" type="application/rss+xml"/><item><title>Google 搜索技巧</title><link>https://sincerecsl.github.io/googlesearch/</link><pubDate>Sat, 04 Jan 2025 14:16:15 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/googlesearch/</guid><description>&lt;h2 id="google-搜索技巧"&gt;Google 搜索技巧&lt;/h2&gt;
+&lt;h3 id="1-基础搜索运算符"&gt;1. 基础搜索运算符&lt;/h3&gt;
+&lt;h4 id="精确匹配搜索---引号-"&gt;精确匹配搜索 - 引号 &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;当你需要搜索完全匹配的词组时使用&lt;/li&gt;
+&lt;li&gt;例如：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;最好的编程语言&amp;quot;&lt;/code&gt; - 完整匹配这个短语&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;python error&amp;quot;&lt;/code&gt; - 精确匹配错误信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;how to&amp;quot; &amp;quot;python&amp;quot;&lt;/code&gt; - 组合多个精确匹配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;适用场景：
+&lt;ul&gt;
+&lt;li&gt;搜索特定的错误信息&lt;/li&gt;
+&lt;li&gt;查找精确的引用或句子&lt;/li&gt;
+&lt;li&gt;寻找特定的标题或名称&lt;/li&gt;
+&lt;li&gt;搜索特定的代码片段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用技巧：
+&lt;ul&gt;
+&lt;li&gt;可以组合多个引号搜索&lt;/li&gt;
+&lt;li&gt;引号内的空格会被保留&lt;/li&gt;
+&lt;li&gt;标点符号最好也包含在内&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="排除特定词---减号--"&gt;排除特定词 - 减号 &lt;code&gt;-&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;在关键词前加减号可以排除包含该词的结果&lt;/li&gt;
+&lt;li&gt;实例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;java -咖啡&lt;/code&gt; (搜索Java编程而非咖啡)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python -蛇 -宠物&lt;/code&gt; (编程相关)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;苹果 -手机 -水果&lt;/code&gt; (公司相关)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用技巧：
+&lt;ul&gt;
+&lt;li&gt;减号必须紧贴要排除的词&lt;/li&gt;
+&lt;li&gt;可以同时使用多个减号&lt;/li&gt;
+&lt;li&gt;可以排除特定网站：&lt;code&gt;python -site:csdn.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以排除特定文件类型：&lt;code&gt;教程 -filetype:pdf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;常见应用：
+&lt;ul&gt;
+&lt;li&gt;去除购物网站：&lt;code&gt;-site:taobao.com -site:jd.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;去除视频站点：&lt;code&gt;-site:bilibili.com -site:youtube.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;排除培训广告：&lt;code&gt;-培训 -招生 -报名&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="站内搜索---site"&gt;站内搜索 - &lt;code&gt;site:&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;限定在特定网站内搜索内容&lt;/li&gt;
+&lt;li&gt;基本语法：&lt;code&gt;site:网站域名 搜索词&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;实例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;site:zhihu.com 人工智能&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;site:edu.cn 论文&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;site:gov.cn 政策&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;高级用法：
+&lt;ul&gt;
+&lt;li&gt;指定多个站点：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:(github.com OR stackoverflow.com) python错误
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;限定子域名：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:docs.python.org 教程
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:help.github.com 指南
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;组合其他运算符：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:edu.cn filetype:pdf &amp;#34;机器学习&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:github.com &amp;#34;README.md&amp;#34; &amp;#34;最佳实践&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实用技巧：
+&lt;ul&gt;
+&lt;li&gt;学术搜索：&lt;code&gt;site:edu.cn OR site:ac.cn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;官方文档：&lt;code&gt;site:docs.*.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;技术问答：&lt;code&gt;site:(stackoverflow.com OR github.com)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;政府文件：&lt;code&gt;site:gov.cn filetype:pdf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-高级搜索技巧"&gt;2. 高级搜索技巧&lt;/h3&gt;
+&lt;h4 id="文件类型搜索---filetype"&gt;文件类型搜索 - &lt;code&gt;filetype:&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;搜索特定格式的文件&lt;/li&gt;
+&lt;li&gt;常用文件类型：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filetype:pdf&lt;/code&gt; - PDF文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:ppt&lt;/code&gt; - 演示文稿&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:doc&lt;/code&gt; - Word文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:xls&lt;/code&gt; - Excel表格&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:txt&lt;/code&gt; - 文本文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:zip&lt;/code&gt; - 压缩文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filetype:pdf python教程 site:edu.cn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:ppt 项目管理&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filetype:doc 简历模板&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;高级用法：
+&lt;ul&gt;
+&lt;li&gt;多文件类型：&lt;code&gt;(filetype:doc OR filetype:pdf) 开发文档&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;排除某类文件：&lt;code&gt;开发文档 -filetype:pdf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;组合站点搜索：&lt;code&gt;site:github.com filetype:md README&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="通配符搜索---"&gt;通配符搜索 - &lt;code&gt;*&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;用星号代替任意文字&lt;/li&gt;
+&lt;li&gt;使用场景：
+&lt;ul&gt;
+&lt;li&gt;记不清完整词句时&lt;/li&gt;
+&lt;li&gt;搜索变体形式&lt;/li&gt;
+&lt;li&gt;查找特定模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;例子：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;如何成为一名*工程师&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;* 的使用方法&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2024年*趋势&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;高级应用：
+&lt;ul&gt;
+&lt;li&gt;歌词搜索：&lt;code&gt;&amp;quot;我爱* 就像*&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;成语搜索：&lt;code&gt;&amp;quot;一* 一*&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;标题匹配：&lt;code&gt;&amp;quot;如何提高* 效率&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="多关键词搜索---or-或-"&gt;多关键词搜索 - &lt;code&gt;OR&lt;/code&gt; 或 &lt;code&gt;|&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;搜索多个可能的关键词&lt;/li&gt;
+&lt;li&gt;使用大写的OR或竖线符号&lt;/li&gt;
+&lt;li&gt;实例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;前端 OR 后端 开发&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Python | Java | C++ 教程&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可以组合多个条件：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;(Python | Java) site:github.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(北京 | 上海 | 深圳) 招聘&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="标题搜索---intitle-和-allintitle"&gt;标题搜索 - &lt;code&gt;intitle:&lt;/code&gt; 和 &lt;code&gt;allintitle:&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intitle:&lt;/code&gt; - 搜索标题中包含特定词的页面&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allintitle:&lt;/code&gt; - 搜索标题中包含所有指定词的页面&lt;/li&gt;
+&lt;li&gt;使用方法：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intitle:python 教程&lt;/code&gt; - 标题含&amp;quot;python&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allintitle:python 入门 教程&lt;/code&gt; - 标题同时含这三个词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实用场景：
+&lt;ul&gt;
+&lt;li&gt;找教程：&lt;code&gt;intitle:教程 python&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;找文档：&lt;code&gt;intitle:documentation react&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;找视频：&lt;code&gt;intitle:视频教程 golang&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="网址搜索---inurl-和-allinurl"&gt;网址搜索 - &lt;code&gt;inurl:&lt;/code&gt; 和 &lt;code&gt;allinurl:&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inurl:&lt;/code&gt; - URL中包含特定词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allinurl:&lt;/code&gt; - URL中包含所有指定词&lt;/li&gt;
+&lt;li&gt;应用示例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inurl:blog python&lt;/code&gt; - URL含&amp;quot;blog&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allinurl:github python project&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实用技巧：
+&lt;ul&gt;
+&lt;li&gt;找博客：&lt;code&gt;inurl:blog site:medium.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;找项目：&lt;code&gt;inurl:project site:github.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;找文档：&lt;code&gt;inurl:docs python&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="正文内容搜索---intext-和-allintext"&gt;正文内容搜索 - &lt;code&gt;intext:&lt;/code&gt; 和 &lt;code&gt;allintext:&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intext:&lt;/code&gt; - 正文中包含特定词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allintext:&lt;/code&gt; - 正文中包含所有指定词&lt;/li&gt;
+&lt;li&gt;使用场景：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intext:机器学习 算法&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allintext:python 错误 解决方案&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;组合应用：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;intext:面试题 site:zhihu.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;allintext:源码分析 site:github.com&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="相关词搜索---related-和-aroundn"&gt;相关词搜索 - &lt;code&gt;related:&lt;/code&gt; 和 &lt;code&gt;AROUND(n)&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;related:&lt;/code&gt; - 查找相关网站&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AROUND(n)&lt;/code&gt; - 查找两个词距离在n个词以内的结果&lt;/li&gt;
+&lt;li&gt;实例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;related:python.org&lt;/code&gt; - Python相关网站&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python AROUND(3) 教程&lt;/code&gt; - 两词相距3个词内&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实用场景：
+&lt;ul&gt;
+&lt;li&gt;寻找替代网站：&lt;code&gt;related:stackoverflow.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;寻找相近内容：&lt;code&gt;javascript AROUND(5) framework&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="时间和数字范围搜索"&gt;时间和数字范围搜索&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;数字范围 &lt;code&gt;..&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;手机 3000..5000 元&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;显示器 24..32 英寸&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2020..2024 技术趋势&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;时间范围：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;before:2024-01-01&lt;/code&gt; - 某日期之前&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;after:2023-01-01&lt;/code&gt; - 某日期之后&lt;/li&gt;
+&lt;li&gt;组合示例：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;after:2023-01-01 before:2024-01-01 编程语言排行&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;after:2024 site:github.com &amp;quot;machine learning&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-实用搜索命令"&gt;3. 实用搜索命令&lt;/h3&gt;
+&lt;h4 id="计算和单位转换"&gt;计算和单位转换&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;数学计算：
+&lt;ul&gt;
+&lt;li&gt;基础运算：&lt;code&gt;2 * 3 + 4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;高级计算：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sin(30) + cos(60)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sqrt(144)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2^10&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(15% of 80) * 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;log(1000)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5!&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;单位换算：
+&lt;ul&gt;
+&lt;li&gt;货币：&lt;code&gt;100 USD to CNY&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;长度：&lt;code&gt;5 miles to km&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;面积：&lt;code&gt;100 平方米 to 平方英尺&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重量：&lt;code&gt;50 公斤 转 磅&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;温度：&lt;code&gt;32F to C&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="时间和日期查询"&gt;时间和日期查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;时区转换：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;北京时间 3pm in New York&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tokyo time in London&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;日期计算：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Easter 2024&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;days between 2024-01-01 and 2024-12-31&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weeks until Christmas&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;日出日落：&lt;code&gt;sunrise/sunset [城市名]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;节假日：&lt;code&gt;[节日名] [年份]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实时信息查询"&gt;实时信息查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;天气信息：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;天气 [城市名]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[城市]未来一周天气&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weather alerts [地区]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;交通状态：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flight [航班号]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[城市]实时路况&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自然灾害：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;earthquakes near [地点]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;台风实时路径&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;股票市场：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[股票代码] stock&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[公司名] stock price&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="健康相关查询"&gt;健康相关查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;营养成分：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;calories in apple&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protein in chicken breast&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;运动消耗：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;calories burned running 30 minutes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;calories walking 5km&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BMI计算：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BMI calculator&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;healthy weight for 175cm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实用工具命令"&gt;实用工具命令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;IP地址查询：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;what is my ip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip location 8.8.8.8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;网站状态：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;is facebook down&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;site status github.com&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;字符计数：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;word count &amp;quot;your text here&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;character count &amp;quot;测试文本&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="娱乐功能"&gt;娱乐功能&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;掷骰子：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;roll a die&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;roll 2d6&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;随机数：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;random number 1-100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;random number generator&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;游戏：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;play pacman&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;play snake&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;play solitaire&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="紧急信息查询"&gt;紧急信息查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;天气预警：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;weather alerts near me&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;台风实时路径&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;地震信息：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;earthquakes near me&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;recent earthquakes in Japan&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;急救信息：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;first aid for burns&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CPR steps&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="4-搜索技巧组合使用"&gt;4. 搜索技巧组合使用&lt;/h3&gt;
+&lt;h4 id="实例一学术研究"&gt;实例一：学术研究&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;论文搜索组合：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:edu.cn filetype:pdf &amp;#34;机器学习&amp;#34; after:2023 -&amp;#34;课程设计&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这个组合可以：
+&lt;ul&gt;
+&lt;li&gt;限定在教育网站搜索&lt;/li&gt;
+&lt;li&gt;只搜索PDF格式&lt;/li&gt;
+&lt;li&gt;精确匹配&amp;quot;机器学习&amp;quot;&lt;/li&gt;
+&lt;li&gt;限定2023年后的内容&lt;/li&gt;
+&lt;li&gt;排除课程设计类文档&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实例二技术问题排查"&gt;实例二：技术问题排查&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;错误信息搜索：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:(stackoverflow.com OR github.com) &amp;#34;RuntimeException&amp;#34; &amp;#34;解决方案&amp;#34; after:2023
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;搜索策略：
+&lt;ul&gt;
+&lt;li&gt;在主流技术社区中搜索&lt;/li&gt;
+&lt;li&gt;精确匹配错误信息&lt;/li&gt;
+&lt;li&gt;查找最新的解决方案&lt;/li&gt;
+&lt;li&gt;支持中英文混合查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实例三产品调研"&gt;实例三：产品调研&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;产品评测搜索：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;(小米 OR 华为) 手机 15000..20000 评测 -二手 filetype:pdf after:2024-01
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;搜索要点：
+&lt;ul&gt;
+&lt;li&gt;指定多个品牌&lt;/li&gt;
+&lt;li&gt;设定价格范围&lt;/li&gt;
+&lt;li&gt;排除二手信息&lt;/li&gt;
+&lt;li&gt;限定最新评测&lt;/li&gt;
+&lt;li&gt;专业评测文档&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实例四编程资源查找"&gt;实例四：编程资源查找&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;开发文档搜索：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:github.com &amp;#34;React Native&amp;#34; (tutorial OR 教程) stars:&amp;gt;1000 after:2023
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;搜索特点：
+&lt;ul&gt;
+&lt;li&gt;在GitHub上搜索&lt;/li&gt;
+&lt;li&gt;查找高质量教程&lt;/li&gt;
+&lt;li&gt;限定星标数量&lt;/li&gt;
+&lt;li&gt;确保资源新鲜度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="实例五求职信息搜索"&gt;实例五：求职信息搜索&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;工作机会搜索：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;site:(linkedin.com OR zhipin.com) (&amp;#34;前端开发&amp;#34; OR &amp;#34;前端工程师&amp;#34;) (React OR Vue) 深圳 after:2024
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;搜索策略：
+&lt;ul&gt;
+&lt;li&gt;多平台组合&lt;/li&gt;
+&lt;li&gt;职位名称变体&lt;/li&gt;
+&lt;li&gt;技术栈要求&lt;/li&gt;
+&lt;li&gt;地理位置限定&lt;/li&gt;
+&lt;li&gt;时间限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="参考资料"&gt;参考资料：&lt;/h4&gt;
+&lt;p&gt;文章资料：&lt;/p&gt;</description></item></channel></rss>

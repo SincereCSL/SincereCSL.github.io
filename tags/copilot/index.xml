@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Copilot on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/copilot/</link><description>Recent content in Copilot on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Tue, 08 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/copilot/index.xml" rel="self" type="application/rss+xml"/><item><title>我的AI工具使用笔记</title><link>https://sincerecsl.github.io/ai/</link><pubDate>Tue, 10 Jun 2025 16:00:30 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/ai/</guid><description>&lt;blockquote>
-&lt;p>📝 &lt;strong>前言&lt;/strong>：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。&lt;/p>&lt;/blockquote>
-&lt;h2 id="-ai对话工具详解">🤖 AI对话工具详解&lt;/h2>
-&lt;h3 id="chatgpt-系列-">ChatGPT 系列 ⭐⭐⭐⭐⭐&lt;/h3>
-&lt;p>&lt;strong>官网&lt;/strong>：&lt;a href="https://chat.openai.com" target="_blank" rel="noopener noreffer ">https://chat.openai.com&lt;/a>&lt;/p></description></item><item><title>我的AI资讯了解渠道</title><link>https://sincerecsl.github.io/ai_01/</link><pubDate>Tue, 08 Jul 2025 21:00:00 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/ai_01/</guid><description>&lt;h3 id="ai资讯渠道">AI资讯渠道&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://www.qbitai.com" target="_blank" rel="noopener noreffer ">量子位&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.zhidx.com" target="_blank" rel="noopener noreffer ">新智元&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://modelwatch.dev" target="_blank" rel="noopener noreffer ">AI 日刊&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://aihot.today" target="_blank" rel="noopener noreffer ">AI今日热榜&lt;/a> — AI资讯聚合网站&lt;/li>
-&lt;li>&lt;a href="https://linux.do/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" target="_blank" rel="noopener noreffer ">linux.do 人工智能模块&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.reddit.com/r/ClaudeAI/" target="_blank" rel="noopener noreffer ">Reddit ClaudeAI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.bensbites.com" target="_blank" rel="noopener noreffer ">bensbites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://sanhua.himrr.com/daily-news" target="_blank" rel="noopener noreffer ">三花快讯&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.technologyreview.com/tag/the-algorithm" target="_blank" rel="noopener noreffer ">MIT Technology Review – The Algorithm&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank" rel="noopener noreffer ">The Verge – AI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.wired.com/tag/artificial-intelligence/" target="_blank" rel="noopener noreffer ">WIRED – AI&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Copilot on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/copilot/</link><description>Recent content in Copilot on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Tue, 08 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/copilot/index.xml" rel="self" type="application/rss+xml"/><item><title>我的AI工具使用笔记</title><link>https://sincerecsl.github.io/ai/</link><pubDate>Tue, 10 Jun 2025 16:00:30 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/ai/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;📝 &lt;strong&gt;前言&lt;/strong&gt;：这是我在使用各种AI工具过程中积累的经验总结，希望能帮助大家更好地利用AI提升工作效率。文章会持续更新，记录最新的工具和使用技巧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="-ai对话工具详解"&gt;🤖 AI对话工具详解&lt;/h2&gt;
+&lt;h3 id="chatgpt-系列-"&gt;ChatGPT 系列 ⭐⭐⭐⭐⭐&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;官网&lt;/strong&gt;：&lt;a href="https://chat.openai.com" target="_blank" rel="noopener noreffer "&gt;https://chat.openai.com&lt;/a&gt;&lt;/p&gt;</description></item><item><title>我的AI资讯了解渠道</title><link>https://sincerecsl.github.io/ai_01/</link><pubDate>Tue, 08 Jul 2025 21:00:00 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/ai_01/</guid><description>&lt;h3 id="ai资讯渠道"&gt;AI资讯渠道&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.qbitai.com" target="_blank" rel="noopener noreffer "&gt;量子位&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.zhidx.com" target="_blank" rel="noopener noreffer "&gt;新智元&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://modelwatch.dev" target="_blank" rel="noopener noreffer "&gt;AI 日刊&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aihot.today" target="_blank" rel="noopener noreffer "&gt;AI今日热榜&lt;/a&gt; — AI资讯聚合网站&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linux.do/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" target="_blank" rel="noopener noreffer "&gt;linux.do 人工智能模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/ClaudeAI/" target="_blank" rel="noopener noreffer "&gt;Reddit ClaudeAI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bensbites.com" target="_blank" rel="noopener noreffer "&gt;bensbites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sanhua.himrr.com/daily-news" target="_blank" rel="noopener noreffer "&gt;三花快讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.technologyreview.com/tag/the-algorithm" target="_blank" rel="noopener noreffer "&gt;MIT Technology Review – The Algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank" rel="noopener noreffer "&gt;The Verge – AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wired.com/tag/artificial-intelligence/" target="_blank" rel="noopener noreffer "&gt;WIRED – AI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
