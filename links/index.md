@@ -18,6 +18,12 @@
 * [勾三股四](https://jiongks.name)
 * [是不是很酷:微信公众号](https://mp.weixin.qq.com/s/Q0IrfV7FcGbIYsQ8jFdOdQ)
 * [张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com)
+* [云风的 BLOG](https://codingnow.com)
+* [当然我在扯淡](https://www.yinwang.org)
+* [廖雪峰的官方网站](https://liaoxuefeng.com)
+* [鸟窝](https://colobu.com)
+* [离别歌](https://www.leavesongs.com)
+* [美团技术团队](https://tech.meituan.com)
 ## 文章
 * [40 years of programming](https://liw.fi/40/)
 * [别让自己“墙”了自己](https://coolshell.cn/articles/20276.html)
