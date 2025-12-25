@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/posts/</link><description>所有文章 | SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Jul 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description>&lt;p>Amazon 创始人杰夫·贝索斯认为很酷&lt;/p></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - SincereCSL's Blog</title><link>https://sincerecsl.github.io/posts/</link><description>所有文章 | SincereCSL's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 25 Dec 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>今天的你Cool嘛</title><link>https://sincerecsl.github.io/cool/</link><pubDate>Thu, 10 Feb 2022 20:49:43 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/cool/</guid><description>&lt;p>Amazon 创始人杰夫·贝索斯认为很酷&lt;/p></description></item><item><title>Google 评分卡</title><link>https://sincerecsl.github.io/googlescorecard/</link><pubDate>Mon, 25 Sep 2023 22:16:23 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/googlescorecard/</guid><description><![CDATA[<h2 id="google-评分卡">Google 评分卡</h2>
 <ul>
 <li>
 <p>0 - 对于相关的技术领域还不熟悉</p>
@@ -736,4 +736,100 @@
 </ul>
 <h2 id="播客学习计划">播客学习计划</h2>
 <h3 id="初学者友好播客">初学者友好播客</h3>
-<p>这些播客语速较慢，内容简单易懂，适合英语学习初期：</p>]]></description></item></channel></rss>
+<p>这些播客语速较慢，内容简单易懂，适合英语学习初期：</p>]]></description></item><item><title>转载：2025 我最喜欢的 LLM x AI 论文集</title><link>https://sincerecsl.github.io/llm-x-ai/</link><pubDate>Thu, 25 Dec 2025 10:00:00 +0800</pubDate><author>SincereCSL</author><guid>https://sincerecsl.github.io/llm-x-ai/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/2025/12/img.png" referrerpolicy="no-referrer">
+            </div><h2 id="2025-我最喜欢的-llm-x-ai-论文集">2025 我最喜欢的 LLM x AI 论文集</h2>
+<p>2025年快过去了。</p>
+<p>这一年，我几乎每天都有坚持读论文和分享论文， 获益匪浅。</p>
+<p>下面是我整理的个人年度最喜欢论文集：</p>
+<h3 id="1test-time-scaling">1、Test Time Scaling</h3>
+<ul>
+<li>“Thinking” 到底是什么？</li>
+</ul>
+<h5 id="deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning"><a href="https://arxiv.org/pdf/2501.12948" target="_blank" rel="noopener noreffer ">DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</a></h5>
+<h5 id="s1-simple-test-time-scaling"><a href="https://arxiv.org/pdf/2501.19393" target="_blank" rel="noopener noreffer ">s1: Simple test-time scaling</a></h5>
+<h3 id="2-efficient-reasoning">2. Efficient Reasoning</h3>
+<ul>
+<li>“如果思考一种budget”</li>
+</ul>
+<h5 id="l1-controlling-how-long-a-reasoning-model-thinks-with-reinforcement-learning"><a href="https://arxiv.org/pdf/2503.04697" target="_blank" rel="noopener noreffer ">L1: Controlling How Long A Reasoning Model Thinks With Reinforcement Learning</a></h5>
+<h5 id="scalable-chain-of-thoughts-via-elastic-reasoning"><a href="https://arxiv.org/pdf/2505.05315" target="_blank" rel="noopener noreffer ">Scalable Chain of Thoughts via Elastic Reasoning</a></h5>
+<h3 id="3-reasoning-analysis">3. Reasoning Analysis</h3>
+<ul>
+<li>该如何更好理解 “Reasoning” ？</li>
+</ul>
+<h5 id="how-do-reasoning-models-reason"><a href="https://arxiv.org/pdf/2504.09762" target="_blank" rel="noopener noreffer ">(How) Do reasoning models reason?</a></h5>
+<h5 id="deepseek-r1-thoughtology-lets-about-llm-reasoning"><a href="https://arxiv.org/pdf/2504.07128" target="_blank" rel="noopener noreffer ">DeepSeek-R1 Thoughtology: Let’s about LLM reasoning</a></h5>
+<h5 id="rethinking-reflection-in-pre-training"><a href="https://arxiv.org/pdf/2504.04022" target="_blank" rel="noopener noreffer ">Rethinking Reflection in Pre-Training</a></h5>
+<h5 id="thinking-vs-doing-agents-that-reason-by-scaling-test-time-interaction"><a href="arxiv.org/pdf/2506.07976" rel="">Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction</a></h5>
+<h3 id="4-cli-agent">4. CLI Agent</h3>
+<ul>
+<li>2024年文章，但深度影响了2025。</li>
+</ul>
+<h5 id="swe-agent-agent-computer-interfaces-enable-automated-software-engineering"><a href="https://arxiv.org/pdf/2405.15793" target="_blank" rel="noopener noreffer ">SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</a></h5>
+<h3 id="5-llm-x-rl-agentic">5. LLM X RL Agentic</h3>
+<ul>
+<li>为此，我创造了一个词，“协议token”</li>
+</ul>
+<h5 id="retool-reinforcement-learning-for-strategic-tool-use-in-llms"><a href="https://arxiv.org/pdf/2504.11536" target="_blank" rel="noopener noreffer ">ReTool: Reinforcement Learning for Strategic Tool Use in LLMs</a></h5>
+<h5 id="research-learning-to-reason-with-search-for-llms-via-reinforcement-learning"><a href="https://arxiv.org/pdf/2503.19470" target="_blank" rel="noopener noreffer ">ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning</a></h5>
+<h5 id="recall-learning-to-reason-with-tool-call-for-llms-via-reinforcement-learning"><a href="https://attractive-almandine-935.notion.site/ReCall-Learning-to-Reason-with-Tool-Call-for-LLMs-via-Reinforcement-Learning-1d7aec91e9bb8006ad40f9edbfe2191a" target="_blank" rel="noopener noreffer ">ReCall: Learning to Reason with Tool Call for LLMs via Reinforcement Learning</a></h5>
+<h3 id="6-parallel-reasoning">6. Parallel Reasoning</h3>
+<ul>
+<li>并行 reasoning，超越单线程的想象！</li>
+</ul>
+<h5 id="learning-adaptive-parallel-reasoning-with-language-models"><a href="https://arxiv.org/pdf/2504.15466" target="_blank" rel="noopener noreffer ">Learning Adaptive Parallel Reasoning with Language Models</a></h5>
+<h5 id="multiverse-your-language-models-secretly-decide-how-to-parallelize-and-merge-generation"><a href="https://arxiv.org/pdf/2506.09991" target="_blank" rel="noopener noreffer ">Multiverse: Your Language Models Secretly Decide How to Parallelize and Merge Generation</a></h5>
+<h5 id="learning-to-keep-a-promise-scaling-language-model-decoding-parallelism-with-learned-asynchronous-decoding"><a href="https://arxiv.org/pdf/2502.11517" target="_blank" rel="noopener noreffer ">Learning to Keep a Promise: Scaling Language Model Decoding Parallelism with Learned Asynchronous Decoding</a></h5>
+<h3 id="7-rl-x-reasoning">7. RL X Reasoning,</h3>
+<ul>
+<li>RLVR 这四篇，给 RL X Reasoning 极速升温+降温！</li>
+</ul>
+<h5 id="reinforcement-learning-for-reasoning-in-large-language-models-with-one-training-example"><a href="https://arxiv.org/pdf/2504.20571" target="_blank" rel="noopener noreffer ">Reinforcement Learning for Reasoning in Large Language Models with One Training Example</a></h5>
+<h5 id="absolute-zero-reinforced-self-play-reasoning-with-zero-data"><a href="https://arxiv.org/pdf/2505.03335" target="_blank" rel="noopener noreffer ">Absolute Zero: Reinforced Self-play Reasoning with Zero Data</a></h5>
+<h5 id="learning-to-reason-without-external-rewards"><a href="https://arxiv.org/pdf/2505.19590" target="_blank" rel="noopener noreffer ">Learning to Reason without External Rewards</a></h5>
+<h5 id="spurious-rewards-rethinking-training-signals-in-rlvr"><a href="https://arxiv.org/pdf/2506.10947" target="_blank" rel="noopener noreffer ">Spurious Rewards: Rethinking Training Signals in RLVR</a></h5>
+<h3 id="8-agent-interaction-deep-research-agent">8. Agent, interaction Deep research agent</h3>
+<ul>
+<li>经验，记忆，交互，workflow，围绕</li>
+</ul>
+<h5 id="agent-kb-leveraging-cross-domain-experience-for-agentic-problem-solving"><a href="https://arxiv.org/pdf/2507.06229" target="_blank" rel="noopener noreffer ">Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving</a></h5>
+<h5 id="alita-g-self-evolving-generative-agent-for-agent-generation"><a href="https://arxiv.org/pdf/2510.23601" target="_blank" rel="noopener noreffer ">Alita-G: Self-Evolving Generative Agent for Agent Generation</a></h5>
+<h5 id="sleep-time-compute-beyond-inference-scaling-at-test-time"><a href="https://arxiv.org/pdf/2504.13171" target="_blank" rel="noopener noreffer ">Sleep-time Compute: Beyond Inference Scaling at Test-time</a></h5>
+<h5 id="webthinker-empowering-large-reasoning-models-with-deep-research-capability"><a href="https://arxiv.org/pdf/2504.21776" target="_blank" rel="noopener noreffer ">WebThinker: Empowering Large Reasoning Models with Deep Research Capability</a></h5>
+<h5 id="webdancer-towards-autonomous-information-seeking-agency"><a href="https://arxiv.org/pdf/2505.22648" target="_blank" rel="noopener noreffer ">WebDancer: Towards Autonomous Information Seeking Agency</a></h5>
+<h3 id="9-risk-modeling-x-llm">9. Risk modeling X LLM</h3>
+<ul>
+<li>“让贝叶斯再次伟大！”</li>
+</ul>
+<h5 id="model-predictive-task-sampling-for-efficient-and-robust-adaptation"><a href="https://arxiv.org/pdf/2501.11039" target="_blank" rel="noopener noreffer ">Model Predictive Task Sampling for Efficient and Robust Adaptation</a></h5>
+<h5 id="can-prompt-difficulty-be-online-predicted-for-accelerating-rl-finetuning-of-reasoning-models"><a href="https://arxiv.org/pdf/2507.04632" target="_blank" rel="noopener noreffer ">Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?</a></h5>
+<h3 id="10-multi-agentic">10. Multi-Agentic</h3>
+<ul>
+<li>Multi Agent该怎么用？</li>
+</ul>
+<h5 id="co-evolving-llm-coder-and-unit-tester-via-reinforcement-learning"><a href="https://arxiv.org/pdf/2506.03136" target="_blank" rel="noopener noreffer ">Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning</a></h5>
+<h5 id="codecontests-high-quality-test-case-generation-for-competitive-programming"><a href="https://arxiv.org/pdf/2506.05817" target="_blank" rel="noopener noreffer ">CodeContests+: High-Quality Test Case Generation for Competitive Programming</a></h5>
+<h3 id="11-sentient-agent">11. Sentient Agent</h3>
+<ul>
+<li>AI + 人文，情怀满满！</li>
+</ul>
+<h5 id="rlver-reinforcement-learning-with-verifiable-emotion-rewards-for-empathetic-agents"><a href="https://arxiv.org/pdf/2507.03112" target="_blank" rel="noopener noreffer ">RLVER: Reinforcement Learning with Verifiable Emotion Rewards for Empathetic Agents</a></h5>
+<h5 id="sentient-agent-as-a-judge-evaluating-higher-order-social-cognition-in-large-language-models"><a href="https://arxiv.org/pdf/2505.02847" target="_blank" rel="noopener noreffer ">Sentient Agent as a Judge: Evaluating Higher-Order Social Cognition in Large Language Models</a></h5>
+<h3 id="12-llm-security-and-alignment">12: LLM security and alignment</h3>
+<ul>
+<li>想要懂你真的不容易, LLM!</li>
+</ul>
+<h5 id="chain-of-thought-monitorability-a-new-and-fragile-opportunity-for-ai-safety"><a href="https://arxiv.org/pdf/2507.11473" target="_blank" rel="noopener noreffer ">Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety</a></h5>
+<h5 id="emergent-misalignment-narrow-finetuning-can-produce-broadly-misaligned-llms"><a href="https://arxiv.org/pdf/2502.17424" target="_blank" rel="noopener noreffer ">Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs</a></h5>
+<h5 id="thought-crime-backdoors-and-emergent-misalignment-in-reasoning-models"><a href="https://arxiv.org/pdf/2506.13206" target="_blank" rel="noopener noreffer ">Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models</a></h5>
+<h5 id="natural-emergent-misalignment-from-reward-hacking-in-production-rl"><a href="https://arxiv.org/pdf/2511.18397" target="_blank" rel="noopener noreffer ">Natural Emergent Misalignment from Reward Hacking in Production RL</a></h5>
+<h5 id="weird-generalization-and-inductive-backdoors-new-ways-to-corrupt-llms"><a href="https://arxiv.org/pdf/2512.09742" target="_blank" rel="noopener noreffer ">Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs</a></h5>
+<h3 id="13-model-steering">13. Model Steering</h3>
+<ul>
+<li>我要控制我自己，LLM!</li>
+</ul>
+<h5 id="axbench-steering-llms-even-simple-baselines-outperform-sparse-autoencoders"><a href="https://arxiv.org/pdf/2501.17148" target="_blank" rel="noopener noreffer ">AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders</a></h5>
+<h5 id="persona-vectors-monitoring-and-controlling-character-traits-in-language-models"><a href="https://arxiv.org/abs/2507.21509" target="_blank" rel="noopener noreffer ">Persona Vectors: Monitoring and Controlling Character Traits in Language Models</a></h5>
+<h5 id="how-to-train-your-advisor-steering-black-box-llms-with-advisor-models"><a href="https://arxiv.org/abs/2510.02453" target="_blank" rel="noopener noreffer ">How to Train Your Advisor: Steering Black-Box LLMs with Advisor Models</a></h5>
+<p>最后，这个 list 是我的个人选择，因为时间精力有限，很多很好的工作，或许我都没有机会读到，感谢论文的作者们，带我领略智慧的风光！</p>]]></description></item></channel></rss>
