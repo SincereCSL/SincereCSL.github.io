@@ -2,11 +2,23 @@
 
 时不时更新中👀 …
 ## 博客
-* [Martin Fowler](https://martinfowler.com/aboutMe.html)
-* [The Clean Code Blog](https://blog.cleancoder.com)
-* [Joel on Software](https://www.joelonsoftware.com)
-* [Paul Graham Essays](https://www.paulgraham.com/articles.html)
-* [Julia Evans](https://jvns.ca)
+* [Martin Fowler](https://martinfowler.com/aboutMe.html) - 软件架构大师，《重构》作者，敷捷宣言起草人之一
+* [The Clean Code Blog](https://blog.cleancoder.com) - Robert C. Martin (Bob大叔) 的博客，《代码整洁之道》作者
+* [Joel on Software](https://www.joelonsoftware.com) - Joel Spolsky，Stack Overflow 联合创始人，软件管理真知赞
+* [Paul Graham Essays](https://www.paulgraham.com/articles.html) - Y Combinator 创始人，硅谷创业教父，Lisp 大师
+* [Julia Evans](https://jvns.ca) - 以简洁有趣的方式解释复杂技术概念，zines 漫画风格讲编程
+* [Simon Willison's Weblog](https://simonwillison.net) - Django 联合创始人，AI/LLM 领域活跃博主
+* [BYVoid](https://byvoid.com) - 谷歌工程师，《上海从ԝ外》作者，语言学与编程爱好者
+* [Coding Horror](https://blog.codinghorror.com) - Jeff Atwood，Stack Overflow 联合创始人
+* [Dan Abramov (Overreacted)](https://overreacted.io) - React 核心团队成员，Redux 作者
+* [Stratechery by Ben Thompson](https://stratechery.com) - 科技行业深度分析，商业战略洞察
+* [Steve Yegge](https://steve-yegge.blogspot.com) - 前 Google/Amazon 工程师，以犯言直谏的技术文章著称
+* [Brendan Eich](https://brendaneich.com) - JavaScript 语言发明者，Mozilla 联合创始人
+* [kexizeroing](https://kexizeroing.github.io) - 前端技术博客，内容清晰实用
+* [Hacker News](https://news.ycombinator.com) - Y Combinator 旗下的技术社区，程序员必读
+* [Gergely Orosz (The Pragmatic Engineer)](https://blog.pragmaticengineer.com) - 前 Uber 工程经理，工程管理与职业发展
+* [Antirez (Redis 作者)](http://antirez.com) - Salvatore Sanfilippo，Redis 数据库创建者
+* [Jeff Atwood (Stack Overflow 联创)](https://blog.codinghorror.com) - 软件开发、用户体验见解
 * [酷壳 – CoolShell](https://coolshell.cn)
 * [阮一峰的个人网站](https://www.ruanyifeng.com)
 * [面向信仰编程](https://draveness.me)
@@ -25,13 +37,26 @@
 * [离别歌](https://www.leavesongs.com)
 * [美团技术团队](https://tech.meituan.com)
 ## 文章
-* [40 years of programming](https://liw.fi/40/)
+* [40 years of programming](https://liw.fi/40/) - 40年编程生涯回顾
 * [别让自己“墙”了自己](https://coolshell.cn/articles/20276.html)
 * [如何超过大多数人](https://coolshell.cn/articles/19464.html)
-* [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html)
-* [What are some of the most basic things every programmer should know?](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
-* [how to read an academic article](https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article)
-* [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
+* [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html) - 十年学会编程
+* [What are some of the most basic things every programmer should know?](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know) - 程序员必知的基础知识
+* [how to read an academic article](https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article) - 如何阅读学术文章
+* [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) - 提问的智慧
+* [Beating the Averages](https://paulgraham.com/avg.html) - 超越平庸（论 Lisp 的优势）
+* [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) - 抽象泄漏定律
+* [Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/) - 你永远不该做的事（关于代码重写）
+* [A Blogging Style Guide](https://robertheaton.com/2018/12/06/a-blogging-style-guide/) - 博客写作风格指南
+* [The Grug Brained Developer](https://grugbrain.dev) - 穴居人开发者（幽默的编程智慧）
+* [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) - 选择无聊的技术
+* [Write Code Every Day](https://johnresig.com/blog/write-code-every-day/) - 每天写代码
+* [The Absolute Minimum Every Software Developer Must Know About Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) - 开发者必知的 Unicode 基础
+* [What I Worked On](https://paulgraham.com/worked.html) - 我做过的事（Paul Graham 自传）
+* [You and Your Research (Richard Hamming)](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) - 你和你的研究（如何做一流的研究）
+* [Reflections on Trusting Trust (Ken Thompson)](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflsOnTrustingTrust.pdf) - 对信任的反思（图灵奖演讲）
+* [How to Do Great Work](https://paulgraham.com/greatwork.html) - 如何做出伟大的工作
+* [Makers Schedule, Managers Schedule](https://paulgraham.com/makersschedule.html) - 创造者日程与管理者日程
 ## 英语
 * [BBC Learning English](https://www.bbc.co.uk/learningenglish/english/course/eiam)
 * [英语自学](https://bewaters.me/limxtop/2021/08/18/English-introduction)
