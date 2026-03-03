@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gemini on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/gemini/</link><description>Recent content in Gemini on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Fri, 30 Jan 2026 10:30:00 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title>转载：2025 LLM 年度回顾</title><link>https://sincerecsl.github.io/theyearinllms/</link><pubDate>Fri, 30 Jan 2026 10:30:00 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/theyearinllms/</guid><description>&lt;h2 id="2025llm-年度回顾"&gt;2025：LLM 年度回顾&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gemini on SincereCSL's Blog</title><link>https://sincerecsl.github.io/tags/gemini/</link><description>Recent content in Gemini on SincereCSL's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>SincereCSL@163.com (SincereCSL)</managingEditor><webMaster>SincereCSL@163.com (SincereCSL)</webMaster><lastBuildDate>Tue, 03 Mar 2026 15:48:59 +0800</lastBuildDate><atom:link href="https://sincerecsl.github.io/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title>大语言模型（LLM）学习路径和资料汇总</title><link>https://sincerecsl.github.io/studyllm/</link><pubDate>Tue, 03 Mar 2026 15:48:59 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/studyllm/</guid><description>&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文大部分内容整理自：&lt;a href="https://github.com/ninehills/blog/issues/97" target="_blank" rel="noopener noreffer "&gt;ninehills/blog#97&lt;/a&gt; (作者: &lt;a href="https://github.com/ninehills" target="_blank" rel="noopener noreffer "&gt;ninehills&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="0x00-学习路径"&gt;0x00 学习路径&lt;/h2&gt;
+&lt;p&gt;本文分为三个章节，各章节的学习目标如下。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;入门篇：
+&lt;ul&gt;
+&lt;li&gt;了解大语言模型的基础知识和常见术语。&lt;/li&gt;
+&lt;li&gt;学会使用编程语言访问 OpenAI API 等常见大语言模型接口。&lt;/li&gt;
+&lt;li&gt;面向非专业背景的大模型普及知识。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;应用篇：
+&lt;ul&gt;
+&lt;li&gt;可以在本地环境搭建开源模型的推理环境。&lt;/li&gt;
+&lt;li&gt;大语言模型应用开发框架（如 LangChain、Dify等）。&lt;/li&gt;
+&lt;li&gt;Prompt 工程、 RAG、Agent 等大模型应用开发范式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;深入篇：
+&lt;ul&gt;
+&lt;li&gt;大模型技术原理、训练微调、数据工程、推理优化等。&lt;/li&gt;
+&lt;li&gt;大模型应用范式（RAG、Agent等）前沿进展。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;读者可以根据自己需要选择对应的章节，如对大语言模型的原理不感兴趣，可只关注入门篇和应用篇。 考虑到阅读背景，本文尽可能提供中文资料或有中文翻译的资料。
+标记为【必看】的是我认为只要你对这个主题感兴趣，必须要看的资料。&lt;/p&gt;</description></item><item><title>转载：2025 LLM 年度回顾</title><link>https://sincerecsl.github.io/theyearinllms/</link><pubDate>Fri, 30 Jan 2026 10:30:00 +0800</pubDate><author>SincereCSL@163.com (SincereCSL)</author><guid>https://sincerecsl.github.io/theyearinllms/</guid><description>&lt;h2 id="2025llm-年度回顾"&gt;2025：LLM 年度回顾&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;转载声明&lt;/strong&gt;：本文转载自 &lt;a href="https://simonwillison.net/" target="_blank" rel="noopener noreffer "&gt;Simon Willison&amp;rsquo;s Weblog&lt;/a&gt;，原文链接：&lt;a href="https://simonwillison.net/2025/Dec/31/the-year-in-llms/" target="_blank" rel="noopener noreffer "&gt;https://simonwillison.net/2025/Dec/31/the-year-in-llms/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;作者：Simon Willison&lt;br&gt;
