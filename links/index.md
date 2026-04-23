@@ -38,7 +38,21 @@
 * [离别歌](https://www.leavesongs.com)
 * [美团技术团队](https://tech.meituan.com)
 ## 友链
+* [云谦sorrycc](https://sorrycc.com) - 云谦的个人博客，UmiJS 作者
+* [大圣前端进阶指南](https://shengxinjing.cn) - 解决前端进阶的难点
+* [方应杭的个人网站](https://fangyinghang.com) - 方应杭的前端技术博客
+* [小马哥的技术博客](https://mercyblitz.github.io) - 深入探讨行业动态，架构设计，设计模式，框架使用，源码分析等
+* [冴羽的博客](https://yayujs.com) - 冴羽的前端技术博客，不止有技术，还有生活
+* [liruifengv](https://liruifengv.com) - liruifengv 的个人网站，分享技术、生活、读书、随笔等
+* [山月行](https://shanyue.tech) - 山月的琐碎博客记录
+* [神族九帝's blog](https://blog.shenzjd.com) - 神族九帝的博客
+* [前端双越老师](https://github.com/wangfupeng1988) - 前端双越老师，wangEditor 作者，划水AI 作者
+* [范文杰的博客](https://tecvan.fun) - 范文杰的博客
+* [Winty Blog](https://service-4y8ogt70-1253736472.gz.apigw.tencentcs.com) - Winty 的博客
+* [Otto-J (辛宝Otto)](https://github.com/otto-j) - 《Web Worker - 前端程序员都爱听》播客主播
+* [且听书吟](https://yufan.me) - 诗与梦想的远方
 * [天渺studio的小站](https://tianmiao.site) - 我是kai，曾创过业。喜欢 Vue、React、Android、Flutter、Nodejs。目前在从事Node全栈，Android开发的工作。
+* [星辰大海](https://vincentruan.github.io) - The King is dead, long live the King!
 ## 文章
 * [40 years of programming](https://liw.fi/40/) - 40年编程生涯回顾
 * [别让自己“墙”了自己](https://coolshell.cn/articles/20276.html)
