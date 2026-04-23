@@ -87,6 +87,9 @@
 
 ### Vue 生态主流 UI 方案
 
+*   **shadcn-vue**
+    *   **官网**: [https://www.shadcn-vue.com](https://www.shadcn-vue.com)
+    *   **介绍**: shadcn/ui 的 Vue 社区优秀移植版。保留了可复制组件代码的设计理念与 Tailwind CSS 的结合优势，为 Vue 开发者带来极致的定制自由度，在现代 SaaS 与全栈项目中极受欢迎。
 *   **Element Plus**
     *   **官网**: [https://element-plus.org](https://element-plus.org)
     *   **介绍**: Vue 3 时代最主流的企业级组件库之一，国内使用面非常广，中后台与运营系统尤其常见。
