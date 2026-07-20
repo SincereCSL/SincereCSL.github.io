@@ -48,14 +48,38 @@ type cd                    # cd 通常是 Shell 内建命令
 
 ## 准备一个练习环境
 
-最省心的入门环境是当前仍受支持的 Ubuntu LTS 或 Debian stable 虚拟机。这样既能练习真实 Linux，也能用快照恢复误操作。不同平台可以这样选择：
+现在入门配置的云服务器价格已经很低，如果能够接受持续计费并愿意学习基本的公网安全，直接购买一台小规格云服务器通常是最方便的选择。它提供真实、长期在线的 Linux 环境，还能顺便练习 SSH、软件包、systemd、日志、防火墙、域名和 Web 服务，比只在本机记命令更接近实际开发与运维工作。
 
-| 当前平台 | 建议环境 | 说明 |
+建议选择离自己较近的地域、当前仍受支持的 Ubuntu LTS 或 Debian stable 镜像。学习命令行和运行小型服务不需要追求高配置，先选服务商提供的入门规格即可；以后不够用再升级。
+
+| 云服务 | 推荐入口 | 适合情况 |
 | --- | --- | --- |
-| Linux | 普通非 root 用户 | 直接练习，系统管理实验最好仍使用虚拟机 |
-| Windows | [Microsoft 官方 WSL 安装指南](https://learn.microsoft.com/windows/wsl/install) | 安装 Ubuntu 后即可获得真实 Linux 用户空间 |
-| macOS | 自带终端用于 Unix/Shell 基础；Linux 专属内容使用虚拟机 | 不要默认 GNU 命令参数与 macOS 完全相同 |
-| 任意桌面系统 | Ubuntu/Debian 虚拟机 | 最适合练 systemd、软件包、网络和磁盘管理 |
+| AWS | [Amazon Lightsail Linux/Unix 快速入门](https://docs.aws.amazon.com/lightsail/latest/userguide/getting-started-with-amazon-lightsail.html) | 套餐和管理界面相对简单，可选择 Ubuntu、Debian 等镜像并直接使用浏览器 SSH，适合第一次使用 AWS |
+| Google Cloud | [Compute Engine 创建 Linux VM](https://docs.cloud.google.com/compute/docs/create-linux-vm-instance?hl=zh-cn) | 可从控制台创建 Ubuntu 等 Linux 虚拟机并使用浏览器 SSH，适合同时学习 Google Cloud 项目、网络和 IAM |
+| Microsoft Azure | [通过 Azure 门户创建 Linux VM](https://learn.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-portal) | 官方入门流程覆盖 Ubuntu、SSH 密钥、网络安全组和资源清理，适合已有 Microsoft/Azure 账号的用户 |
+| Oracle Cloud | [OCI：启动第一台 Linux 实例](https://docs.oracle.com/en-us/iaas/Content/Compute/tutorials/first-linux-instance/overview.htm) | 教程从网络、子网、SSH 密钥到 Oracle Linux 实例完整配置，适合体验 OCI Compute |
+| 阿里云 | [ECS 官方入门指引](https://help.aliyun.com/zh/ecs/quick-start) | 中国大陆访问方便，可使用 ECS 或面向入门用户的轻量应用服务器 |
+| 腾讯云 | [快速配置 Linux 云服务器](https://cloud.tencent.com/document/product/213/2936) | 官方文档同时介绍 CVM，并建议初学者优先考虑轻量应用服务器 Lighthouse |
+| Cloudflare | [Cloudflare Containers](https://developers.cloudflare.com/containers/) | 它是与 Workers 配合的容器运行环境，不是传统 VPS；需要 Workers 付费计划，并通过 Wrangler [连接 SSH](https://developers.cloudflare.com/containers/ssh/)，适合容器应用实验，不适合练完整主机管理 |
+
+购买云服务器时，不要一路沿用默认选项。至少完成下面这些设置：
+
+1. 使用 SSH 密钥登录，避免启用弱密码；日常登录使用普通用户，需要时再执行 `sudo`。
+2. 在安全组或防火墙中只开放 SSH 端口，并尽可能限制为自己的出口 IP；真正部署网站时再开放 `80` 和 `443`。
+3. 不要把数据库、管理后台或临时测试服务直接暴露到整个互联网。
+4. 开启费用提醒，确认公网流量、云盘、快照和公网 IP 是否单独计费，并检查是否开启了自动续费。
+5. 做磁盘、网络或权限实验前创建快照；学习结束后及时释放不再使用的实例、云盘和公网 IP，仅关机不一定停止计费。
+
+> 云服务器有公网地址，错误配置可能在几分钟内就被自动扫描发现。初学阶段不要在云服务器上练习不理解的防火墙清空、磁盘格式化、批量用户管理或攻击测试，也不要把私钥提交到 Git 仓库。
+
+如果暂时不想购买云服务器，也可以使用本地环境：
+
+| 当前平台 | 本地方案 | 说明 |
+| --- | --- | --- |
+| Linux | 普通非 root 用户或 Linux 虚拟机 | 基础命令可以直接练；系统管理实验建议使用可恢复快照的虚拟机 |
+| Windows | [Microsoft 官方 WSL 安装指南](https://learn.microsoft.com/windows/wsl/install) | 安装 Ubuntu 后即可获得真实 Linux 用户空间，适合命令行与开发工具学习 |
+| macOS | 自带终端用于 Unix/Shell 基础，Linux 专属内容使用虚拟机 | 不要默认 GNU 命令参数与 macOS 的 BSD 工具完全相同 |
+| 任意桌面系统 | Ubuntu/Debian 虚拟机 | 不产生云服务费用，也不会把实验端口暴露到公网，适合高风险操作 |
 
 创建只属于本教程的实验目录：
 
@@ -65,7 +89,7 @@ cd "$HOME/unix-lab"
 pwd
 ```
 
-后面的破坏性练习只在这个目录中做。开始前先养成三个习惯：
+无论使用云服务器还是本地环境，后面的基础练习都只在这个目录中做。开始前先养成三个习惯：
 
 1. 用 `pwd` 确认自己在哪里。
 2. 用 `ls -la` 查看将被操作的对象。
