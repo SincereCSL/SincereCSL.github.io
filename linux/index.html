@@ -1,0 +1,851 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Linux 命令速查 - SincereCSL's Blog</title><meta name=Description content="Linux 高频命令、常见组合、权限、进程、网络、软件包与 systemd 操作速查"><meta property="og:url" content="https://sincerecsl.github.io/linux/"><meta property="og:site_name" content="SincereCSL's Blog"><meta property="og:title" content="Linux 命令速查"><meta property="og:description" content="Linux 高频命令、常见组合、权限、进程、网络、软件包与 systemd 操作速查"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-07-20T15:12:43+08:00"><meta property="article:modified_time" content="2026-07-20T15:12:43+08:00"><meta property="article:tag" content="Linux"><meta property="article:tag" content="命令行"><meta property="article:tag" content="Shell"><meta property="article:tag" content="运维"><meta name=twitter:card content="summary"><meta name=twitter:title content="Linux 命令速查"><meta name=twitter:description content="Linux 高频命令、常见组合、权限、进程、网络、软件包与 systemd 操作速查"><meta name=twitter:site content="@SincereCSL95"><meta name=application-name content="SincereCSL"><meta name=apple-mobile-web-app-title content="SincereCSL"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sincerecsl.github.io/linux/><link rel=prev href=https://sincerecsl.github.io/fnm/><link rel=next href=https://sincerecsl.github.io/unixandlinux/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux 命令速查","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sincerecsl.github.io\/linux\/"},"genre":"posts","keywords":"Linux, 命令行, Shell, 运维","wordcount":5347,"url":"https:\/\/sincerecsl.github.io\/linux\/","datePublished":"2026-07-20T15:12:43+08:00","dateModified":"2026-07-20T15:12:43+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"SincereCSL"},"description":"Linux 高频命令、常见组合、权限、进程、网络、软件包与 systemd 操作速查"}</script></head><body data-header-desktop=fixed data-header-mobile=fixed><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><script>(function(){try{window.localStorage&&window.localStorage.setItem("theme","light"),document.body.removeAttribute("theme")}catch{document.body.removeAttribute("theme")}})()</script><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/posts/>所有文章 </a><a class=menu-item href=/links/>Links </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about/>关于 </a><a class=menu-item href=https://github.com/SincereCSL rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></span></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/links/ title>Links</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about/ title>关于</a><a class=menu-item href=https://github.com/SincereCSL title rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=post-layout><article class="page single"><h1 class=single-title>Linux 命令速查</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>SincereCSL</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术工具</a>&nbsp;<a href=/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>学习笔记</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime="2026-07-20 15:12:43">2026-07-20 15:12:43</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 5347 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 11 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#高频命令速查>高频命令速查</a></li><li><a href=#获取帮助>获取帮助</a></li><li><a href=#目录与路径>目录与路径</a></li><li><a href=#文件与目录操作>文件与目录操作</a></li><li><a href=#查看文件与日志>查看文件与日志</a></li><li><a href=#搜索文件和文本>搜索文件和文本</a><ul><li><a href=#使用-grep-搜索内容>使用 <code>grep</code> 搜索内容</a></li><li><a href=#使用-find-搜索文件>使用 <code>find</code> 搜索文件</a></li></ul></li><li><a href=#文本处理与统计>文本处理与统计</a></li><li><a href=#管道与重定向>管道与重定向</a></li><li><a href=#用户权限与所有权>用户、权限与所有权</a></li><li><a href=#进程与任务管理>进程与任务管理</a></li><li><a href=#系统与硬件信息>系统与硬件信息</a></li><li><a href=#磁盘与目录空间>磁盘与目录空间</a></li><li><a href=#网络诊断>网络诊断</a></li><li><a href=#下载远程登录与文件传输>下载、远程登录与文件传输</a></li><li><a href=#压缩与解压>压缩与解压</a></li><li><a href=#软件包管理>软件包管理</a><ul><li><a href=#debian-与-ubuntuapt>Debian 与 Ubuntu：APT</a></li><li><a href=#fedorarhel-系dnf>Fedora、RHEL 系：DNF</a></li><li><a href=#arch-linuxpacman>Arch Linux：pacman</a></li></ul></li><li><a href=#systemd-服务与日志>systemd 服务与日志</a></li><li><a href=#shell-中的几个实用技巧>Shell 中的几个实用技巧</a></li><li><a href=#官方资料与扩展阅读>官方资料与扩展阅读</a></li></ul></nav></div></div><div class=content id=content><p>Linux 命令很多，但日常开发和服务器维护真正高频使用的只是一小部分。本文按使用场景整理最常用的命令，并给出可以直接修改使用的示例。</p><p>如果只想快速查某条命令，推荐收藏 <a href=https://quickref.me/zh-CN/docs/linux-command.html target=_blank rel="noopener noreffer">Quick Reference 的 Linux 命令中文速查表</a>。它把系统、文件、进程、权限、网络、压缩和磁盘等命令集中在一个页面中，很适合临时查阅和分享给刚接触 Linux 的同学。</p><blockquote><p>本文默认使用常见的 GNU/Linux 环境和 Bash。不同发行版、工具版本以及 macOS/BSD 的参数可能存在差异；不确定时，优先执行 <code>man &lt;命令></code> 或 <code>&lt;命令> --help</code> 查看当前机器上的说明。</p></blockquote><h2 id=高频命令速查>高频命令速查</h2><table><thead><tr><th>命令</th><th>用途</th></tr></thead><tbody><tr><td><code>pwd</code></td><td>显示当前目录</td></tr><tr><td><code>ls -lah</code></td><td>查看目录内容、隐藏文件和易读的文件大小</td></tr><tr><td><code>cd &lt;目录></code></td><td>切换目录</td></tr><tr><td><code>mkdir -p &lt;目录></code></td><td>递归创建目录</td></tr><tr><td><code>cp -a &lt;源> &lt;目标></code></td><td>保留属性复制文件或目录</td></tr><tr><td><code>mv &lt;源> &lt;目标></code></td><td>移动或重命名</td></tr><tr><td><code>rm -i &lt;文件></code></td><td>确认后删除文件</td></tr><tr><td><code>cat &lt;文件></code></td><td>输出文件内容</td></tr><tr><td><code>less &lt;文件></code></td><td>分页查看文件</td></tr><tr><td><code>tail -f &lt;日志></code></td><td>持续查看新增日志</td></tr><tr><td><code>grep -RIn '&lt;文本>' &lt;目录></code></td><td>在目录中递归搜索文本</td></tr><tr><td><code>find &lt;目录> -name '&lt;模式>'</code></td><td>按名称查找文件</td></tr><tr><td><code>df -h</code></td><td>查看各文件系统剩余空间</td></tr><tr><td><code>du -sh &lt;目录></code></td><td>查看目录占用空间</td></tr><tr><td><code>ps aux</code></td><td>查看全部进程</td></tr><tr><td><code>top</code></td><td>动态查看进程和资源占用</td></tr><tr><td><code>kill &lt;PID></code></td><td>请求进程正常退出</td></tr><tr><td><code>ip -brief address</code></td><td>简洁显示网卡和 IP 地址</td></tr><tr><td><code>ss -lntup</code></td><td>查看监听端口和相关进程</td></tr><tr><td><code>curl -I &lt;URL></code></td><td>查看 HTTP 响应头</td></tr><tr><td><code>ssh &lt;用户>@&lt;主机></code></td><td>登录远程主机</td></tr><tr><td><code>tar -czf &lt;包名>.tar.gz &lt;目录></code></td><td>创建 gzip 压缩包</td></tr><tr><td><code>sudo systemctl status &lt;服务></code></td><td>查看 systemd 服务状态</td></tr><tr><td><code>sudo journalctl -u &lt;服务> -f</code></td><td>持续查看服务日志</td></tr></tbody></table><h2 id=获取帮助>获取帮助</h2><p>遇到陌生命令或参数时，先查本机手册。手册与当前安装版本通常最匹配。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看命令手册；按 / 搜索，按 n 跳到下一个结果，按 q 退出</span>
+</span></span><span class=line><span class=cl>man ls
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 搜索与关键词有关的手册</span>
+</span></span><span class=line><span class=cl>man -k network
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看简要参数说明</span>
+</span></span><span class=line><span class=cl>ls --help
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 判断命令来自可执行文件、Shell 内建命令、函数还是别名</span>
+</span></span><span class=line><span class=cl><span class=nb>type</span> <span class=nb>cd</span>
+</span></span><span class=line><span class=cl><span class=nb>type</span> -a python
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查找将被执行的程序路径</span>
+</span></span><span class=line><span class=cl><span class=nb>command</span> -v git
+</span></span></code></pre></td></tr></table></div></div><p>Bash 内建命令（例如 <code>cd</code>、<code>export</code>、<code>history</code>）可以使用 <code>help</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>help</span> <span class=nb>cd</span>
+</span></span><span class=line><span class=cl><span class=nb>help</span> <span class=nb>export</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=目录与路径>目录与路径</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 显示当前目录的绝对路径</span>
+</span></span><span class=line><span class=cl><span class=nb>pwd</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 列出文件；-a 包含隐藏文件，-l 显示详情，-h 显示易读大小</span>
+</span></span><span class=line><span class=cl>ls -lah
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 按修改时间倒序排列，最近修改的文件在前</span>
+</span></span><span class=line><span class=cl>ls -lht
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 进入目录</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span> /var/log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 回到上一次所在目录</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span> -
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 回到当前用户的主目录</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 递归创建多层目录</span>
+</span></span><span class=line><span class=cl>mkdir -p project/src/components
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除空目录</span>
+</span></span><span class=line><span class=cl>rmdir empty-directory
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 获取规范化后的绝对路径</span>
+</span></span><span class=line><span class=cl>realpath ./relative/path
+</span></span></code></pre></td></tr></table></div></div><p>几个常用路径符号：</p><ul><li><code>.</code>：当前目录。</li><li><code>..</code>：上一级目录。</li><li><code>~</code>：当前用户主目录。</li><li><code>/</code>：根目录。</li><li><code>-</code>：对 <code>cd</code> 来说表示上一次所在目录。</li></ul><h2 id=文件与目录操作>文件与目录操作</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 创建空文件，文件存在时只更新时间戳</span>
+</span></span><span class=line><span class=cl>touch notes.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 复制文件</span>
+</span></span><span class=line><span class=cl>cp source.txt backup.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 复制目录，并尽量保留权限、时间戳和符号链接等属性</span>
+</span></span><span class=line><span class=cl>cp -a source-directory backup-directory
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 移动文件，或给文件重命名</span>
+</span></span><span class=line><span class=cl>mv old-name.txt new-name.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 覆盖目标前询问</span>
+</span></span><span class=line><span class=cl>cp -i source.txt target.txt
+</span></span><span class=line><span class=cl>mv -i old-name.txt new-name.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除文件，删除前询问</span>
+</span></span><span class=line><span class=cl>rm -i notes.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 递归删除目录，执行前务必确认路径</span>
+</span></span><span class=line><span class=cl>rm -r old-directory
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 创建符号链接：先写目标，再写链接名</span>
+</span></span><span class=line><span class=cl>ln -s /opt/app/current app-current
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看文件类型和编码等信息</span>
+</span></span><span class=line><span class=cl>file archive.tar.gz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看大小、权限、inode 和时间戳等元数据</span>
+</span></span><span class=line><span class=cl>stat notes.txt
+</span></span></code></pre></td></tr></table></div></div><blockquote><p><code>rm</code> 默认不会进入回收站。<code>rm -rf</code> 会递归、强制删除且通常不可恢复，使用变量、通配符或 <code>sudo</code> 时尤其要谨慎。可以先用 <code>ls</code> 检查同一个路径，再执行删除。</p></blockquote><p>GNU Coreutils 官方手册集中说明了 <code>ls</code>、<code>cp</code>、<code>mv</code>、<code>rm</code>、<code>mkdir</code>、<code>chmod</code>、<code>df</code>、<code>du</code>、<code>sort</code>、<code>wc</code> 等基础工具，完整参数可查 <a href=https://www.gnu.org/software/coreutils/manual/coreutils.html target=_blank rel="noopener noreffer">GNU Coreutils Manual</a>。</p><h2 id=查看文件与日志>查看文件与日志</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 输出整个文件，适合较短内容</span>
+</span></span><span class=line><span class=cl>cat config.ini
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 带行号输出</span>
+</span></span><span class=line><span class=cl>cat -n config.ini
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 分页查看大文件；按 / 搜索，按 q 退出</span>
+</span></span><span class=line><span class=cl>less access.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看开头 20 行</span>
+</span></span><span class=line><span class=cl>head -n <span class=m>20</span> access.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看末尾 100 行</span>
+</span></span><span class=line><span class=cl>tail -n <span class=m>100</span> access.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 持续显示文件末尾的新内容，Ctrl+C 退出</span>
+</span></span><span class=line><span class=cl>tail -f app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 文件被日志轮转后也继续按文件名追踪</span>
+</span></span><span class=line><span class=cl>tail -F app.log
+</span></span></code></pre></td></tr></table></div></div><p><code>less</code> 比 <code>cat</code> 更适合大文件，因为它不会一次把所有内容刷到终端中。</p><h2 id=搜索文件和文本>搜索文件和文本</h2><h3 id=使用-grep-搜索内容>使用 <code>grep</code> 搜索内容</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 在文件中搜索文本</span>
+</span></span><span class=line><span class=cl>grep <span class=s1>&#39;ERROR&#39;</span> app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 忽略大小写，并显示行号</span>
+</span></span><span class=line><span class=cl>grep -in <span class=s1>&#39;error&#39;</span> app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 递归搜索当前目录，显示文件名和行号</span>
+</span></span><span class=line><span class=cl>grep -RIn <span class=s1>&#39;TODO&#39;</span> .
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 搜索完整单词</span>
+</span></span><span class=line><span class=cl>grep -Rw <span class=s1>&#39;timeout&#39;</span> config/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 排除 .git 目录</span>
+</span></span><span class=line><span class=cl>grep -RIn --exclude-dir<span class=o>=</span>.git <span class=s1>&#39;password&#39;</span> .
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 显示匹配行前后各 2 行</span>
+</span></span><span class=line><span class=cl>grep -C <span class=m>2</span> <span class=s1>&#39;Exception&#39;</span> app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只显示不匹配的行</span>
+</span></span><span class=line><span class=cl>grep -v <span class=s1>&#39;^#&#39;</span> app.conf
+</span></span></code></pre></td></tr></table></div></div><p>正则表达式和全部选项可查看 <a href=https://www.gnu.org/software/grep/manual/ target=_blank rel="noopener noreffer">GNU Grep 官方手册</a>。</p><h3 id=使用-find-搜索文件>使用 <code>find</code> 搜索文件</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 按名称搜索，通配符需要加引号，避免先被 Shell 展开</span>
+</span></span><span class=line><span class=cl>find . -type f -name <span class=s1>&#39;*.log&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 忽略名称大小写</span>
+</span></span><span class=line><span class=cl>find . -type f -iname <span class=s1>&#39;readme*&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查找大于 100 MiB 的文件</span>
+</span></span><span class=line><span class=cl>find /var -type f -size +100M
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查找最近 7 天内修改的普通文件</span>
+</span></span><span class=line><span class=cl>find . -type f -mtime -7
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查找空文件</span>
+</span></span><span class=line><span class=cl>find . -type f -empty
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 对每个结果执行命令；{} 代表找到的路径</span>
+</span></span><span class=line><span class=cl>find . -type f -name <span class=s1>&#39;*.log&#39;</span> -exec ls -lh <span class=o>{}</span> <span class=se>\;</span>
+</span></span></code></pre></td></tr></table></div></div><p>先让 <code>find</code> 打印并确认结果，再添加 <code>-delete</code> 或有修改作用的 <code>-exec</code>。<code>find</code>、<code>locate</code> 和 <code>xargs</code> 的完整说明见 <a href=https://www.gnu.org/software/findutils/manual/html_mono/find.html target=_blank rel="noopener noreffer">GNU Findutils 官方手册</a>。</p><h2 id=文本处理与统计>文本处理与统计</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 统计行数、单词数和字节数</span>
+</span></span><span class=line><span class=cl>wc app.log
+</span></span><span class=line><span class=cl>wc -l app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 排序；-n 按数字排序，-r 倒序</span>
+</span></span><span class=line><span class=cl>sort names.txt
+</span></span><span class=line><span class=cl>sort -nr scores.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 对相邻重复行计数，通常先排序</span>
+</span></span><span class=line><span class=cl>sort access.log <span class=p>|</span> uniq -c <span class=p>|</span> sort -nr
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 取冒号分隔文本的第 1 列</span>
+</span></span><span class=line><span class=cl>cut -d <span class=s1>&#39;:&#39;</span> -f <span class=m>1</span> /etc/passwd
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 把小写转换为大写</span>
+</span></span><span class=line><span class=cl><span class=nb>printf</span> <span class=s1>&#39;linux\n&#39;</span> <span class=p>|</span> tr <span class=s1>&#39;[:lower:]&#39;</span> <span class=s1>&#39;[:upper:]&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 输出第 10 到 20 行</span>
+</span></span><span class=line><span class=cl>sed -n <span class=s1>&#39;10,20p&#39;</span> app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 按空白分列，输出第 1、3 列</span>
+</span></span><span class=line><span class=cl>awk <span class=s1>&#39;{print $1, $3}&#39;</span> data.txt
+</span></span></code></pre></td></tr></table></div></div><p>一个实用组合：统计访问日志中出现次数最多的客户端 IP。这里假设 IP 位于每行第一列。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>awk <span class=s1>&#39;{print $1}&#39;</span> access.log <span class=p>|</span> sort <span class=p>|</span> uniq -c <span class=p>|</span> sort -nr <span class=p>|</span> head
+</span></span></code></pre></td></tr></table></div></div><h2 id=管道与重定向>管道与重定向</h2><p>Shell 可以把一个命令的输出交给另一个命令，或者保存到文件。</p><table><thead><tr><th>写法</th><th>含义</th></tr></thead><tbody><tr><td><code>command1 | command2</code></td><td>把前一个命令的标准输出交给后一个命令</td></tr><tr><td><code>command > file</code></td><td>覆盖写入标准输出</td></tr><tr><td><code>command >> file</code></td><td>追加写入标准输出</td></tr><tr><td><code>command 2> error.log</code></td><td>把标准错误写入文件</td></tr><tr><td><code>command > all.log 2>&amp;1</code></td><td>把标准输出和标准错误写入同一文件</td></tr><tr><td><code>command &lt; input.txt</code></td><td>从文件读取标准输入</td></tr><tr><td><code>command | tee file</code></td><td>同时显示并写入文件</td></tr></tbody></table><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 从进程列表中筛选 nginx</span>
+</span></span><span class=line><span class=cl>ps aux <span class=p>|</span> grep <span class=s1>&#39;[n]ginx&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 覆盖保存输出</span>
+</span></span><span class=line><span class=cl>ip address &gt; network-info.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 追加日志</span>
+</span></span><span class=line><span class=cl>date &gt;&gt; deploy.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 同时在终端显示并保存</span>
+</span></span><span class=line><span class=cl>df -h <span class=p>|</span> tee disk-usage.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 需要管理员权限时，让 tee 负责写入目标文件</span>
+</span></span><span class=line><span class=cl><span class=nb>printf</span> <span class=s1>&#39;example\n&#39;</span> <span class=p>|</span> sudo tee /etc/example.conf
+</span></span></code></pre></td></tr></table></div></div><p><code>sudo command > /etc/file</code> 只会提升 <code>command</code> 的权限，重定向仍由当前 Shell 执行，所以写系统文件时常使用 <code>sudo tee</code>。管道、引用、展开和重定向的准确规则可查 <a href=https://www.gnu.org/software/bash/manual/bash.html target=_blank rel="noopener noreffer">Bash Reference Manual</a>。</p><h2 id=用户权限与所有权>用户、权限与所有权</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看当前用户名、UID、GID 和所属组</span>
+</span></span><span class=line><span class=cl>whoami
+</span></span><span class=line><span class=cl>id
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前已登录用户</span>
+</span></span><span class=line><span class=cl>who
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看文件权限</span>
+</span></span><span class=line><span class=cl>ls -l script.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 给文件所有者增加执行权限</span>
+</span></span><span class=line><span class=cl>chmod u+x script.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 常见权限：所有者可读写，组和其他用户只读</span>
+</span></span><span class=line><span class=cl>chmod <span class=m>644</span> config.ini
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 常见权限：所有者可读写执行，组和其他用户可读执行</span>
+</span></span><span class=line><span class=cl>chmod <span class=m>755</span> script.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 修改所有者和所属组</span>
+</span></span><span class=line><span class=cl>sudo chown appuser:appgroup app.log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 递归修改目录所有权，执行前确认目标目录</span>
+</span></span><span class=line><span class=cl>sudo chown -R appuser:appgroup /srv/app
+</span></span></code></pre></td></tr></table></div></div><p>权限数字由 <code>r=4</code>、<code>w=2</code>、<code>x=1</code> 相加得到，三位依次对应所有者、组和其他用户。例如 <code>640</code> 表示 <code>rw-r-----</code>。</p><p>不要为了“解决权限问题”直接使用 <code>chmod -R 777</code>。这会让所有用户都能读、写和执行目标，应先确认真正需要访问的用户、组和最小权限。</p><h2 id=进程与任务管理>进程与任务管理</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看全部进程</span>
+</span></span><span class=line><span class=cl>ps aux
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 按名称和完整命令行查找进程</span>
+</span></span><span class=line><span class=cl>pgrep -af nginx
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 动态查看进程、CPU 和内存占用，按 q 退出</span>
+</span></span><span class=line><span class=cl>top
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 请求进程正常终止，默认发送 SIGTERM</span>
+</span></span><span class=line><span class=cl><span class=nb>kill</span> &lt;PID&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 重新加载配置；仅适用于支持 SIGHUP 的程序</span>
+</span></span><span class=line><span class=cl><span class=nb>kill</span> -HUP &lt;PID&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 强制结束进程，只在进程无法正常退出时使用</span>
+</span></span><span class=line><span class=cl><span class=nb>kill</span> -KILL &lt;PID&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前 Shell 的后台任务</span>
+</span></span><span class=line><span class=cl><span class=nb>jobs</span> -l
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 把任务放到后台继续运行</span>
+</span></span><span class=line><span class=cl><span class=nb>bg</span> %1
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 把后台任务调回前台</span>
+</span></span><span class=line><span class=cl><span class=nb>fg</span> %1
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 退出终端后继续运行，并保存输出</span>
+</span></span><span class=line><span class=cl>nohup ./server &gt; server.log 2&gt;<span class=p>&amp;</span><span class=m>1</span> <span class=p>&amp;</span>
+</span></span></code></pre></td></tr></table></div></div><p>优先使用默认的 <code>kill &lt;PID></code>，给程序清理资源和保存数据的机会。<code>SIGKILL</code>（<code>kill -9</code>）不能被进程捕获或延迟处理，应作为最后手段。</p><h2 id=系统与硬件信息>系统与硬件信息</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看内核、主机名和架构等信息</span>
+</span></span><span class=line><span class=cl>uname -a
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看发行版信息</span>
+</span></span><span class=line><span class=cl>cat /etc/os-release
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看主机信息；适用于使用 systemd 的系统</span>
+</span></span><span class=line><span class=cl>hostnamectl
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看开机时长和平均负载</span>
+</span></span><span class=line><span class=cl>uptime
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看内存和 Swap 使用情况</span>
+</span></span><span class=line><span class=cl>free -h
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 CPU 信息</span>
+</span></span><span class=line><span class=cl>lscpu
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看块设备、文件系统和挂载点</span>
+</span></span><span class=line><span class=cl>lsblk -f
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前时间</span>
+</span></span><span class=line><span class=cl>date
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看时区和时间同步状态</span>
+</span></span><span class=line><span class=cl>timedatectl
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看最近的内核消息；普通用户权限可能受限</span>
+</span></span><span class=line><span class=cl>dmesg --level<span class=o>=</span>err,warn
+</span></span></code></pre></td></tr></table></div></div><h2 id=磁盘与目录空间>磁盘与目录空间</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看文件系统容量和可用空间</span>
+</span></span><span class=line><span class=cl>df -h
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 同时显示文件系统类型</span>
+</span></span><span class=line><span class=cl>df -hT
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 inode 使用情况</span>
+</span></span><span class=line><span class=cl>df -i
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看一个目录的总大小</span>
+</span></span><span class=line><span class=cl>du -sh /var/log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前目录下一层各项大小，并按大小排序</span>
+</span></span><span class=line><span class=cl>du -h --max-depth<span class=o>=</span><span class=m>1</span> . <span class=p>|</span> sort -h
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看挂载关系</span>
+</span></span><span class=line><span class=cl>findmnt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看块设备、UUID、文件系统和挂载点</span>
+</span></span><span class=line><span class=cl>lsblk -f
+</span></span></code></pre></td></tr></table></div></div><p><code>df</code> 统计文件系统整体空间，<code>du</code> 统计目录树中可见文件占用的空间。已删除但仍被进程打开的文件，可能造成两者结果明显不同，此时可以使用 <code>sudo lsof +L1</code> 查找。</p><h2 id=网络诊断>网络诊断</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 简洁显示网络接口、状态和地址</span>
+</span></span><span class=line><span class=cl>ip -brief address
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看路由表和默认网关</span>
+</span></span><span class=line><span class=cl>ip route
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 连续发送 4 个 ICMP 请求</span>
+</span></span><span class=line><span class=cl>ping -c <span class=m>4</span> example.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 TCP、UDP 监听端口和相关进程</span>
+</span></span><span class=line><span class=cl>sudo ss -lntup
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查询域名的 DNS 记录</span>
+</span></span><span class=line><span class=cl>dig example.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 HTTP 响应头</span>
+</span></span><span class=line><span class=cl>curl -I https://example.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 请求接口，失败时返回非零状态并显示响应内容</span>
+</span></span><span class=line><span class=cl>curl --fail-with-body https://api.example.com/health
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 显示本次请求的连接过程</span>
+</span></span><span class=line><span class=cl>curl -v https://example.com
+</span></span></code></pre></td></tr></table></div></div><p>常用网络命令参数含义：<code>ss -lntup</code> 中 <code>l</code> 表示监听、<code>n</code> 表示不解析名称、<code>t</code> 表示 TCP、<code>u</code> 表示 UDP、<code>p</code> 表示进程。curl 的完整参数以 <a href=https://curl.se/docs/manpage.html target=_blank rel="noopener noreffer">curl 官方手册</a> 为准。</p><h2 id=下载远程登录与文件传输>下载、远程登录与文件传输</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 下载文件，保留服务器端文件名；-f 在 HTTP 错误时失败</span>
+</span></span><span class=line><span class=cl>curl -fLO https://example.com/archive.tar.gz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用 wget 下载文件</span>
+</span></span><span class=line><span class=cl>wget https://example.com/archive.tar.gz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 远程登录</span>
+</span></span><span class=line><span class=cl>ssh user@example.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用指定端口登录</span>
+</span></span><span class=line><span class=cl>ssh -p <span class=m>2222</span> user@example.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 上传本地文件</span>
+</span></span><span class=line><span class=cl>scp report.txt user@example.com:/tmp/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 下载远程目录</span>
+</span></span><span class=line><span class=cl>scp -r user@example.com:/srv/reports ./reports
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 同步目录内容，并显示进度</span>
+</span></span><span class=line><span class=cl>rsync -av --progress ./dist/ user@example.com:/srv/www/
+</span></span></code></pre></td></tr></table></div></div><p><code>rsync</code> 源目录末尾的 <code>/</code> 很重要：<code>./dist/</code> 表示同步目录内的内容，<code>./dist</code> 通常表示把 <code>dist</code> 目录本身放进目标目录。SSH 和 SCP 的准确参数可查看 OpenSSH 项目的 <a href=https://man.openbsd.org/ssh.1 target=_blank rel="noopener noreffer"><code>ssh(1)</code></a> 与 <a href=https://man.openbsd.org/scp.1 target=_blank rel="noopener noreffer"><code>scp(1)</code></a> 官方手册。</p><h2 id=压缩与解压>压缩与解压</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 创建 .tar.gz 压缩包</span>
+</span></span><span class=line><span class=cl>tar -czf project.tar.gz project/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 不解压，先查看压缩包内容</span>
+</span></span><span class=line><span class=cl>tar -tzf project.tar.gz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 解压 .tar.gz 到当前目录</span>
+</span></span><span class=line><span class=cl>tar -xzf project.tar.gz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 解压到指定目录；目标目录需要提前存在</span>
+</span></span><span class=line><span class=cl>mkdir -p restore
+</span></span><span class=line><span class=cl>tar -xzf project.tar.gz -C restore
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 创建和解压未压缩的 .tar 归档</span>
+</span></span><span class=line><span class=cl>tar -cf project.tar project/
+</span></span><span class=line><span class=cl>tar -xf project.tar
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># zip 格式</span>
+</span></span><span class=line><span class=cl>zip -r project.zip project/
+</span></span><span class=line><span class=cl>unzip project.zip -d restore/
+</span></span></code></pre></td></tr></table></div></div><p><code>tar</code> 常用操作字母：<code>c</code> 创建、<code>x</code> 解包、<code>t</code> 列出内容、<code>f</code> 指定文件、<code>z</code> 使用 gzip、<code>v</code> 显示详细过程。更多格式、参数以及从不可信归档解压时的安全注意事项，见 <a href=https://www.gnu.org/software/tar/manual/tar.html target=_blank rel="noopener noreffer">GNU tar 官方手册</a>。</p><h2 id=软件包管理>软件包管理</h2><p>发行版使用的软件包管理器不同，不要混用以下命令。</p><h3 id=debian-与-ubuntuapt>Debian 与 Ubuntu：APT</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 更新本地软件包索引</span>
+</span></span><span class=line><span class=cl>sudo apt update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 升级已安装的软件包</span>
+</span></span><span class=line><span class=cl>sudo apt upgrade
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 搜索、查看、安装和删除软件包</span>
+</span></span><span class=line><span class=cl>apt search &lt;关键词&gt;
+</span></span><span class=line><span class=cl>apt show &lt;包名&gt;
+</span></span><span class=line><span class=cl>sudo apt install &lt;包名&gt;
+</span></span><span class=line><span class=cl>sudo apt remove &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除已不再需要的依赖</span>
+</span></span><span class=line><span class=cl>sudo apt autoremove
+</span></span></code></pre></td></tr></table></div></div><p>官方说明：<a href=https://ubuntu.com/server/docs/how-to/software/package-management/ target=_blank rel="noopener noreffer">Ubuntu Server 软件包管理文档</a>。交互使用推荐 <code>apt</code>；编写非交互脚本时，Ubuntu 官方建议使用接口更稳定的 <code>apt-get</code>。</p><h3 id=fedorarhel-系dnf>Fedora、RHEL 系：DNF</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 搜索、查看、安装和删除软件包</span>
+</span></span><span class=line><span class=cl>dnf search &lt;关键词&gt;
+</span></span><span class=line><span class=cl>dnf info &lt;包名&gt;
+</span></span><span class=line><span class=cl>sudo dnf install &lt;包名&gt;
+</span></span><span class=line><span class=cl>sudo dnf remove &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 升级系统中的软件包</span>
+</span></span><span class=line><span class=cl>sudo dnf upgrade
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除不再需要的依赖</span>
+</span></span><span class=line><span class=cl>sudo dnf autoremove
+</span></span></code></pre></td></tr></table></div></div><p>官方说明：<a href=https://dnf.readthedocs.io/en/stable/command_ref.html target=_blank rel="noopener noreffer">DNF Command Reference</a>。</p><h3 id=arch-linuxpacman>Arch Linux：pacman</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 同步数据库并完整升级系统</span>
+</span></span><span class=line><span class=cl>sudo pacman -Syu
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 搜索、安装和删除软件包</span>
+</span></span><span class=line><span class=cl>pacman -Ss &lt;关键词&gt;
+</span></span><span class=line><span class=cl>sudo pacman -S &lt;包名&gt;
+</span></span><span class=line><span class=cl>sudo pacman -Rs &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查询本机已安装的软件包</span>
+</span></span><span class=line><span class=cl>pacman -Q
+</span></span></code></pre></td></tr></table></div></div><p>官方说明：<a href=https://wiki.archlinux.org/title/Pacman target=_blank rel="noopener noreffer">ArchWiki：pacman</a>。Arch Linux 不支持部分升级，不要使用 <code>pacman -Sy &lt;包名></code> 代替完整的 <code>pacman -Syu</code> 更新流程。</p><h2 id=systemd-服务与日志>systemd 服务与日志</h2><p>以下命令适用于使用 systemd 的发行版。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看服务状态</span>
+</span></span><span class=line><span class=cl>systemctl status nginx.service
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 启动、停止、重启和重新加载配置</span>
+</span></span><span class=line><span class=cl>sudo systemctl start nginx.service
+</span></span><span class=line><span class=cl>sudo systemctl stop nginx.service
+</span></span><span class=line><span class=cl>sudo systemctl restart nginx.service
+</span></span><span class=line><span class=cl>sudo systemctl reload nginx.service
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 设置开机启动并立即启动</span>
+</span></span><span class=line><span class=cl>sudo systemctl <span class=nb>enable</span> --now nginx.service
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 取消开机启动并立即停止</span>
+</span></span><span class=line><span class=cl>sudo systemctl disable --now nginx.service
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看正在运行的服务</span>
+</span></span><span class=line><span class=cl>systemctl list-units --type<span class=o>=</span>service --state<span class=o>=</span>running
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看本次启动以来某服务的日志</span>
+</span></span><span class=line><span class=cl>journalctl -b -u nginx.service
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 持续查看某服务的新日志</span>
+</span></span><span class=line><span class=cl>journalctl -u nginx.service -f
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看本次启动以来 warning 及更严重的日志</span>
+</span></span><span class=line><span class=cl>journalctl -b -p warning
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看最近 100 行，不进入分页器</span>
+</span></span><span class=line><span class=cl>journalctl -u nginx.service -n <span class=m>100</span> --no-pager
+</span></span></code></pre></td></tr></table></div></div><p>完整说明可查 systemd 官方 <a href=https://www.freedesktop.org/software/systemd/man/systemctl.html target=_blank rel="noopener noreffer"><code>systemctl(1)</code></a> 和 <a href=https://www.freedesktop.org/software/systemd/man/journalctl.html target=_blank rel="noopener noreffer"><code>journalctl(1)</code></a> 手册。服务名通常可以省略 <code>.service</code>，但完整写出更清楚。</p><h2 id=shell-中的几个实用技巧>Shell 中的几个实用技巧</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看历史命令</span>
+</span></span><span class=line><span class=cl><span class=nb>history</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 反向搜索历史命令</span>
+</span></span><span class=line><span class=cl><span class=c1># 按 Ctrl+R 后输入关键词，再按 Ctrl+R 查找更早的匹配项</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看上一条命令的退出状态；0 通常表示成功</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=nv>$?</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只有前一条成功才继续</span>
+</span></span><span class=line><span class=cl>command1 <span class=o>&amp;&amp;</span> command2
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只有前一条失败才执行</span>
+</span></span><span class=line><span class=cl>command1 <span class=o>||</span> command2
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 临时设置环境变量，只影响这一条命令</span>
+</span></span><span class=line><span class=cl><span class=nv>APP_ENV</span><span class=o>=</span>production ./server
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 设置当前 Shell 及其子进程可见的环境变量</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>APP_ENV</span><span class=o>=</span>production
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看环境变量</span>
+</span></span><span class=line><span class=cl>printenv APP_ENV
+</span></span></code></pre></td></tr></table></div></div><p>文件名或变量可能包含空格时要加双引号：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cp <span class=s2>&#34;</span><span class=nv>$source_file</span><span class=s2>&#34;</span> <span class=s2>&#34;</span><span class=nv>$target_directory</span><span class=s2>/&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>Shell 脚本中也应默认给变量引用加双引号，避免单词拆分和通配符展开造成意外结果。</p><h2 id=官方资料与扩展阅读>官方资料与扩展阅读</h2><ul><li><a href=https://www.gnu.org/software/coreutils/manual/coreutils.html target=_blank rel="noopener noreffer">GNU Coreutils 官方手册</a>：文件、目录、权限、文本处理、磁盘统计等核心命令。</li><li><a href=https://www.gnu.org/software/bash/manual/bash.html target=_blank rel="noopener noreffer">Bash Reference Manual</a>：Shell 语法、引用、展开、管道、重定向和任务控制。</li><li><a href=https://www.gnu.org/software/grep/manual/ target=_blank rel="noopener noreffer">GNU Grep 官方手册</a>：文本搜索和正则表达式。</li><li><a href=https://www.gnu.org/software/findutils/manual/html_mono/find.html target=_blank rel="noopener noreffer">GNU Findutils 官方手册</a>：<code>find</code>、<code>locate</code> 和 <code>xargs</code>。</li><li><a href=https://www.gnu.org/software/tar/manual/tar.html target=_blank rel="noopener noreffer">GNU tar 官方手册</a>：归档、压缩与安全解压。</li><li><a href=https://curl.se/docs/ target=_blank rel="noopener noreffer">curl 官方文档</a>：HTTP 请求、下载和网络排查。</li><li><a href=https://www.freedesktop.org/software/systemd/man/ target=_blank rel="noopener noreffer">systemd 官方手册</a>：服务、日志、定时器和系统管理。</li><li><a href=https://www.kernel.org/doc/man-pages/ target=_blank rel="noopener noreffer">Linux Kernel man-pages 项目</a>：Linux 内核与 C 库接口手册。</li><li><a href=https://quickref.me/zh-CN/docs/linux-command.html target=_blank rel="noopener noreffer">Quick Reference：Linux 命令中文速查表</a>：适合日常快速查找和分享的中文命令清单。</li></ul></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2026-07-20 15:12:43</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/linux/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查" data-via=SincereCSL95 data-hashtags=Linux,命令行,Shell,运维><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://sincerecsl.github.io/linux/ data-hashtag=Linux><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 WhatsApp" data-sharer=whatsapp data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Reddit" data-sharer=reddit data-url=https://sincerecsl.github.io/linux/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查"><i data-svg-src=/lib/simple-icons/icons/line.min.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查" data-ralateuid=u/5535058729><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Blogger" data-sharer=blogger data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查" data-description="Linux 高频命令、常见组合、权限、进程、网络、软件包与 systemd 操作速查"><i class="fab fa-blogger fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Evernote" data-sharer=evernote data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查"><i class="fab fa-evernote fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Skype" data-sharer=skype data-url=https://sincerecsl.github.io/linux/ data-title="Linux 命令速查"><i class="fab fa-skype fa-fw" aria-hidden=true></i></a></span></div></div></div><div class="post-info-more post-info-more-plain"><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/fnm/ class=prev rel=prev title="fnm 常用命令"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>fnm 常用命令</a>
+<a href=/unixandlinux/ class=next rel=next title="Unix 与 Linux 入门：从命令行到系统管理的学习路线">Unix 与 Linux 入门：从命令行到系统管理的学习路线<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div></div></div></main><footer class=footer><div class=footer-container><div class=footer-line>SincereCSL</div><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.164.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2026</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>SincereCSL</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/katex/katex.min.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/contrib/auto-render.min.js></script><script type=text/javascript src=/lib/katex/contrib/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/contrib/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
