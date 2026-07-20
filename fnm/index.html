@@ -1,0 +1,275 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>fnm 常用命令 - SincereCSL's Blog</title><meta name=Description content="fnm 安装、Node.js 版本切换、项目自动切换与常用命令速查"><meta property="og:url" content="https://sincerecsl.github.io/fnm/"><meta property="og:site_name" content="SincereCSL's Blog"><meta property="og:title" content="fnm 常用命令"><meta property="og:description" content="fnm 安装、Node.js 版本切换、项目自动切换与常用命令速查"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-07-20T15:04:25+08:00"><meta property="article:modified_time" content="2026-07-20T15:04:25+08:00"><meta property="article:tag" content="Fnm"><meta property="article:tag" content="Node.js"><meta property="article:tag" content="版本管理"><meta name=twitter:card content="summary"><meta name=twitter:title content="fnm 常用命令"><meta name=twitter:description content="fnm 安装、Node.js 版本切换、项目自动切换与常用命令速查"><meta name=twitter:site content="@SincereCSL95"><meta name=application-name content="SincereCSL"><meta name=apple-mobile-web-app-title content="SincereCSL"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sincerecsl.github.io/fnm/><link rel=prev href=https://sincerecsl.github.io/homebrew/><link rel=next href=https://sincerecsl.github.io/remotework/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"fnm 常用命令","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sincerecsl.github.io\/fnm\/"},"genre":"posts","keywords":"fnm, Node.js, 版本管理","wordcount":2552,"url":"https:\/\/sincerecsl.github.io\/fnm\/","datePublished":"2026-07-20T15:04:25+08:00","dateModified":"2026-07-20T15:04:25+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"SincereCSL"},"description":"fnm 安装、Node.js 版本切换、项目自动切换与常用命令速查"}</script></head><body data-header-desktop=fixed data-header-mobile=fixed><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><script>(function(){try{window.localStorage&&window.localStorage.setItem("theme","light"),document.body.removeAttribute("theme")}catch{document.body.removeAttribute("theme")}})()</script><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/posts/>所有文章 </a><a class=menu-item href=/links/>Links </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about/>关于 </a><a class=menu-item href=https://github.com/SincereCSL rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></span></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/links/ title>Links</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about/ title>关于</a><a class=menu-item href=https://github.com/SincereCSL title rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=post-layout><article class="page single"><h1 class=single-title>fnm 常用命令</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>SincereCSL</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术工具</a>&nbsp;<a href=/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>学习笔记</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime="2026-07-20 15:04:25">2026-07-20 15:04:25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 2552 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 6 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#fnm-是什么>fnm 是什么</a></li><li><a href=#安装-fnm>安装 fnm</a><ul><li><a href=#macos-或-linux使用-homebrew>macOS 或 Linux：使用 Homebrew</a></li><li><a href=#macos-或-linux使用官方安装脚本>macOS 或 Linux：使用官方安装脚本</a></li><li><a href=#windows>Windows</a></li></ul></li><li><a href=#配置-shell>配置 Shell</a><ul><li><a href=#zsh>Zsh</a></li><li><a href=#bash>Bash</a></li><li><a href=#fish>Fish</a></li><li><a href=#powershell>PowerShell</a></li></ul></li><li><a href=#查看可安装的-nodejs-版本>查看可安装的 Node.js 版本</a></li><li><a href=#安装-nodejs>安装 Node.js</a></li><li><a href=#切换-nodejs-版本>切换 Node.js 版本</a></li><li><a href=#设置默认版本>设置默认版本</a></li><li><a href=#查看已安装版本>查看已安装版本</a></li><li><a href=#为项目固定-nodejs-版本>为项目固定 Node.js 版本</a><ul><li><a href=#使用-node-version>使用 <code>.node-version</code></a></li><li><a href=#使用-nvmrc>使用 <code>.nvmrc</code></a></li></ul></li><li><a href=#管理版本别名>管理版本别名</a></li><li><a href=#临时使用指定版本运行命令>临时使用指定版本运行命令</a></li><li><a href=#卸载-nodejs-版本>卸载 Node.js 版本</a></li><li><a href=#生成命令补全>生成命令补全</a></li><li><a href=#常用工作流>常用工作流</a><ul><li><a href=#第一次安装-fnm>第一次安装 fnm</a></li><li><a href=#进入已有项目>进入已有项目</a></li><li><a href=#创建新项目>创建新项目</a></li></ul></li><li><a href=#常见问题>常见问题</a><ul><li><a href=#安装后提示-fnm-command-not-found>安装后提示 <code>fnm: command not found</code></a></li><li><a href=#fnm-能运行但-node-找不到或版本没有切换><code>fnm</code> 能运行，但 <code>node</code> 找不到或版本没有切换</a></li><li><a href=#npm-全局包为什么不见了>npm 全局包为什么不见了</a></li></ul></li><li><a href=#常用命令速查>常用命令速查</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav></div></div><div class=content id=content><h2 id=fnm-是什么>fnm 是什么</h2><p><a href=https://github.com/Schniz/fnm target=_blank rel="noopener noreffer">fnm（Fast Node Manager）</a> 是一个使用 Rust 编写的 Node.js 版本管理器，支持 macOS、Linux 和 Windows。它可以在同一台电脑上安装多个 Node.js 版本，并根据不同项目的要求快速切换版本。</p><p>fnm 支持 <code>.node-version</code>、<code>.nvmrc</code>，也可以读取 <code>package.json</code> 中的 <code>engines.node</code>。如果之前使用 nvm，通常可以直接沿用项目中的 <code>.nvmrc</code> 文件。</p><h2 id=安装-fnm>安装 fnm</h2><h3 id=macos-或-linux使用-homebrew>macOS 或 Linux：使用 Homebrew</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew install fnm
+</span></span></code></pre></td></tr></table></div></div><p>升级 fnm：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew upgrade fnm
+</span></span></code></pre></td></tr></table></div></div><h3 id=macos-或-linux使用官方安装脚本>macOS 或 Linux：使用官方安装脚本</h3><p>执行前需要先安装 <code>curl</code> 和 <code>unzip</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>curl -fsSL https://fnm.vercel.app/install <span class=p>|</span> bash
+</span></span></code></pre></td></tr></table></div></div><p>再次运行脚本升级时，可以添加 <code>--skip-shell</code>，避免重复修改 Shell 配置：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>curl -fsSL https://fnm.vercel.app/install <span class=p>|</span> bash -s -- --skip-shell
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>fnm 官方目前建议 macOS 用户优先通过 Homebrew 安装；安装脚本在 macOS 上默认也会使用 Homebrew。</p></blockquote><h3 id=windows>Windows</h3><p>可以选择系统中已有的包管理器：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=c># Windows Package Manager</span>
+</span></span><span class=line><span class=cl><span class=n>winget</span> <span class=n>install</span> <span class=n>Schniz</span><span class=p>.</span><span class=py>fnm</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Scoop</span>
+</span></span><span class=line><span class=cl><span class=n>scoop</span> <span class=n>install</span> <span class=n>fnm</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Chocolatey</span>
+</span></span><span class=line><span class=cl><span class=n>choco</span> <span class=n>install</span> <span class=n>fnm</span>
+</span></span></code></pre></td></tr></table></div></div><p>更多安装方式和参数请查看官方的 <a href=https://github.com/Schniz/fnm#installation target=_blank rel="noopener noreffer">Installation</a> 说明。</p><h2 id=配置-shell>配置 Shell</h2><p>仅安装 fnm 还不够，需要让 Shell 执行 <code>fnm env</code> 输出的环境配置。官方建议明确写出 Shell 类型，这样启动稍快，也不需要在运行时推断 Shell。</p><h3 id=zsh>Zsh</h3><p>将下面的内容加入 <code>~/.zshrc</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-zsh data-lang=zsh><span class=line><span class=cl><span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>fnm env --use-on-cd --shell zsh<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>然后执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-zsh data-lang=zsh><span class=line><span class=cl><span class=nb>source</span> ~/.zshrc
+</span></span></code></pre></td></tr></table></div></div><h3 id=bash>Bash</h3><p>将下面的内容加入 <code>~/.bashrc</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>fnm env --use-on-cd --shell bash<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=fish>Fish</h3><p>将下面的内容加入 <code>~/.config/fish/conf.d/fnm.fish</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fish data-lang=fish><span class=line><span class=cl><span class=nf>fnm</span> env <span class=na>--use-on-cd</span> <span class=na>--shell</span> <span class=nb>fish</span> <span class=o>|</span> <span class=nb>source</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=powershell>PowerShell</h3><p>将下面的内容加入 PowerShell Profile：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=n>fnm</span> <span class=n>env</span> <span class=p>-</span><span class=n>-use-on-cd</span> <span class=p>-</span><span class=n>-shell</span> <span class=n>powershell</span> <span class=p>|</span> <span class=nb>Out-String</span> <span class=p>|</span> <span class=nb>Invoke-Expression</span>
+</span></span></code></pre></td></tr></table></div></div><p>可以通过 <code>$PROFILE</code> 查看 Profile 路径，通过以下命令创建文件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=o>-not</span> <span class=p>(</span><span class=nb>Test-Path</span> <span class=nv>$PROFILE</span><span class=p>))</span> <span class=p>{</span> <span class=nb>New-Item</span> <span class=nv>$PROFILE</span> <span class=n>-Force</span> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>配置中的 <code>--use-on-cd</code> 会在进入项目目录时，根据版本文件自动切换 Node.js。fnm 官方将其列为推荐配置，详细说明见 <a href=https://github.com/Schniz/fnm/blob/master/docs/configuration.md target=_blank rel="noopener noreffer">Configuration</a>。</p><p>验证安装和环境配置：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fnm --version
+</span></span><span class=line><span class=cl>fnm --help
+</span></span></code></pre></td></tr></table></div></div><h2 id=查看可安装的-nodejs-版本>查看可安装的 Node.js 版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 列出全部远端 Node.js 版本</span>
+</span></span><span class=line><span class=cl>fnm list-remote
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只列出 LTS 版本</span>
+</span></span><span class=line><span class=cl>fnm list-remote --lts
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 从新到旧排列 LTS 版本</span>
+</span></span><span class=line><span class=cl>fnm list-remote --lts --sort desc
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只显示最新的 LTS 版本</span>
+</span></span><span class=line><span class=cl>fnm list-remote --lts --latest
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看符合指定范围的最新版本</span>
+</span></span><span class=line><span class=cl>fnm list-remote --filter <span class=s2>&#34;22&#34;</span> --latest
+</span></span></code></pre></td></tr></table></div></div><p><code>fnm ls-remote</code> 是 <code>fnm list-remote</code> 的别名。</p><h2 id=安装-nodejs>安装 Node.js</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 安装最新的 LTS 版本</span>
+</span></span><span class=line><span class=cl>fnm install --lts
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 安装最新版，不限定是否为 LTS</span>
+</span></span><span class=line><span class=cl>fnm install --latest
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 安装指定的大版本，fnm 会解析为该系列的合适版本</span>
+</span></span><span class=line><span class=cl>fnm install <span class=m>22</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 安装精确版本</span>
+</span></span><span class=line><span class=cl>fnm install 22.17.0
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 安装后立即切换到该版本</span>
+</span></span><span class=line><span class=cl>fnm install --lts --use
+</span></span><span class=line><span class=cl>fnm install <span class=m>22</span> --use
+</span></span></code></pre></td></tr></table></div></div><p>版本参数可以是完整版本、部分版本，也可以是 LTS 代号。日常开发通常优先选择 LTS 版本。</p><h2 id=切换-nodejs-版本>切换 Node.js 版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 切换到已经安装的 Node.js 22</span>
+</span></span><span class=line><span class=cl>fnm use <span class=m>22</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 如果本地没有该版本，则先安装再切换</span>
+</span></span><span class=line><span class=cl>fnm use --install-if-missing <span class=m>22</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 根据当前目录中的版本文件切换</span>
+</span></span><span class=line><span class=cl>fnm use
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前使用的版本</span>
+</span></span><span class=line><span class=cl>fnm current
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 同时验证 node 命令实际使用的版本</span>
+</span></span><span class=line><span class=cl>node --version
+</span></span></code></pre></td></tr></table></div></div><p><code>fnm use</code> 只影响当前 Shell 会话；如果希望新终端默认使用某个版本，还需要设置默认版本。</p><h2 id=设置默认版本>设置默认版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 将 Node.js 22 设为默认版本</span>
+</span></span><span class=line><span class=cl>fnm default <span class=m>22</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前默认版本</span>
+</span></span><span class=line><span class=cl>fnm default
+</span></span></code></pre></td></tr></table></div></div><p><code>fnm default 22</code> 等价于为该版本设置名为 <code>default</code> 的别名。设置后，在没有项目版本要求时，新 Shell 会话会使用这个版本。</p><h2 id=查看已安装版本>查看已安装版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 列出本地已经安装的 Node.js 版本和别名</span>
+</span></span><span class=line><span class=cl>fnm list
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 简写形式</span>
+</span></span><span class=line><span class=cl>fnm ls
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看当前正在使用的版本</span>
+</span></span><span class=line><span class=cl>fnm current
+</span></span></code></pre></td></tr></table></div></div><h2 id=为项目固定-nodejs-版本>为项目固定 Node.js 版本</h2><p>推荐在项目根目录提交 <code>.node-version</code> 或 <code>.nvmrc</code>，让团队成员和 CI 使用一致的 Node.js 版本。</p><h3 id=使用-node-version>使用 <code>.node-version</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 把当前 Node.js 的完整版本写入文件</span>
+</span></span><span class=line><span class=cl>node --version &gt; .node-version
+</span></span></code></pre></td></tr></table></div></div><p>文件内容示例：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>v22.17.0
+</span></span></code></pre></td></tr></table></div></div><h3 id=使用-nvmrc>使用 <code>.nvmrc</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>22
+</span></span></code></pre></td></tr></table></div></div><p>配置了 <code>fnm env --use-on-cd</code> 后，进入项目目录就会自动切换版本。没有配置自动切换时，可以手动执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 根据版本文件安装 Node.js</span>
+</span></span><span class=line><span class=cl>fnm install
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 根据版本文件切换 Node.js</span>
+</span></span><span class=line><span class=cl>fnm use
+</span></span></code></pre></td></tr></table></div></div><p>如果是 monorepo，希望在子目录中也能向上查找根目录的版本文件，可以在 Shell 初始化配置中加入 <code>--version-file-strategy=recursive</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-zsh data-lang=zsh><span class=line><span class=cl><span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>fnm env --use-on-cd --version-file-strategy<span class=o>=</span>recursive --shell zsh<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>在没有 <code>.node-version</code> 或 <code>.nvmrc</code> 时，当前 fnm 也会尝试解析 <code>package.json</code> 中的 <code>engines.node</code>，并选择满足 semver 范围的版本：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;engines&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;node&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;=22 &lt;23&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=管理版本别名>管理版本别名</h2><p>别名适合为常用版本取一个容易记忆的名字：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 将 Node.js 22 设置为 work 别名</span>
+</span></span><span class=line><span class=cl>fnm <span class=nb>alias</span> <span class=m>22</span> work
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用该别名</span>
+</span></span><span class=line><span class=cl>fnm use work
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除别名</span>
+</span></span><span class=line><span class=cl>fnm <span class=nb>unalias</span> work
+</span></span></code></pre></td></tr></table></div></div><p>默认版本实际上也是一个特殊别名：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fnm <span class=nb>alias</span> <span class=m>22</span> default
+</span></span></code></pre></td></tr></table></div></div><p>一般直接使用更直观的 <code>fnm default 22</code> 即可。</p><h2 id=临时使用指定版本运行命令>临时使用指定版本运行命令</h2><p><code>fnm exec</code> 可以在不改变当前 Shell 版本的情况下，临时使用指定版本执行命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 使用 Node.js 22 查看版本</span>
+</span></span><span class=line><span class=cl>fnm <span class=nb>exec</span> --using<span class=o>=</span><span class=m>22</span> node --version
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用 Node.js 22 运行 npm 测试</span>
+</span></span><span class=line><span class=cl>fnm <span class=nb>exec</span> --using<span class=o>=</span><span class=m>22</span> npm <span class=nb>test</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用版本文件指定的版本执行命令</span>
+</span></span><span class=line><span class=cl>fnm <span class=nb>exec</span> --using<span class=o>=</span>.node-version node app.js
+</span></span></code></pre></td></tr></table></div></div><p>这个命令适合在脚本或 CI 中对多个 Node.js 版本进行测试。</p><h2 id=卸载-nodejs-版本>卸载 Node.js 版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 先确认本地版本</span>
+</span></span><span class=line><span class=cl>fnm list
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 卸载指定版本</span>
+</span></span><span class=line><span class=cl>fnm uninstall 20.19.4
+</span></span></code></pre></td></tr></table></div></div><p><code>fnm uni</code> 是 <code>fnm uninstall</code> 的别名。卸载时如果传入别名，fnm 会删除该别名指向的 Node.js 版本，并同时删除所有指向同一版本的别名，因此执行前应先运行 <code>fnm list</code> 确认目标。</p><h2 id=生成命令补全>生成命令补全</h2><p>fnm 可以为 Bash、Zsh、Fish 和 PowerShell 输出补全脚本：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fnm completions --shell zsh
+</span></span><span class=line><span class=cl>fnm completions --shell bash
+</span></span><span class=line><span class=cl>fnm completions --shell fish
+</span></span><span class=line><span class=cl>fnm completions --shell powershell
+</span></span></code></pre></td></tr></table></div></div><p>补全脚本的加载位置和方式取决于所使用的 Shell 或补全框架。</p><h2 id=常用工作流>常用工作流</h2><h3 id=第一次安装-fnm>第一次安装 fnm</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew install fnm
+</span></span><span class=line><span class=cl>fnm install --lts --use
+</span></span><span class=line><span class=cl>fnm default <span class=k>$(</span>fnm current<span class=k>)</span>
+</span></span><span class=line><span class=cl>node --version
+</span></span></code></pre></td></tr></table></div></div><p>其中 <code>fnm default $(fnm current)</code> 会把当前正在使用的 Node.js 版本设为默认版本。</p><h3 id=进入已有项目>进入已有项目</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> &lt;项目目录&gt;
+</span></span><span class=line><span class=cl>fnm install
+</span></span><span class=line><span class=cl>fnm use
+</span></span><span class=line><span class=cl>node --version
+</span></span></code></pre></td></tr></table></div></div><p>如果已配置 <code>--use-on-cd</code>，进入目录时会自动切换；本地缺少项目要求的版本时，再执行一次 <code>fnm install</code> 即可。</p><h3 id=创建新项目>创建新项目</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>fnm install --lts --use
+</span></span><span class=line><span class=cl>node --version &gt; .node-version
+</span></span></code></pre></td></tr></table></div></div><p>记得将 <code>.node-version</code> 提交到 Git 仓库。</p><h2 id=常见问题>常见问题</h2><h3 id=安装后提示-fnm-command-not-found>安装后提示 <code>fnm: command not found</code></h3><p>先重新打开终端，或者重新加载 Shell 配置：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Zsh</span>
+</span></span><span class=line><span class=cl><span class=nb>source</span> ~/.zshrc
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Bash</span>
+</span></span><span class=line><span class=cl><span class=nb>source</span> ~/.bashrc
+</span></span></code></pre></td></tr></table></div></div><p>如果仍然找不到命令，检查 fnm 是否已加入 <code>PATH</code>，并确认安装脚本是否修改了正确的 Shell 配置文件。</p><h3 id=fnm-能运行但-node-找不到或版本没有切换><code>fnm</code> 能运行，但 <code>node</code> 找不到或版本没有切换</h3><p>通常是因为 Shell 没有执行 <code>fnm env</code> 的输出。确认 <code>~/.zshrc</code>、<code>~/.bashrc</code> 或 PowerShell Profile 中存在对应的初始化命令，然后重新打开终端。</p><h3 id=npm-全局包为什么不见了>npm 全局包为什么不见了</h3><p>不同 Node.js 版本拥有各自的全局 npm 安装目录。切换版本后，之前通过 <code>npm install -g</code> 安装的命令不一定存在，需要在新版本下重新安装。项目依赖应保存在 <code>package.json</code> 中，通过 <code>npm install</code>、<code>npm ci</code>、<code>pnpm install</code> 或 <code>yarn install</code> 恢复。</p><h2 id=常用命令速查>常用命令速查</h2><table><thead><tr><th>命令</th><th>用途</th></tr></thead><tbody><tr><td><code>fnm list-remote --lts --sort desc</code></td><td>查看可安装的 LTS 版本</td></tr><tr><td><code>fnm install --lts --use</code></td><td>安装并立即使用最新 LTS</td></tr><tr><td><code>fnm install 22</code></td><td>安装 Node.js 22 系列</td></tr><tr><td><code>fnm use 22</code></td><td>在当前 Shell 切换到 Node.js 22</td></tr><tr><td><code>fnm use --install-if-missing 22</code></td><td>缺少版本时自动安装并切换</td></tr><tr><td><code>fnm default 22</code></td><td>设置新 Shell 默认使用的版本</td></tr><tr><td><code>fnm list</code></td><td>查看本地已安装版本和别名</td></tr><tr><td><code>fnm current</code></td><td>查看当前使用的 Node.js 版本</td></tr><tr><td><code>fnm install</code></td><td>根据项目版本文件安装</td></tr><tr><td><code>fnm use</code></td><td>根据项目版本文件切换</td></tr><tr><td><code>fnm exec --using=22 &lt;命令></code></td><td>临时使用指定版本运行命令</td></tr><tr><td><code>fnm uninstall &lt;版本></code></td><td>卸载指定 Node.js 版本</td></tr></tbody></table><h2 id=官方资料>官方资料</h2><ul><li><a href=https://github.com/Schniz/fnm target=_blank rel="noopener noreffer">fnm 官方 GitHub 仓库与安装说明</a></li><li><a href=https://github.com/Schniz/fnm/blob/master/docs/commands.md target=_blank rel="noopener noreffer">fnm 完整命令参考</a></li><li><a href=https://github.com/Schniz/fnm/blob/master/docs/configuration.md target=_blank rel="noopener noreffer">fnm 配置说明</a></li><li><a href=https://github.com/Schniz/fnm/releases target=_blank rel="noopener noreffer">fnm Releases</a></li><li><a href=https://nodejs.org/en/about/previous-releases target=_blank rel="noopener noreffer">Node.js 官方版本发布列表</a></li></ul></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2026-07-20 15:04:25</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/fnm/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令" data-via=SincereCSL95 data-hashtags=fnm,Node.js,版本管理><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://sincerecsl.github.io/fnm/ data-hashtag=fnm><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 WhatsApp" data-sharer=whatsapp data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Reddit" data-sharer=reddit data-url=https://sincerecsl.github.io/fnm/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令"><i data-svg-src=/lib/simple-icons/icons/line.min.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令" data-ralateuid=u/5535058729><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Blogger" data-sharer=blogger data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令" data-description="fnm 安装、Node.js 版本切换、项目自动切换与常用命令速查"><i class="fab fa-blogger fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Evernote" data-sharer=evernote data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令"><i class="fab fa-evernote fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Skype" data-sharer=skype data-url=https://sincerecsl.github.io/fnm/ data-title="fnm 常用命令"><i class="fab fa-skype fa-fw" aria-hidden=true></i></a></span></div></div></div><div class="post-info-more post-info-more-plain"><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/homebrew/ class=prev rel=prev title="Homebrew 常用命令"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Homebrew 常用命令</a>
+<a href=/remotework/ class=next rel=next title=远程工作>远程工作<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div></div></div></main><footer class=footer><div class=footer-container><div class=footer-line>SincereCSL</div><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.164.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2026</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>SincereCSL</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/katex/katex.min.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/contrib/auto-render.min.js></script><script type=text/javascript src=/lib/katex/contrib/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/contrib/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

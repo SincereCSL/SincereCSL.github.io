@@ -1,0 +1,377 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Homebrew 常用命令 - SincereCSL's Blog</title><meta name=Description content="Homebrew 安装、软件管理、服务管理与环境迁移命令速查"><meta property="og:url" content="https://sincerecsl.github.io/homebrew/"><meta property="og:site_name" content="SincereCSL's Blog"><meta property="og:title" content="Homebrew 常用命令"><meta property="og:description" content="Homebrew 安装、软件管理、服务管理与环境迁移命令速查"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-07-20T15:00:00+08:00"><meta property="article:modified_time" content="2026-07-20T15:00:00+08:00"><meta property="article:tag" content="Homebrew"><meta property="article:tag" content="Mac"><meta property="article:tag" content="包管理器"><meta name=twitter:card content="summary"><meta name=twitter:title content="Homebrew 常用命令"><meta name=twitter:description content="Homebrew 安装、软件管理、服务管理与环境迁移命令速查"><meta name=twitter:site content="@SincereCSL95"><meta name=application-name content="SincereCSL"><meta name=apple-mobile-web-app-title content="SincereCSL"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sincerecsl.github.io/homebrew/><link rel=prev href=https://sincerecsl.github.io/frontendframeworks/><link rel=next href=https://sincerecsl.github.io/fnm/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Homebrew 常用命令","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sincerecsl.github.io\/homebrew\/"},"genre":"posts","keywords":"Homebrew, Mac, 包管理器","wordcount":2871,"url":"https:\/\/sincerecsl.github.io\/homebrew\/","datePublished":"2026-07-20T15:00:00+08:00","dateModified":"2026-07-20T15:00:00+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"SincereCSL"},"description":"Homebrew 安装、软件管理、服务管理与环境迁移命令速查"}</script></head><body data-header-desktop=fixed data-header-mobile=fixed><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><script>(function(){try{window.localStorage&&window.localStorage.setItem("theme","light"),document.body.removeAttribute("theme")}catch{document.body.removeAttribute("theme")}})()</script><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/posts/>所有文章 </a><a class=menu-item href=/links/>Links </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about/>关于 </a><a class=menu-item href=https://github.com/SincereCSL rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></span></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="SincereCSL's Blog"><span class=header-title-pre><i class='far fa-grin-stars fa-fw'></i></span>SincereCSL</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/links/ title>Links</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about/ title>关于</a><a class=menu-item href=https://github.com/SincereCSL title rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=post-layout><article class="page single"><h1 class=single-title>Homebrew 常用命令</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>SincereCSL</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术工具</a>&nbsp;<a href=/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>学习笔记</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime="2026-07-20 15:00:00">2026-07-20 15:00:00</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 2871 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 6 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#homebrew-是什么>Homebrew 是什么</a></li><li><a href=#高频命令速查>高频命令速查</a></li><li><a href=#安装-homebrew>安装 Homebrew</a></li><li><a href=#获取帮助与查看环境>获取帮助与查看环境</a></li><li><a href=#搜索与查看软件包信息>搜索与查看软件包信息</a></li><li><a href=#安装重装与卸载>安装、重装与卸载</a><ul><li><a href=#安装-formula>安装 Formula</a></li><li><a href=#安装-cask>安装 Cask</a></li><li><a href=#重装与卸载>重装与卸载</a></li></ul></li><li><a href=#查看已安装的软件>查看已安装的软件</a></li><li><a href=#更新与升级>更新与升级</a></li><li><a href=#清理缓存与无用依赖>清理缓存与无用依赖</a></li><li><a href=#查看依赖关系>查看依赖关系</a></li><li><a href=#管理后台服务>管理后台服务</a></li><li><a href=#管理第三方仓库-tap>管理第三方仓库 Tap</a></li><li><a href=#使用-brewfile-备份和恢复软件列表>使用 Brewfile 备份和恢复软件列表</a></li><li><a href=#常用维护流程>常用维护流程</a></li><li><a href=#常见问题>常见问题</a><ul><li><a href=#安装成功后提示-brew-command-not-found>安装成功后提示 <code>brew: command not found</code></a></li><li><a href=#如何确认一个命令来自哪个软件包>如何确认一个命令来自哪个软件包</a></li><li><a href=#从哪里开始排查错误>从哪里开始排查错误</a></li></ul></li><li><a href=#官方资料>官方资料</a></li></ul></nav></div></div><div class=content id=content><h2 id=homebrew-是什么>Homebrew 是什么</h2><p><a href=https://brew.sh/ target=_blank rel="noopener noreffer">Homebrew</a> 是一个开源包管理器，可用于 macOS、Linux 和 WSL。它可以统一完成软件的搜索、安装、升级、卸载和依赖管理。</p><p>Homebrew 中最常见的两类软件包是：</p><ul><li><strong>Formula（配方）</strong>：通常是命令行工具、编程语言、库或后台服务，例如 <code>git</code>、<code>node</code>、<code>wget</code>、<code>redis</code>。</li><li><strong>Cask（桶）</strong>：通常是带图形界面的 macOS 应用、字体或插件，例如 <code>visual-studio-code</code>、<code>google-chrome</code>。</li></ul><p>可以在官方的 <a href=https://formulae.brew.sh/ target=_blank rel="noopener noreffer">Homebrew Formulae</a> 页面查询软件包名称、当前版本、依赖和安装命令。</p><h2 id=高频命令速查>高频命令速查</h2><table><thead><tr><th>命令</th><th>用途</th></tr></thead><tbody><tr><td><code>brew search &lt;关键词></code></td><td>搜索 Formula 和 Cask</td></tr><tr><td><code>brew info &lt;包名></code></td><td>查看软件包信息</td></tr><tr><td><code>brew install &lt;包名></code></td><td>安装 Formula</td></tr><tr><td><code>brew install --cask &lt;包名></code></td><td>安装 Cask</td></tr><tr><td><code>brew list</code></td><td>查看已安装的软件包</td></tr><tr><td><code>brew list --versions &lt;包名></code></td><td>查看指定软件的已安装版本</td></tr><tr><td><code>brew update</code></td><td>更新 Homebrew 和软件包元数据</td></tr><tr><td><code>brew outdated</code></td><td>查看可升级的软件包</td></tr><tr><td><code>brew upgrade</code></td><td>升级全部未锁定的软件包</td></tr><tr><td><code>brew upgrade &lt;包名></code></td><td>升级指定软件包</td></tr><tr><td><code>brew uninstall &lt;包名></code></td><td>卸载软件包</td></tr><tr><td><code>brew cleanup --dry-run</code></td><td>预览可清理内容</td></tr><tr><td><code>brew cleanup</code></td><td>清理旧版本和过期缓存</td></tr><tr><td><code>brew services list</code></td><td>查看后台服务状态</td></tr><tr><td><code>brew doctor</code></td><td>检查 Homebrew 环境</td></tr></tbody></table><h2 id=安装-homebrew>安装 Homebrew</h2><p>安装前建议先阅读官方的 <a href=https://docs.brew.sh/Installation target=_blank rel="noopener noreffer">Installation 文档</a>。在 macOS 上，如果尚未安装 Xcode Command Line Tools，可以先执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>xcode-select --install
+</span></span></code></pre></td></tr></table></div></div><p>然后使用官网提供的安装脚本：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>/bin/bash -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>安装结束后，应按照终端给出的提示配置 <code>brew shellenv</code>。Homebrew 的默认安装目录通常为：</p><ul><li>Apple Silicon Mac：<code>/opt/homebrew</code></li><li>Intel Mac：<code>/usr/local</code></li><li>Linux：<code>/home/linuxbrew/.linuxbrew</code></li></ul><p>验证安装是否成功：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew --version
+</span></span><span class=line><span class=cl>brew doctor
+</span></span></code></pre></td></tr></table></div></div><p><code>brew doctor</code> 会检查系统中可能影响 Homebrew 的配置问题。它给出的部分内容只是警告；如果相关功能能够正常使用，不一定需要逐条处理。</p><h2 id=获取帮助与查看环境>获取帮助与查看环境</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看常用命令和帮助</span>
+</span></span><span class=line><span class=cl>brew <span class=nb>help</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看某个命令的详细帮助</span>
+</span></span><span class=line><span class=cl>brew <span class=nb>help</span> install
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看版本</span>
+</span></span><span class=line><span class=cl>brew --version
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 Homebrew、Ruby、Git、系统等配置信息</span>
+</span></span><span class=line><span class=cl>brew config
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 Homebrew 的安装前缀</span>
+</span></span><span class=line><span class=cl>brew --prefix
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看全部可用命令</span>
+</span></span><span class=line><span class=cl>brew commands
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 打开完整手册</span>
+</span></span><span class=line><span class=cl>man brew
+</span></span></code></pre></td></tr></table></div></div><p>Homebrew 的完整命令说明也可以直接查看官方 <a href=https://docs.brew.sh/Manpage target=_blank rel="noopener noreffer"><code>brew(1)</code> 手册</a>。</p><h2 id=搜索与查看软件包信息>搜索与查看软件包信息</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 同时搜索 Formula 和 Cask</span>
+</span></span><span class=line><span class=cl>brew search &lt;关键词&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看软件包介绍、版本、依赖和安装选项</span>
+</span></span><span class=line><span class=cl>brew info &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只按 Formula 查询</span>
+</span></span><span class=line><span class=cl>brew info --formula &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只按 Cask 查询</span>
+</span></span><span class=line><span class=cl>brew info --cask &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 在浏览器中打开软件包的项目主页</span>
+</span></span><span class=line><span class=cl>brew home &lt;包名&gt;
+</span></span></code></pre></td></tr></table></div></div><p>例如：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew search node
+</span></span><span class=line><span class=cl>brew info node
+</span></span><span class=line><span class=cl>brew info --cask visual-studio-code
+</span></span></code></pre></td></tr></table></div></div><h2 id=安装重装与卸载>安装、重装与卸载</h2><h3 id=安装-formula>安装 Formula</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 安装单个命令行工具</span>
+</span></span><span class=line><span class=cl>brew install wget
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 一次安装多个软件包</span>
+</span></span><span class=line><span class=cl>brew install git node ripgrep
+</span></span></code></pre></td></tr></table></div></div><h3 id=安装-cask>安装 Cask</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 安装 macOS 图形应用</span>
+</span></span><span class=line><span class=cl>brew install --cask visual-studio-code
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 一次安装多个图形应用</span>
+</span></span><span class=line><span class=cl>brew install --cask firefox iina
+</span></span></code></pre></td></tr></table></div></div><h3 id=重装与卸载>重装与卸载</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 重新安装软件包，常用于修复文件缺失或安装损坏</span>
+</span></span><span class=line><span class=cl>brew reinstall &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 重新安装 Cask</span>
+</span></span><span class=line><span class=cl>brew reinstall --cask &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 卸载 Formula 或 Cask</span>
+</span></span><span class=line><span class=cl>brew uninstall &lt;包名&gt;
+</span></span><span class=line><span class=cl>brew uninstall --cask &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 卸载 Cask，并尝试删除其关联配置文件</span>
+</span></span><span class=line><span class=cl>brew uninstall --cask --zap &lt;包名&gt;
+</span></span></code></pre></td></tr></table></div></div><blockquote><p><code>--zap</code> 可能删除与其他应用共享的文件，执行前应先用 <code>brew info --cask &lt;包名></code> 查看相关信息。</p></blockquote><h2 id=查看已安装的软件>查看已安装的软件</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 列出全部已安装的软件包</span>
+</span></span><span class=line><span class=cl>brew list
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 分别列出 Formula 和 Cask</span>
+</span></span><span class=line><span class=cl>brew list --formula
+</span></span><span class=line><span class=cl>brew list --cask
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 列出已安装的软件及版本</span>
+</span></span><span class=line><span class=cl>brew list --versions
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看指定软件的已安装版本，无需再配合 grep</span>
+</span></span><span class=line><span class=cl>brew list --versions &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只列出手动安装、不是作为依赖安装的 Formula</span>
+</span></span><span class=line><span class=cl>brew leaves
+</span></span></code></pre></td></tr></table></div></div><h2 id=更新与升级>更新与升级</h2><p><code>update</code> 和 <code>upgrade</code> 的作用不同：</p><ul><li><code>brew update</code>：更新 Homebrew 自身和软件包元数据。</li><li><code>brew upgrade</code>：升级已经安装的软件包。</li></ul><p>常用命令如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 更新 Homebrew 和软件包元数据</span>
+</span></span><span class=line><span class=cl>brew update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看哪些软件可以升级</span>
+</span></span><span class=line><span class=cl>brew outdated
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 Formula 或 Cask 中可以升级的软件</span>
+</span></span><span class=line><span class=cl>brew outdated --formula
+</span></span><span class=line><span class=cl>brew outdated --cask
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 升级全部未锁定的软件包</span>
+</span></span><span class=line><span class=cl>brew upgrade
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 升级指定软件包</span>
+</span></span><span class=line><span class=cl>brew upgrade &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只升级 Cask</span>
+</span></span><span class=line><span class=cl>brew upgrade --cask
+</span></span><span class=line><span class=cl>brew upgrade --cask &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 预览将要升级的软件，不执行实际升级</span>
+</span></span><span class=line><span class=cl>brew upgrade --dry-run
+</span></span></code></pre></td></tr></table></div></div><p>如果需要临时保持某个版本，可以锁定软件包：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 禁止指定软件包被 brew upgrade 升级</span>
+</span></span><span class=line><span class=cl>brew pin &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看已锁定的软件包</span>
+</span></span><span class=line><span class=cl>brew list --pinned
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 解除锁定</span>
+</span></span><span class=line><span class=cl>brew unpin &lt;包名&gt;
+</span></span></code></pre></td></tr></table></div></div><p>锁定旧版本可能使依赖它的其他软件无法正确安装或运行，因此不建议长期锁定。</p><h2 id=清理缓存与无用依赖>清理缓存与无用依赖</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 预览 cleanup 将删除的旧版本、过期下载和缓存</span>
+</span></span><span class=line><span class=cl>brew cleanup --dry-run
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 清理全部软件包的旧版本和过期缓存</span>
+</span></span><span class=line><span class=cl>brew cleanup
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 只清理指定软件包</span>
+</span></span><span class=line><span class=cl>brew cleanup &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 预览已经不再需要的依赖</span>
+</span></span><span class=line><span class=cl>brew autoremove --dry-run
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 卸载已经不再需要的依赖</span>
+</span></span><span class=line><span class=cl>brew autoremove
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看 Homebrew 下载缓存的位置</span>
+</span></span><span class=line><span class=cl>brew --cache
+</span></span></code></pre></td></tr></table></div></div><p>建议先执行带有 <code>--dry-run</code> 的命令，确认待删除内容后再真正清理。</p><h2 id=查看依赖关系>查看依赖关系</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看指定 Formula 的依赖</span>
+</span></span><span class=line><span class=cl>brew deps &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 以树形结构显示全部依赖</span>
+</span></span><span class=line><span class=cl>brew deps --tree &lt;包名&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看哪些已安装软件依赖指定 Formula</span>
+</span></span><span class=line><span class=cl>brew uses --installed &lt;包名&gt;
+</span></span></code></pre></td></tr></table></div></div><p>在卸载底层库之前，先运行 <code>brew uses --installed &lt;包名></code>，可以避免误删其他软件仍在使用的依赖。</p><h2 id=管理后台服务>管理后台服务</h2><p>数据库、缓存等 Formula 可以通过 <code>brew services</code> 管理。例如安装 Redis 后：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看 Homebrew 管理的服务及其状态</span>
+</span></span><span class=line><span class=cl>brew services list
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 启动服务，并在当前用户登录时自动启动</span>
+</span></span><span class=line><span class=cl>brew services start redis
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 停止服务，并取消登录时自动启动</span>
+</span></span><span class=line><span class=cl>brew services stop redis
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 重启服务</span>
+</span></span><span class=line><span class=cl>brew services restart redis
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 查看指定服务的详细信息</span>
+</span></span><span class=line><span class=cl>brew services info redis
+</span></span></code></pre></td></tr></table></div></div><p>在 macOS 上，不带 <code>sudo</code> 时服务属于当前用户，通常已经足够。只有明确需要系统级开机服务时才考虑使用 <code>sudo brew services ...</code>。</p><h2 id=管理第三方仓库-tap>管理第三方仓库 Tap</h2><p>Tap 是 Homebrew 的第三方软件仓库。一般安装官方 Formula 和 Cask 时不需要手动添加 Tap。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 查看已经添加的 Tap</span>
+</span></span><span class=line><span class=cl>brew tap
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 添加第三方 Tap</span>
+</span></span><span class=line><span class=cl>brew tap &lt;用户或组织&gt;/&lt;仓库&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除 Tap</span>
+</span></span><span class=line><span class=cl>brew untap &lt;用户或组织&gt;/&lt;仓库&gt;
+</span></span></code></pre></td></tr></table></div></div><p>添加第三方 Tap 前，应确认其来源和维护状态。Homebrew 官方的 Tap 说明见 <a href=https://docs.brew.sh/Taps target=_blank rel="noopener noreffer">Taps 文档</a>。</p><h2 id=使用-brewfile-备份和恢复软件列表>使用 Brewfile 备份和恢复软件列表</h2><p>当需要迁移 Mac 或为团队统一开发环境时，可以用 <code>Brewfile</code> 记录已安装的软件。详细说明见官方的 <a href=https://docs.brew.sh/Brew-Bundle-and-Brewfile target=_blank rel="noopener noreffer">Homebrew Bundle 文档</a>。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 将当前目录下的软件状态导出为 Brewfile</span>
+</span></span><span class=line><span class=cl>brew bundle dump --file<span class=o>=</span>./Brewfile --force
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 检查 Brewfile 中的软件是否都已安装</span>
+</span></span><span class=line><span class=cl>brew bundle check --file<span class=o>=</span>./Brewfile
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 按 Brewfile 安装或恢复软件</span>
+</span></span><span class=line><span class=cl>brew bundle install --file<span class=o>=</span>./Brewfile
+</span></span></code></pre></td></tr></table></div></div><p><code>Brewfile</code> 可以提交到 Git 仓库中，方便在新设备上恢复命令行工具、图形应用和 Tap。</p><h2 id=常用维护流程>常用维护流程</h2><p>日常维护可以按照下面的顺序执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 1. 更新 Homebrew 和软件包元数据</span>
+</span></span><span class=line><span class=cl>brew update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2. 查看可升级的软件</span>
+</span></span><span class=line><span class=cl>brew outdated
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3. 升级软件</span>
+</span></span><span class=line><span class=cl>brew upgrade
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4. 预览并清理旧版本和缓存</span>
+</span></span><span class=line><span class=cl>brew cleanup --dry-run
+</span></span><span class=line><span class=cl>brew cleanup
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 5. 遇到异常时检查环境</span>
+</span></span><span class=line><span class=cl>brew doctor
+</span></span></code></pre></td></tr></table></div></div><h2 id=常见问题>常见问题</h2><h3 id=安装成功后提示-brew-command-not-found>安装成功后提示 <code>brew: command not found</code></h3><p>通常是没有完成安装程序最后给出的 <code>shellenv</code> 配置。先重新查看安装输出，并将它建议的命令加入 <code>~/.zprofile</code>、<code>~/.zshrc</code> 或当前 Shell 对应的配置文件。Apple Silicon Mac 当前终端也可以临时执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>/opt/homebrew/bin/brew shellenv<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=如何确认一个命令来自哪个软件包>如何确认一个命令来自哪个软件包</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew which-formula &lt;命令名&gt;
+</span></span></code></pre></td></tr></table></div></div><p>例如，<code>brew which-formula wget</code> 会查询提供 <code>wget</code> 命令的 Formula。</p><h3 id=从哪里开始排查错误>从哪里开始排查错误</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew update
+</span></span><span class=line><span class=cl>brew doctor
+</span></span><span class=line><span class=cl>brew config
+</span></span></code></pre></td></tr></table></div></div><p>然后查看官方的 <a href=https://docs.brew.sh/Troubleshooting target=_blank rel="noopener noreffer">Troubleshooting</a> 和 <a href=https://docs.brew.sh/FAQ target=_blank rel="noopener noreffer">FAQ</a>。提交问题时，<code>brew config</code> 的输出通常有助于说明运行环境，但公开前仍应检查是否包含不希望披露的信息。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://brew.sh/ target=_blank rel="noopener noreffer">Homebrew 官网</a></li><li><a href=https://docs.brew.sh/ target=_blank rel="noopener noreffer">Homebrew 官方文档首页</a></li><li><a href=https://docs.brew.sh/Installation target=_blank rel="noopener noreffer">安装说明</a></li><li><a href=https://docs.brew.sh/Manpage target=_blank rel="noopener noreffer"><code>brew(1)</code> 完整命令手册</a></li><li><a href=https://formulae.brew.sh/ target=_blank rel="noopener noreffer">Formula 与 Cask 查询</a></li><li><a href=https://docs.brew.sh/Brew-Bundle-and-Brewfile target=_blank rel="noopener noreffer">Homebrew Bundle 与 Brewfile</a></li><li><a href=https://docs.brew.sh/Troubleshooting target=_blank rel="noopener noreffer">故障排查</a></li><li><a href=https://docs.brew.sh/FAQ target=_blank rel="noopener noreffer">常见问题</a></li></ul></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2026-07-20 15:00:00</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/homebrew/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令" data-via=SincereCSL95 data-hashtags=Homebrew,Mac,包管理器><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://sincerecsl.github.io/homebrew/ data-hashtag=Homebrew><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 WhatsApp" data-sharer=whatsapp data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Reddit" data-sharer=reddit data-url=https://sincerecsl.github.io/homebrew/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令"><i data-svg-src=/lib/simple-icons/icons/line.min.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令" data-ralateuid=u/5535058729><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Blogger" data-sharer=blogger data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令" data-description="Homebrew 安装、软件管理、服务管理与环境迁移命令速查"><i class="fab fa-blogger fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Evernote" data-sharer=evernote data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令"><i class="fab fa-evernote fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Skype" data-sharer=skype data-url=https://sincerecsl.github.io/homebrew/ data-title="Homebrew 常用命令"><i class="fab fa-skype fa-fw" aria-hidden=true></i></a></span></div></div></div><div class="post-info-more post-info-more-plain"><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/frontendframeworks/ class=prev rel=prev title=前端主流框架与核心生态全景盘点><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>前端主流框架与核心生态全景盘点</a>
+<a href=/fnm/ class=next rel=next title="fnm 常用命令">fnm 常用命令<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div></div></div></main><footer class=footer><div class=footer-container><div class=footer-line>SincereCSL</div><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.164.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2026</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>SincereCSL</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/katex/katex.min.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/contrib/auto-render.min.js></script><script type=text/javascript src=/lib/katex/contrib/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/contrib/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
