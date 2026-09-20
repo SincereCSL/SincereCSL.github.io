@@ -113,7 +113,7 @@ OpenAI 也有类似的200美元计划叫 ChatGPT Pro。Gemini 的 Google AI Ultr
 
 2025年这种情况发生了巨大变化。
 
-![2025年开源模型排名](/posts/2026/01/artificial-analysis-open-weight-2025.jpg)
+![2025年开源模型排名](/posts/2026/01/artificial-analysis-open-weight-2025.webp)
 
 这是 [Artificial Analysis 截至2025年12月30日的开源模型排名](https://artificialanalysis.ai/models/open-source)：
 
@@ -138,7 +138,7 @@ GLM-4.7、Kimi K2 Thinking、MiMo-V2-Flash、DeepSeek V3.2、MiniMax-M2.1 都是
 
 关于 LLM 最有趣的图表之一是 METR 的 [不同 LLM 能以50%概率完成的软件工程任务时间范围](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)：
 
-![METR 长任务图表](/posts/2026/01/metr-long-task-2025.jpg)
+![METR 长任务图表](/posts/2026/01/metr-long-task-2025.webp)
 
 该图表显示需要人类最多5小时完成的任务，并绘制了能独立完成相同目标的模型的演变。2025年在这方面取得了巨大飞跃，GPT-5、GPT-5.1 Codex Max 和 Claude Opus 4.5 能够执行需要人类数小时的任务——2024年最好的模型只能做到30分钟以下。
 
@@ -158,7 +158,7 @@ OpenAI 在 ChatGPT 中推出了新的图像生成功能，关键特性是你可�
 
 Google 的 Nano Banana 模型带来了更大的新闻。11月，Google 发布了 [Nano Banana Pro](https://simonwillison.net/2025/Nov/20/nano-banana-pro/)。它不仅能生成文本，还能输出真正有用的详细信息图和其他文本和信息密集的图像。
 
-![Nano Banana 图像示例](/posts/2026/01/pots-nano-banana-q80-half.jpg)
+![Nano Banana 图像示例](/posts/2026/01/pots-nano-banana-q80-half.webp)
 
 ---
 
@@ -226,7 +226,7 @@ Google 使用自己的内部硬件 TPU，今年他们展示了 TPU 在模型训�
 
 我去年开始了 [tools.simonwillison.net](https://tools.simonwillison.net/) 网站，作为我不断增长的 vibe-coded / AI 辅助 HTML+JavaScript 工具集合的单一位置。
 
-![工具分析](/posts/2026/01/tool-analytics-2025.jpg)
+![工具分析](/posts/2026/01/tool-analytics-2025.webp)
 
 新的[按月浏览页面](https://tools.simonwillison.net/by-month)显示我在2025年建了110个这样的工具！
 
@@ -276,7 +276,7 @@ OpenAI 在10月[推出了 ChatGPT Atlas](https://openai.com/index/introducing-ch
 
 ### 致命三合一的一年
 
-![致命三合一](/posts/2026/01/lethaltrifecta.jpg)
+![致命三合一](/posts/2026/01/lethaltrifecta.webp)
 
 我写关于 [prompt injection 攻击](https://simonwillison.net/tags/prompt-injection/) 已经三年多了。6月我创造了 [致命三合一](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) 这个术语来描述恶意指令欺骗 agent 代表攻击者窃取私人数据的 prompt injection 子集。
 

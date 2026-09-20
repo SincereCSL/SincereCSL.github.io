@@ -6,7 +6,7 @@
 AI 时代，很多同学都有这样的困惑：AI 写代码已经这么快了，计算机专业到底还要学什么？又该怎么学？
 
 最近，斯坦福大学计算机系公布了 2026 年秋季的课表。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 如果对这份课表的完整版感兴趣的同学，可以参考这里：
 
@@ -43,7 +43,7 @@ AI 课程和非 AI 课程的比例大致是三七开。
 缺乏基础，就只能做一个盲目的使用者。面对 AI 生成的代码，也只能“知其然，不知其所以然”。既无法识别隐蔽的性能瓶颈与安全漏洞，也难以在程序报错或失效时定位根本原因。
 
 更重要的是，基础知识里还藏着一个领域的发展历史和发展方向。只有理解基础，才能看清哪些问题还没解决，哪些问题更值得解决，进而推动这个领域往前走。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_1.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_1.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 &nbsp;
 
@@ -70,7 +70,7 @@ AI 课程和非 AI 课程的比例大致是三七开。
 学生用函数和字典这些非常基础的知识，搭起一个冒险故事。玩家走到一个还不存在的场景时，需要用程序调用 AI，把新场景生成出来。
 
 大家可以把它想象成一本边读边长出新章节的互动小说。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_2.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_2.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 作为一份编程基础课的大作业，用到的技术都很基础。可它能让刚学编程的同学感受到编程的乐趣：原来，用最简单的计算机知识，也可以接入最先进的 AI 工具，借助 AI 的力量，做出一些很酷、很有创意的东西。
 
@@ -83,12 +83,12 @@ AI 课程和非 AI 课程的比例大致是三七开。
 {{< color "#2563eb" >}}最常见的规定是：可以让 AI 解释概念、澄清题意，但不能让它解题或帮助撰写作业答案。{{< /color >}}
 
 比如概率论课程 CS109。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_3.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_3.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 涉及编程时，大多数基础课也会明确要求学生避免让 AI 生成代码。
 
 CS107（计算机组成与系统）就是其中之一。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_4.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_4.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 理由也很直接：{{<color "#0080ff" >}}只有掌握基础，才能评估、调试、审查代码，也才能有效地向 AI 提问。{{< /color >}}
 
@@ -99,12 +99,12 @@ CS107（计算机组成与系统）就是其中之一。
 CS147L（跨平台移动开发）和 CS107（计算机组成与系统）都引入了面试考核，不再只靠笔试或项目作业。
 
 即使同学“偷偷”用 AI 交出了一份像样的作业，老师也能通过面试进一步确认：你到底理解了多少？
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_5.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_5.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 在 CS144（计算机网络导论）中，老师则会用 AI 来评判学生作业的代码风格和质量。
 
 相对“形式化”的作业审查，可以借助 AI 提高效率，老师也就能把更多精力放在更重要的知识辅导上。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_6.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_6.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 &nbsp;
 
@@ -133,12 +133,12 @@ CS147L（跨平台移动开发）和 CS107（计算机组成与系统）都引�
 大模型只是今天解决 AI 问题的一条重要路径，但在很多专门的领域，更古老（或者说更经典）的智能算法，比如搜索、约束求解等，依然有用武之地。
 
 学了这些基础，面对一个具体问题，我们就能知道还有哪些方法可选，各自适合什么条件。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_7.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_7.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 这门课程的推荐教材之一，我以前在公众号上向大家推荐过，就是这本大名鼎鼎的《人工智能：一种现代的方法》。有中文版。
 
 不过要注意，这本书属于比较老旧的大部头经典教材，没有决心认真“从头”学习人工智能的同学，不建议购买。对于大多数同学，还是从 LLM，Agent 这些概念学起比较友好。
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_8.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_8.webp" alt="liuyubobobo" width="1200" linked=false >}}
 &nbsp;
 比如，课程中有一个作业，是要做一个智能对话的选课助手。
 
@@ -174,7 +174,7 @@ AI 工具会不断更新。如果学习总是围着“某个产品怎么用”�
 
 我把这门课程的教学大纲截取出来，大家可以感受一下。
 
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_9.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_9.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 这也从侧面印证了：{{<color "#0080ff" >}} 现代软件开发，已经离不开 AI 了。{{< /color >}}
 
@@ -221,7 +221,7 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 
 另一门让我非常感兴趣的课程，是{{< color "#ff4c05" >}} CS336：从零构建语言模型。{{< /color >}}
 
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_10.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_10.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 
 在这门课程中，学生从亲手实现一个分词器开始，逐步搭建语言模型的各个组件，训练一个小型语言模型。接着，还要优化训练效率、处理预训练数据。最后，通过微调和强化学习，训练模型解决数学问题。
@@ -232,7 +232,7 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 
 （说到这里，我也想吐血推荐斯坦福的经典操作系统课程 CS140。其 4 个 Projects 的设计，可谓操作系统领域经典中的经典）
 
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_11.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_11.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 学习语言模型也是如此。完整地走一遍开发过程，才更容易看清问题出在哪里：
 
@@ -250,7 +250,7 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 
 接下来我想介绍的这门课，就和当下的 Agent 热潮直接相关了：{{< color "#ff4c05" >}}CS329Z，AI Agent 工程。{{< /color >}}
 
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_12.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_12.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 这门课程一共有两个大作业：
 
@@ -290,7 +290,7 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 
 说到评测，还得提斯坦福的另一门老牌经典课程：{{< color "#ff4c05" >}}CS224N，基于深度学习的自然语言处理。{{< /color >}}
 
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_13.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_13.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 这门课以前只介绍怎样创建一个基于深度学习的语言模型，但现在，它所涉及的内容已经从模型本身，延伸到了模型后训练、Agent、工具调用和 RAG。
 
@@ -339,7 +339,7 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 {{< color "#0080ff" >}}然后，要证明你会用 AI 做。{{< /color >}}
 
 原因也很简单：{{< color "#0080ff" >}}如果你自己都不会，也就不知道 AI 什么时候错了。{{< /color >}}
-{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_14.png" alt="liuyubobobo" width="1200" linked=false >}}
+{{< image src="/posts/2026/09/StanfordComputerScienceImages/img_14.webp" alt="liuyubobobo" width="1200" linked=false >}}
 
 再回头看斯坦福的课程设计，就会发现：他们就是在让学习者留下这两种证据。
 
@@ -361,5 +361,5 @@ AI 可以承担越来越多的代码编写工作。那么，开发者该怎样�
 
 我在 5 年前写过一篇旧文 [国外公开课都没视频，怎么办？](https://mp.weixin.qq.com/s?__biz=MzU4NTIxODYwMQ%3D%3D&mid=2247487070&idx=1&sn=991de8097232e2f5bd494d115202c37c&scene=21#wechat_redirect)讲的就是这个问题。感兴趣的同学可以参考。
 
-![公众号二维码](/posts/2026/09/StanfordComputerScienceImages/liuyubobobo.jpg)
+![公众号二维码](/posts/2026/09/StanfordComputerScienceImages/liuyubobobo.webp)
 

@@ -15,7 +15,7 @@
 
 我觉得最直接的理解方式，是把 Claude Code 拆成六层来看：
 
-![架构分层](/posts/2026/03/claude_images/img_01.jpg)
+![架构分层](/posts/2026/03/claude_images/img_01.webp)
 
 | 层级 | 职责 |
 | :--- | :--- |
@@ -34,7 +34,7 @@
 
 Claude Code 的核心不是"回答"，而是一个反复循环的代理过程：
 
-![循环代理过程](/posts/2026/03/claude_images/img_02.jpg)
+![循环代理过程](/posts/2026/03/claude_images/img_02.webp)
 
 **收集上下文 -> 采取行动 -> 验证结果 -> [完成 or 回到收集]**
 
@@ -46,7 +46,7 @@ Claude Code 的核心不是"回答"，而是一个反复循环的代理过程：
 
 ### 真正要关注的五个层面：
 
-![五个层面](/posts/2026/03/claude_images/img_03.jpg)
+![五个层面](/posts/2026/03/claude_images/img_03.webp)
 
 | 层面 | 核心问题 | 主要载体 |
 | :--- | :--- | :--- |
@@ -62,7 +62,7 @@ Claude Code 的核心不是"回答"，而是一个反复循环的代理过程：
 
 ## 2. 概念边界：MCP / Plugin / Tools / Skills / Hooks / Subagents
 
-![概念边界](/posts/2026/03/claude_images/img_04.jpg)
+![概念边界](/posts/2026/03/claude_images/img_04.webp)
 
 | 概念 | 运行时角色 | 解决什么 | 典型误用 |
 | :--- | :--- | :--- | :--- |
@@ -87,7 +87,7 @@ Claude Code 的核心不是"回答"，而是一个反复循环的代理过程：
 
 Claude Code 的 200K 上下文并非全部可用：
 
-![上下文成本构成](/posts/2026/03/claude_images/img_05.jpg)
+![上下文成本构成](/posts/2026/03/claude_images/img_05.webp)
 
 ```text
 200K 总上下文
@@ -111,7 +111,7 @@ Claude Code 的 200K 上下文并非全部可用：
 
 ### 推荐的上下文分层
 
-![上下文分层](/posts/2026/03/claude_images/img_06.jpg)
+![上下文分层](/posts/2026/03/claude_images/img_06.webp)
 
 ```text
 始终常驻    → CLAUDE.md：项目契约 / 构建命令 / 禁止事项
@@ -132,7 +132,7 @@ Claude Code 的 200K 上下文并非全部可用：
 
 ### 压缩后保留什么？（Compact Instructions）
 
-![Compact Instructions](/posts/2026/03/claude_images/img_07.jpg)
+![Compact Instructions](/posts/2026/03/claude_images/img_07.webp)
 
 你可以在 CLAUDE.md 里显式地告诉 Claude 压缩时必须保留哪些核心状态：
 
@@ -165,7 +165,7 @@ Skill 官方描述是”按需加载的知识与工作流”，描述符常驻�
 
 Claude Code 团队在内部设计中反复强调 “progressive disclosure”，意思不是让模型一次性看到所有信息，而是先获得索引和导航，再按需拉取细节：
 
-![按需拉取细节](/posts/2026/03/claude_images/img_08.jpg)
+![按需拉取细节](/posts/2026/03/claude_images/img_08.webp)
 
 - **SKILL.md** 负责定义任务语义、边界和执行骨架。
 - **supporting files** 负责提供领域细节。
@@ -227,7 +227,7 @@ Pass / Fail per item. Any Fail must be fixed before release.
 
 ### 好工具 vs 坏工具
 
-![好工具 vs 坏工具](/posts/2026/03/claude_images/img_09.jpg)
+![好工具 vs 坏工具](/posts/2026/03/claude_images/img_09.webp)
 
 | 维度 | 好工具 | 坏工具 |
 | :--- | :--- | :--- |
@@ -236,9 +236,9 @@ Pass / Fail per item. Any Fail must be fixed before release.
 
 **工具设计的黄金准则：**
 
-![AskUserQuestion 工具界面](/posts/2026/03/claude_images/img_10.jpg)
+![AskUserQuestion 工具界面](/posts/2026/03/claude_images/img_10.webp)
 
-![工具设计的黄金准则](/posts/2026/03/claude_images/img_11.jpg)
+![工具设计的黄金准则](/posts/2026/03/claude_images/img_11.webp)
 
 - **左边（markdown 自由输出）太松**，模型格式随意、外层解析脆弱；
 - **右边（ExitPlanTool 参数）太死**，等到退出计划阶段提问已经太晚；
@@ -261,7 +261,7 @@ Pass / Fail per item. Any Fail must be fixed before release.
 
 Hooks 是 Claude Code 的控制平面出口。它不是 Prompt，而是**拦截逻辑**。
 
-![Hooks 命令](/posts/2026/03/claude_images/img_13.jpg)
+![Hooks 命令](/posts/2026/03/claude_images/img_13.webp)
 
 ### 适合 vs 不适合放到 Hooks 的
 
@@ -292,7 +292,7 @@ Hooks 是 Claude Code 的控制平面出口。它不是 Prompt，而是**拦截�
 
 ### Hooks：越早发现错误，越省时间
 
-![早发现错误](/posts/2026/03/claude_images/img_14.jpg)
+![早发现错误](/posts/2026/03/claude_images/img_14.webp)
 
 每次编辑完立刻知道有没有编译错误，比”跑了一堆才发现最开始就挂了”舒服得多。
 
@@ -309,7 +309,7 @@ Hooks 是 Claude Code 的控制平面出口。它不是 Prompt，而是**拦截�
 
 Subagent 就是从主对话派出去的一个独立 Claude 实例，有自己的上下文窗口、只用你指定的工具、干完汇报结果。核心价值不是”并行”，而是隔离。
 
-![Subagents 任务结构](/posts/2026/03/claude_images/img_12.jpg)
+![Subagents 任务结构](/posts/2026/03/claude_images/img_12.webp)
 
 ### 配置时要显式约束
 
@@ -334,7 +334,7 @@ Claude Code 的整个架构都是围绕 Prompt 缓存构建的，高缓存命中
 
 ### 为缓存设计的 Prompt Layout
 
-![Prompt Layout](/posts/2026/03/claude_images/img_15.jpg)
+![Prompt Layout](/posts/2026/03/claude_images/img_15.webp)
 
 1. **始终常驻：**System Prompts、Tool Definitions、Skills。
 2. **极少变动：**CLAUDE.md、Memory。
@@ -346,7 +346,7 @@ Claude Code 的整个架构都是围绕 Prompt 缓存构建的，高缓存命中
 - **会话中途不要切换模型：**切换到 Haiku 实际上比继续用 Opus 更贵，因为要为 Haiku 重建整个缓存。
 - **Compaction 的实际实现：**上下文快满时，Claude Code 会开一个 fork 调用，把完整对话历史喂给模型请求摘要，这一步命中缓存只需 1/10 的价格。
 
-![上下文压缩](/posts/2026/03/claude_images/img_16.jpg)
+![上下文压缩](/posts/2026/03/claude_images/img_16.webp)
 
 - **defer_loading：**工具的延迟加载。只有当 Claude 显式请求某个新工具或 Skill 时，才将其定义插入到缓存链的后端。
 
@@ -391,7 +391,7 @@ Definition of done:
 
 ### 能力与治理
 
-![mcp 设置](/posts/2026/03/claude_images/img_17.jpg)
+![mcp 设置](/posts/2026/03/claude_images/img_17.webp)
 
 - `/mcp`：管理 MCP 连接，检查 token 成本。
 - `/hooks`：管理 hooks。
@@ -518,7 +518,7 @@ Project/
 
 ## 13. 常见反模式
 
-![常见反模式](/posts/2026/03/claude_images/img_19.jpg)
+![常见反模式](/posts/2026/03/claude_images/img_19.webp)
 
 - **死磕一个会话**：上下文污染是客观存在的，感觉 Claude 开始”胡言乱语”或不停道歉时，存个 HANDOFF.md 快跑。
 - **允许任何文件修改**：某些核心文件（如加密 Key、关键配置）必须在 Hooks 里做 Hard Block。
@@ -540,11 +540,11 @@ npx skills add tw93/claude-health
 
 ## 15. 结语
 
-![智商钟形图隐喻](/posts/2026/03/claude_images/img_18.jpg)
+![智商钟形图隐喻](/posts/2026/03/claude_images/img_18.webp)
 
 用 Claude Code 大概会经历三个阶段：
 
-![使用体验的三阶段](/posts/2026/03/claude_images/img_20.jpg)
+![使用体验的三阶段](/posts/2026/03/claude_images/img_20.webp)
 
 | 阶段 | 关注点 | 效率感知 |
 | :--- | :--- | :--- |

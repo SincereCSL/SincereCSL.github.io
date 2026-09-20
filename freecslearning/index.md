@@ -3,7 +3,7 @@
 
 本文整理自 [Mert Metin Tekdemir 的这份清单](https://x.com/mertmetindev/status/2096172167381553367)：50 个来自哈佛、MIT、斯坦福、耶鲁等学校和开放平台的免费课程、教材与学习网站。
 
-![世界顶尖大学公开课与学习资源](/posts/2026/09/01.png)
+![世界顶尖大学公开课与学习资源](/posts/2026/09/01.webp)
 
 > 多数资源可免费旁听或阅读。Coursera、edX 的证书，以及 Brilliant、Math Academy 的完整路径，仍可能收费。
 
