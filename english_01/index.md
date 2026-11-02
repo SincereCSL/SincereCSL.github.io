@@ -123,9 +123,21 @@
   - 专注于JavaScript和Web开发
   - 讨论最新的前端技术趋势
 
-- **[The Changelog: Software Development, Open Source](https://podcasts.apple.com/cn/podcast/the-changelog-software-development-open-source/id341623264)**
+- **[The Changelog Podcast](https://changelog.com/podcast)**
   - 软件开发和开源项目讨论
   - 了解开源社区动态
+
+以下播客参考了 [《那些年我听过的 Podcasts（播客）节目》](https://kenshinji.me/na-xie-nian-wo-ting-guo-de-podcasts-bo-ke-jie-mu/)，可按兴趣和英语水平选择收听：
+
+- **[Healthy Hacker](https://www.healthyhacker.com)** —— 程序员成长与职业经验；原文提到该节目已停止更新，适合挑选旧集收听
+- **[Software Engineering Daily](https://softwareengineeringdaily.com/category/all-episodes/exclusive-content/Podcast/)** —— 软件工程和科技行业访谈
+- **[Talk Python To Me](https://talkpython.fm/)** —— Python 社区与技术话题
+- **[JavaScript Jabber](https://devchat.tv/show/javascript-jabber/)** —— JavaScript 生态与开发者访谈
+- **[Smart Passive Income](https://www.smartpassiveincome.com/shows/spi/)** —— 在线创业与被动收入
+- **[Indie Hackers](https://www.indiehackers.com/podcasts)** —— 独立创业者和产品创作者的经验分享
+- **[The Tim Ferriss Show](https://tim.blog/podcast/)** —— 对企业家、运动员和创作者的长篇访谈
+- **[How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this)** —— NPR 节目，讲述知名企业与产品的创业故事
+- **[Hidden Brain](https://hiddenbrain.org/)** —— NPR 社会科学节目，以故事和访谈讨论心理与行为
 
 ## 实用学习工具
 
@@ -177,6 +189,8 @@
 1. **技术社区参与**：在GitHub、Stack Overflow等平台用英文交流
 2. **写作练习**：尝试用英文写技术博客或文档
 3. **口语练习**：参加英语技术分享或在线讨论
+- **[r/language_exchange](https://www.reddit.com/r/language_exchange/)** —— Reddit 上的语言交换社区，可以寻找希望互相练习语言的伙伴；建议先围绕共同兴趣约定交流主题
+- **[Meetup](https://www.meetup.com/)** —— 查找本地或线上的兴趣活动，例如技术、编程或语言交流聚会；参加活动前可查看活动语言和具体安排
 - **[分享Discord一个英语练习小组，在这里可以和全世界各个地方的语言学习者聊天，有三四人以上的房间，也可以两个人进行一对一聊，练习口语很不错](https://discord.gg/english)**
 - **[Call Annie](https://callannie.ai)** 目前支持iOS美区Apple ID下载和web网页版
 - **[duolingo](https://www.duolingo.cn/)**
