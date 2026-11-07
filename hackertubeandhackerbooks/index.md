@@ -1,4 +1,4 @@
-# HackerTube 与 Hacker Books：从 Hacker News 发现视频和书籍
+# HackerTube、Hacker Books 与 Hacker Podcasts：发现视频、书籍和播客
 
 
 ## HackerTube
@@ -13,5 +13,11 @@
 
 ![Hacker Books 首页截图](/posts/2026/11/hackerbooks-home.png)
 
-两个网站都能作为内容发现入口：HackerTube 侧重视频，Hacker Books 侧重书籍。访问后可以用主题或关键词缩小范围，再根据自己的兴趣继续探索。
+## Hacker Podcasts
+
+[Hacker Podcasts](https://www.hackerpodcasts.org/) 汇总 Hacker News 评论中反复被推荐的播客。首页按长期推荐、近期上升和经典节目等方式展示播客，也可以搜索节目或按主题浏览，适合从社区讨论中寻找新的收听内容。
+
+![HackerPodcasts 首页截图](/posts/2026/11/hackerpodcasts-home.png)
+
+这三个网站分别聚合视频、书籍和播客资源。可以先按主题或关键词筛选，再根据自己的兴趣继续探索。
 
